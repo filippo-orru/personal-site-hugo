@@ -1,0 +1,21 @@
+baseURL = 'https://filippo-orru.com/'
+languageCode = 'en-us'
+title = 'Filippo Orru'
+theme = 'hugo-coder'
+
+[params]
+author = 'Filippo Orru'
+description = "John Doe's personal website"
+keywords = 'blog,developer,personal'
+info = ['Full Stack Wizard ✨']
+colorScheme = "dark"
+
+[[languages.en.menu.main]]
+name = "About me"
+weight = 2
+url = "about-me"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 1
+url = "projects/"
