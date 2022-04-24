@@ -5,11 +5,11 @@ theme = 'hugo-coder'
 
 [params]
 author = 'Filippo Orru'
-description = "John Doe's personal website"
-keywords = 'blog,developer,personal'
-info = ['Full Stack Wizard ✨']
+description = "Personal development showcase and blog."
+keywords = 'blog,developer,personal,flutter,rust'
+info = ['Full Stack Developer']
 colorScheme = "dark"
-avatarURL = "images/avatar.png"
+# avatarURL = "images/avatar.png"
 featuredPage = "/projects/four-in-a-row"
 
 [taxonomies]
