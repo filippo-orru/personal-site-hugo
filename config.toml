@@ -10,7 +10,11 @@ keywords = 'blog,developer,personal'
 info = ['Full Stack Wizard ✨']
 colorScheme = "dark"
 avatarURL = "images/avatar.png"
-featuredPage = "/projects/personal-site"
+featuredPage = "/projects/four-in-a-row"
+
+[taxonomies]
+category = "categories"
+series = "series"
 
 [[languages.en.menu.main]]
 name = "About me"
