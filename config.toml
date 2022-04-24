@@ -9,6 +9,8 @@ description = "John Doe's personal website"
 keywords = 'blog,developer,personal'
 info = ['Full Stack Wizard ✨']
 colorScheme = "dark"
+avatarURL = "images/avatar.png"
+featuredPage = "/projects/personal-site"
 
 [[languages.en.menu.main]]
 name = "About me"
@@ -19,3 +21,15 @@ url = "about-me"
 name = "Projects"
 weight = 1
 url = "projects/"
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/ffactory-ofcl/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 4
+url = "https://www.linkedin.com/in/filippo-orru/"
