@@ -1,0 +1,19 @@
+{{ $id := print "age" (substr (md5 .Inner) 0 16) }}
+<span id="{{ $id }}"></span>
+<script>
+    function getAgeInYears(dateString) {
+        var today = new Date();
+        var ageInMilliseconds = today - new Date(dateString);
+        var days = Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24);
+        var secondsToday = today.getSeconds() + (60 * today.getMinutes()) + (60 * 60 * today.getHours());
+
+        return days + " days and " + secondsToday + " seconds";
+    }
+
+    var date = {{ .Get 0 }};
+    var s = document.getElementById('{{ $id }}');
+    s.innerText = getAgeInYears(date);
+    window.setInterval(() => {
+        s.innerText = getAgeInYears(date);
+    }, 1000);
+</script>
