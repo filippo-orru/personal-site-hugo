@@ -18,14 +18,19 @@ category = "categories"
 series = "series"
 
 [[languages.en.menu.main]]
-name = "About me"
-weight = 2
-url = "about-me"
-
-[[languages.en.menu.main]]
 name = "Projects"
 weight = 1
 url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 2
+url = "blog/"
+
+[[languages.en.menu.main]]
+name = "About me"
+weight = 3
+url = "about-me"
 
 [[params.social]]
 name = "Github"

@@ -12,9 +12,13 @@ Enter ONLINE multiplayer in a beautiful redesign of the all-time classic Four in
 
 > ⭐️ Over 5000 downloads in the Google Play Store ⭐️
 
-<!-- video -->
+{{< google-play-badge appId="ml.fourinarow" >}}
 
-<!-- TODO download now | play online -->
+Desktop and iOS users can play it online at https://play.fourinarow.ffactory.me/
+
+![Screenshots](/images/posts/four-in-a-row/fiar-screenshots.webp)
+
+<!-- video -->
 
 The perfect game to lighten up boring hours - challenge your friends or play world wide.
 
