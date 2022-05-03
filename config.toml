@@ -2,6 +2,7 @@ baseURL = 'https://filippo-orru.com/'
 languageCode = 'en-us'
 title = 'Filippo Orru'
 theme = 'hugo-coder'
+buildDraft = false
 
 [params]
 author = 'Filippo Orru'

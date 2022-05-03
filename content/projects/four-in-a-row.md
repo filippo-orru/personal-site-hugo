@@ -35,7 +35,3 @@ The perfect game to lighten up boring hours - challenge your friends or play wor
 When I was in school, I used to play four in a row with a friend of mine. We kept our scores and were pretty even. During the first lockdown in April of 2020, I found myself with a lot of time to spare and started programming a version of Four in a Row with Flutter. First offering local versus, later expanding it to online multiplayer and adding extra features, like accounts, friends, CPU battle, chat and more.
 
 If you're interested to read how the game works behind the scenes, check out my follow-up articles:
-
-***[Part 2: Behind the scenes (Flutter app)]({{< ref "/blog/four-in-a-row/app" >}})***
-
-***[Part 3: Backend Architecture (Rust and actors)]({{< ref "/blog/four-in-a-row/backend" >}})***
