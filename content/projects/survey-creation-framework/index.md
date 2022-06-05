@@ -2,7 +2,7 @@
 title: "Survey Creation Framework"
 description: ""
 date: 2022-02-24T09:26:10+02:00
-draft: true
+draft: false
 ---
 
 <!-- 
@@ -17,7 +17,5 @@ The final product will be used by company partners of Studo who publish their po
 {{< image src="studo-app-features.png" alt="studo app features" >}}
 Features of the Studo app, taken from [Google Play](https://play.google.com/store/apps/details?id=com.moshbit.studo)
 {{< /image >}}
-
-[Two years working as a fullstack developer at Studo]({{< ref "/blog/fullstack-developer-studo" >}})
 
 The survey tool is integrated into the Studo Newsroom architecture and allows us and our company partners to create surveys, which can then be published to the Studo Newsfeed and filled out by students. Check out this article with [more info about the survey creation framework]({{< ref "/projects/survey-creation-framework" >}}). To analyze its performance, I will pit it against other solutions like [Google Forms](https://forms.google.com/) and [SurveyJS](https://surveyjs.io/).
