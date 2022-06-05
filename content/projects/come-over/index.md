@@ -2,6 +2,9 @@
 title: "Meet Your Friends (easy) — A Full Stack Project"
 description: "A project is born. Some backstory and tech details."
 date: 2022-05-30T00:00:00+02:00
+images: ['projects/come-over/preview.png']
+featuredImage: /projects/come-over/featured.png
+featuredImageSource: ['Daniel McCullough', 'https://unsplash.com/@d_mccullough?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 draft: false
 ongoing: true
 ---
