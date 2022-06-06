@@ -1,6 +1,6 @@
 ---
 title: "Meet Your Friends (easy) — A Full Stack Project"
-description: "A project is born. Some backstory and tech details."
+description: "The world needs another solution to schedule meetings. Tech details and backstory."
 date: 2022-05-30T00:00:00+02:00
 images: ['projects/come-over/preview.png']
 featuredImage: /projects/come-over/featured.png
