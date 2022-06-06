@@ -3,7 +3,7 @@ title: "Four in a row"
 date: 2021-03-23T08:00:00+02:00
 ongoing: true
 featured: true
-featuredImage: /images/posts/four-in-a-row/fiar-featured.webp
+featuredImage: fiar-featured.webp
 featuredImageSource: ['Fotis Fotopoulos', 'https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 draft: false
 ---
@@ -16,7 +16,7 @@ Enter ONLINE multiplayer in a beautiful redesign of the all-time classic Four in
 
 Desktop and iOS users can play it online at https://play.fourinarow.ffactory.me/
 
-![Screenshots](/images/posts/four-in-a-row/fiar-screenshots.webp)
+{{< image src="fiar-screenshots.webp" alt="App screenshots" />}}
 
 <!-- video -->
 

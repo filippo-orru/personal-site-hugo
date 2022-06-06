@@ -3,7 +3,7 @@ title: "Meet Your Friends (easy) — A Full Stack Project"
 description: "The world needs another solution to schedule meetings. Tech details and backstory."
 date: 2022-05-30T00:00:00+02:00
 images: ['projects/come-over/preview.png']
-featuredImage: /projects/come-over/featured.png
+featuredImage: featured.png
 featuredImageSource: ['Daniel McCullough', 'https://unsplash.com/@d_mccullough?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 draft: false
 ongoing: true

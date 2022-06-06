@@ -2,7 +2,7 @@
 title: "My Top 10 Takeaways From Studying Mobile Software Development"
 date: 2022-04-25T07:44:03+02:00
 draft: false
-featuredImage: /images/posts/bachelors-takeaways/featured.webp
+featuredImage: featured.webp
 featuredImageSource: ['Scott Graham', 'https://unsplash.com/@homajob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 ---
 
