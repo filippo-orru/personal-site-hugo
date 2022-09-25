@@ -1,12 +1,12 @@
 <!-- Don't format this file, or the html whitespace gets broken-->
 
 {{- $id := print "age-hours-seconds" (substr (md5 .Inner) 0 16) -}}
-<style>.inline-age-display .time {
+<style>.inline-time {
     padding: 2px;
     border-radius: 4px;
     margin: 1px;
     background-color: #ffffff36;
-}</style><span id="{{ $id }}" class="inline-age-display"><span class="time days"></span> days and <span class="time seconds"></span> seconds</span><script>
+}</style><span id="{{ $id }}" class="inline-age-display"><span class="inline-time days"></span> days and <span class="inline-time seconds"></span> seconds</span><script>
     function getAgeInYears(dateString) {
         var today = new Date();
         var ageInMilliseconds = today - new Date(dateString);
