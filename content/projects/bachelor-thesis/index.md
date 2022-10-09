@@ -18,7 +18,7 @@ On the other hand, developing a custom tool for use within the company allows it
 # The three survey creation platforms
 Using the example of a survey creation platform, I compared the custom-built solution "Studo Survey" against two third-party solutions, Google Forms and SurveyJS. Each has a different goal and different advantages. 
 
-## Studo Survey — custom development
+## Studo Survey
 {{< image src="images/survey-creation-platforms/custom/creator.png" alt="Studo survey: creator view" >}}
     The creator view of Studo survey.
 {{< /image >}}
@@ -33,7 +33,10 @@ The main content is the list of questions of the current survey, while there is 
 
 After gathing some responses. The results can be viewed in a list which shows each question with a bar chart or table, depending on the question type. Choice-questions also have the option to view the responses as a table.
 
-While not yet available at the time of writing the bachelor thesis, when a survey is published alongside a post, users of the Studo app can now fill it out right in the news feed. Previously, users had to tap the post and then the survey would open in an in-app browser.
+While not yet available at the time of writing the bachelor thesis, surveys can now be filled out right in the Studo app's news feed. Previously, users had to tap the post and then the survey would open in an in-app browser.
+
+TODO image of survey inline?
+
 
 ## Google Forms
 {{< image src="images/survey-creation-platforms/google/overview.png" alt="Google Forms overview page" >}}
@@ -52,18 +55,25 @@ When creating a new survey, each question is laid out on its own card, which can
     Google Forms presents statistics for collected responses.
 {{< /image >}}
 
-Once a survey has been published and received a few responses, they can be analyzed by heading to the 'responses' tab of a survey. Just like the editing view, it shows a survey's responses as a list TODO
+Once a survey has been published and received a few responses, they can be analyzed by heading to the 'responses' tab of a survey. Just like the editing view, it shows a survey's responses in a list, each with appropriate visualisation via graph or table. 
 
 ## SurveyJS
 > "A robust full-cycle survey and form solution for your JavaScript application"
 
 SurveyJS is made up of multiple modules that work together around the concept of providing your own database to store survey structure data as well as responses. These modules are the 'Survey Library' (allows users to fill out surveys), the 'Creator' and the 'Analytics' module, all readily available for easy installation via npm, alongside integrations for popular app frameworks like Vue or React. While the libraries are open source, a license must be bought for commercial use. 
 
-{{< image src="images/survey-creation-platforms/surveyjs/creator-overview.png" alt="SurveyJS creator view" >}}
+{{< image src="images/survey-creation-platforms/survey-js/creator-overview.png" alt="SurveyJS creator view" >}}
     Overview of SurveyJS' 'designer', its creation interface.
 {{< /image >}}
 
 The survey 'designer' allows creating surveys. It lists questions, categorized into pages, equivalent to Google Forms' sections. However, configuration options for the survey itself, as well as questions and question types go much further than the other two tools. Each component can be tweaked, styled, expanded and configured to one's content. There is a plethora of simple and advanced question types available, including matrix, rating, boolean, image picker, signature and more. The survey can be previewed at any time, to see how it will look to the user.
+
+{{< image src="images/survey-creation-platforms/survey-js/preview.png" alt="SurveyJS preview tab" >}}
+    Example question in the SurveyJS preview tab.
+{{< /image >}}
+
+The 'Preview' tab allows previewing the survey as it will look to the user. The design is very adaptable, but the structure of the survey is primarily geared towards desktop use, with the mobile UX being significantly worse. The third tab is allows configuring advanced logic to show or hide questions based on previous answers or other conditions.
+Clicking on the 'JSON Editor', the last tab, allows editing or copying the survey's JSON structure, which is the format in which the survey is stored. Lastly, the analytics module of SurveyJS wasn't part of the comparison, but is still worth mentioning. Just like the survey editor and runner, the diagrams used to display collected responses can be heavily customized and the page's theme can be matched to the enclosing tool or preference.
 
 
 # Doing the *Real Science™️*
@@ -71,17 +81,36 @@ What are the advantages of a custom-built survey platform, compared to third-par
 
 The three hypotheses this thesis aimed to answer are:
 
-1. Hypothesis 1: Comparing the custom-built solution to the other two solutions in similar conditions should lead to a higher response rate. This would be due to its mobile-friendly design and low friction to fill out, i.e. few users leave the survey before completing it due to poor UX. 
+
+1. **Hypothesis**
+
+    {{< items-row align="center" >}}
+        {{< image src="images/funnel-studo.png" alt="Funnel diagram of responses for Studo survey" >}}{{< /image >}}
+        {{< image src="images/funnel-google.png" alt="Funnel diagram of responses for Google Forms" >}}{{< /image >}}
+        {{< image src="images/funnel-surveyjs.png" alt="Funnel diagram of responses for SurveyJS" >}}{{< /image >}}
+    {{< /items-row >}}
+
+    Comparing the custom-built solution to the other two solutions in similar conditions should lead to a higher response rate. This would be due to its mobile-friendly design and low friction to fill out, i.e. few users leave the survey before completing it due to poor UX. 
 
     When answering a survey, users can go through multiple steps, e.g. opening, interacting, completing and closing it. This is the survey funnel. To answer this hypothesis, an A/B test was conducted, during which surveys created with each tool were randomly distributed to users of the Studo app. The number of users at each step of the survey funnel was recorded and compared between the three tools.
 
-2. Hypothesis 2: KPIs related to the performance of the website that displays the survey fill-out view should also be better, since the scope of the custom-built solution is smaller than that of the other solutions.
 
-    The performance of the survey fill-out view was measured using the Lighthouse tool. This tool is used to quantify the performance of websites and provides metrics such as: *Time to Interactive*, the time it takes for the page to become interactive, and *SpeedIndex*, how quickly the page contents are visually populated.
+2. **Hypothesis**
+
+    KPIs related to the performance of the website that displays the survey fill-out view should also be better, since the scope of the custom-built solution is smaller than that of the other solutions.
+
+    {{< items-row align="center" >}}
+        {{< image src="images/performance/speedindex_compare_progress.png" alt="Speedindex visualisation" >}}{{< /image >}}
+        {{< image src="images/performance/speedindex_vc_progress.png" alt="Speedindex graph visualisation" >}}{{< /image >}}
+    {{< /items-row >}}
+
+    The performance of the survey fill-out view was measured using the Lighthouse tool. This tool is used to quantify the performance of websites and provides metrics such as: *Time to Interactive*, the time it takes for the page to become interactive, and *SpeedIndex*, how quickly the page contents are visually populated. The above image shows a visualisation of how SpeedIndex is calculated and on the right a graph of SpeedIndex progressing for the two examples.
 
     Using these metrics, the performance of the survey fill-out view was compared between the three tools.
 
-3. Hypothesis 3: The survey creation interface is expected to have a better subjective UX, as reported by users. This would be because of its integration into the existing tool Studo newsroom and it being easy to use and designed for the specific use case of creating surveys to be displayed on mobile devices, inside the Studo app.
+3. **Hypothesis**
+
+    The survey creation interface is expected to offer a better user experience. This would be because of its integration into the existing tool Studo newsroom and it being easy to use and designed for the specific use case of creating surveys to be displayed on mobile devices, inside the Studo app.
 
     An unmoderated user test was performed to compare the subjective UX of the three tools. The test consisted of a user being asked to create a survey using each tool and then answering a few questions about their experience comparing the three tools.
 
@@ -101,7 +130,11 @@ To conduct the A/B test, three posts were published to users of the Studo app in
     Measurement of funnel events for survey comparison A/B test.
 {{< /image >}}
 
-TODO analysis
+Since the surveys were distributed randomly, one would expect the percentage of users opening the post to view the survey to be the same for each survey. Unluckily, this is not the case for Studo Survey, which has a 40% lower open rate, compared to the other two tools. The small sample size introduces more noise, which makes it harder to draw conclusions.
+
+Interestingly, Google Forms performed worst in the *completed* rate, with 44.2% of users who interacted with the survey closing it before sending a response. This could indicate that users were not motivated enough by the survey fill-out experience to complete the task. 
+
+The median completion duration of the Studo Survey is 15 seconds higher than that of the other tools, which may be attributed to displaying one question per page, compared to the list view used by the others. However, considering Google Form's low rate of completion, this could also indicate that its responents drop off early after seeing the survey's length, which isn't as apparent in the Studo Survey.
 
 ## Page load speed
 Measuring page load time is not straightforward, but SpeedIndex and `time to interactive' are decent metrics.  TODO more?
@@ -118,12 +151,20 @@ Unlinke the other two tools, Google Forms uses server-side rendering, which expl
 
 
 ## Survey creator UX
-TODO
 
-# Evaluation
+Studo survey's creator interface was perceived as being most user-friendly, intuitive and self-explanatory. The live preview shown beside the editor was perceived as an advantage over the other two tools, which require the survey creator to switch to another tab to view the preview. The goal of being an easy-to-use tool for creating surveys, to be used by employees and company partners alike, is met. Its limitations lie in that minimalism - there are only a few question types and currently  no way to insert images or customize the survey's appearance.
 
-no clear winner blabla but survey creator hit its goal
+Google Forms was perceveived to be easy to use, most so by those who had used it in the past. New users found some aspects of creating a survey unintuitive. It has theming support and other question types, but it is not as intuitive to use as Studo Survey. SurveyJS got some positive feedback for its very large degree of customizability, like customization, advanced question types and enabling dynamic surveys through its logic editor. However, users felt having this many options makes it harder to quickly and easily create surveys. The sheer amount of information displayed at once intimidates first-time survey creators.
+
+This user test was performed in remote and unsupervised fashion. Five representative participants were selected and asked to create a survey using each tool and to then report on their experience by answering open-ended questions on the advantages and disadvantages of each tool.
 
 
 # Conclusion
-For decades (source?) big companies like Siemens and TODO mostly relied on writing their own software. But the trend used to favor custom development heavily, but in recent years, many new companies have come onto the market with SaaS products like TODO
+For decades, big companies mostly favored on writing their own software, but in recent years many new companies have come onto the market with SaaS products. Developers can use AWS instead of buying and configuring their own servers, Google Drive or Dropbox replaced many insecure FPS servers and for many companies, Slack has replaced communication via E-Mail. Since the companies creating these tools want to retain their customers, most tools not only replace existing software, but also provide regular security updates and add more features.
+
+This being said, the comparison done in my bachelor thesis showed that Studo Survey is a viable alternative to the other two commercial products. Its creator interface is easy to use.
+
+TODO
+no clear winner blabla but survey creator hit its goal
+continuous updates ? remains to be seen
+integration into news feed
