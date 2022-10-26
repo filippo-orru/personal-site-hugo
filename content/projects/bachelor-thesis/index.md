@@ -7,6 +7,7 @@ draft: false
 ---
 
 <!--Introduction-->
+
 > Can custom development still shine in a world dominated by SaaS?
 
 Third-party tools are **easy to set up** and require **lower initial investment**. Having one company that dedicates resources towards creating a product to be sold to many others often means this product is more polished than something that would have been developed in-house. It might cater to more use-cases, have more features and is updated more frequently, as the producer has an incentive to keep selling it and to innovate. However, third-party tools mostly offer no or limited integration with existing infrastructure. For example, Google Forms was not designed to be integrated into an exsting web application.
