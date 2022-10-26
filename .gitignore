@@ -1,3 +1,4 @@
 *.lock
 */**/_gen
 public/
+trash.txt
