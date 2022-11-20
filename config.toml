@@ -14,7 +14,7 @@ colorScheme = "dark"
 # avatarURL = "images/avatar.png"
 featuredPage = "/projects/four-in-a-row"
 postHeaderMessageTitle = "Welcome :)"
-postHeaderMessage = "I'm a software engineer living in Graz, Austria. On this blog I write about my programming projects and other interests."
+postHeaderMessage = "Hi, I'm Filippo. A software engineer living in Graz, Austria. On this blog I write about my programming projects and other interests."
 
 [taxonomies]
 category = "categories"
