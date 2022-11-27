@@ -31,8 +31,13 @@ weight = 2
 url = "blog/"
 
 [[languages.en.menu.main]]
-name = "About me"
+name = "Arts"
 weight = 3
+url = "arts/"
+
+[[languages.en.menu.main]]
+name = "About me"
+weight = 4
 url = "about-me"
 
 [[params.social]]
