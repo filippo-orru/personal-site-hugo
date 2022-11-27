@@ -15,4 +15,4 @@ When I'm not working, programming or bouldering, I'm usually out with friends or
 ## More
 - If you want to see my CV, check out my [LinkedIn profile](https://linkedin.com/in/filippo-orru).
 - If you're curious about what I've been up to, take a look at the [projects page]({{< ref "/projects/" >}}).
-- Read more about my [top takeaways from studying Mobile Software Development]({{< ref "/blog/bachelors-takeaways" >}}).
+- Read a summary of my [bachelor thesis]({{< ref "/projects/bachelor-thesis" >}}). I built a survey creation tool and compared it to Google Forms and SurveyJS with some interesting findings.
