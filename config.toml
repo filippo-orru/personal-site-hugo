@@ -31,9 +31,9 @@ weight = 2
 url = "blog/"
 
 [[languages.en.menu.main]]
-name = "Arts"
+name = "Art"
 weight = 3
-url = "arts/"
+url = "art/"
 
 [[languages.en.menu.main]]
 name = "About me"

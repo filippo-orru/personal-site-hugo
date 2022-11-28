@@ -1,4 +1,4 @@
 ---
-title: "Arts"
+title: "Art"
 siteTitleFirst: true
 ---
