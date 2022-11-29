@@ -1,0 +1,21 @@
+@mixin footer_dark {
+  .footer {
+    a {
+      color: $fg-color-dark;
+    }
+
+    .footer-wave {
+      background-image: url('/images/footer-wave/footer-wave-dark.svg');
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include footer_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include footer_dark();
+  }
+}

@@ -1,0 +1,14 @@
+{{- $title := .Site.Params.postHeaderMessageTitle -}}
+{{- with (.Site.Params.postHeaderMessage | .Page.RenderString | chomp) -}}
+<div class="notice warning">
+  {{- with $title -}}
+    <div class="notice-title">
+      <i class="fa fa-sticky-note" aria-hidden="true"></i>
+      {{ . }}
+    </div>
+  {{ end }}
+  <div class="notice-content">
+    {{- . -}}
+  </div>
+</div>
+{{ end }}

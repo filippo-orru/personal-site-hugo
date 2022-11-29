@@ -1,0 +1,16 @@
+<header>
+    <div class="post-title">
+        {{ partial "posts/article-back.html" . }}
+        <h1 class="display title overlined">
+            <a class="title-link" href="{{ .Permalink | safeURL }}">
+                {{ .Title }}
+            </a>
+        </h1>
+        <h6 class="subtitle">
+            {{ with $.Params.subtitle }}{{ . }} &nbsp;·&nbsp;{{ end }}
+            <span>
+                {{- .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) -}}
+            </span>
+        </h6>
+    </div>
+</header>

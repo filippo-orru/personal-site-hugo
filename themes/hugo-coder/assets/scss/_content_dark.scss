@@ -1,0 +1,98 @@
+@mixin content_dark {
+  .content {
+    article {
+      p.image-source {
+        color: $fg-color-secondary-dark;
+      }
+
+      header {
+        .overlined::before {
+          background-color: $fg-color-header-underline-dark;
+        }
+
+        h6 {
+          color: #adadad;
+        }
+      }
+    }
+
+    .post {
+      .post-title {
+        .back-link {
+          color: #adadad;
+        }
+      }
+
+      .tags {
+        .tag {
+          background-color: $alt-bg-color-dark;
+
+          a {
+            color: $fg-color-dark;
+          }
+
+          a:active {
+            color: $fg-color-dark;
+          }
+        }
+      }
+    }
+
+    .list {
+      ul.projects {
+        li {
+          a {
+            color: $fg-color-dark;
+
+            &:hover,
+            &:focus {
+              background-color: #4d4d4d;
+              color: $fg-color-dark;
+            }
+
+            &.featured {
+              background-color: #3a3a3a;
+              border: 1px solid #ffff0030;
+
+              &:hover,
+              &:focus {
+                background-color: #5a5344;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .centered {
+      .about {
+        h3 {
+          color: #969696;
+        }
+
+        ul {
+          li {
+            a {
+              color: $fg-color-dark;
+
+              &:hover,
+              &:focus {
+                color: $link-color-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include content_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include content_dark();
+  }
+}

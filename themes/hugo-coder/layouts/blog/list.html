@@ -1,0 +1,24 @@
+{{ define "title" }}
+  {{ if .Params.siteTitleFirst }}
+      {{ .Site.Title }} · {{ .Title }}
+    {{ else }}
+      {{ .Title }}  · {{ .Site.Title }}
+  {{ end }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{ .Title }}
+      </a>
+    </h1>
+    {{ .Content }}
+    <table class="posts">
+      {{- range .Paginator.Pages -}}
+        {{- .Render "li" -}}
+      {{- end -}}
+    </table>
+
+    {{ partial "pagination.html" . }}
+  </section>
+{{ end }}

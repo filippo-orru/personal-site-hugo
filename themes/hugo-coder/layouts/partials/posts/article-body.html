@@ -1,0 +1,13 @@
+<div>
+  {{ if .Params.featuredImage }}
+    {{ $image := .Page.Resources.GetMatch .Params.featuredImage }}
+    {{ with $image.Resize (printf "%dx%d webp" $image.Width $image.Height) }}
+      <img src="{{ .RelPermalink }}" alt="Featured image" class="featured" width="{{ .Width }}" height="{{ .Height }}" />
+    {{ end }}
+
+    {{ if .Params.featuredImageSource }}
+      <p class="image-source">Photo by <a href="{{ index .Params.featuredImageSource 1 }}" target="_blank">{{ index .Params.featuredImageSource 0 }}</a></p>
+    {{ end }}
+  {{ end }}
+  {{ .Content }}
+</div>

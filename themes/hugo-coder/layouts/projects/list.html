@@ -1,0 +1,56 @@
+{{ define "title" }}
+  {{ if .Params.siteTitleFirst }}
+      {{ .Site.Title }} · {{ .Title }}
+    {{ else }}
+      {{ .Title }}  · {{ .Site.Title }}
+  {{ end }}
+{{ end }}
+{{ define "content" }}
+<section class="container list">
+  <h1 class="title">
+    <a class="title-link" href="{{ .Permalink | safeURL }}">
+      {{- if eq .Kind "term" -}}
+      {{- i18n .Data.Plural 1 | title -}}
+      {{- print ": " -}}
+      {{- end -}}
+      {{- i18n (lower .Title) | default .Title | title -}}
+    </a>
+  </h1>
+  {{ .Content }}
+  <ul class="projects">
+    {{ $list := (.Paginator.Pages) }}
+    {{ $len := (len $list) }}
+    {{ range $i, $element := $list }}
+    {{ $featuredClass := "" }}
+    {{ if $element.Params.featured }}
+    {{ $featuredClass = " featured" }}
+    {{ end }}
+    <li>
+      <a class="{{ $featuredClass }}" href="{{ .Params.externalLink | default .RelPermalink }}">
+        <div class="left">
+          <span>{{ .Date | time.Format ("January 2006" ) }}
+            {{ if $element.Params.ongoing }}
+            (ongoing)
+            {{ end }}
+          </span>
+        </div>
+        <div class="right">
+          <span class="title">{{ .Title }}</span>
+        </div>
+      </a>
+    </li>
+    {{ if ne (add $i 1) $len }}
+    <li class="separator">
+      <div class="left">
+        <span>|</span>
+      </div>
+      <div class="right"></div>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>
+{{ end }}
+
+

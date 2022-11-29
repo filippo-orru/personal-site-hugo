@@ -1,0 +1,15 @@
+<footer class="footer">
+  <div class="footer-wave"></div>
+  
+  <section class="container">
+    {{ with .Site.Params.author }} {{ . }}, {{ end }}
+    {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
+    {{ .Site.Params.since }} -
+    {{ end }}
+    {{ now.Year }}
+    {{ if (and .Site.Params.license) }}
+    ·
+    {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
+    {{ end }}
+  </section>
+</footer>

@@ -1,0 +1,44 @@
+{{ define "title" }}
+{{ if .Params.siteTitleFirst }}
+{{ .Site.Title }} · {{ .Title }}
+{{ else }}
+{{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ end }}
+{{ define "content" }}
+<section class="container list">
+    <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+            {{- if eq .Kind "term" -}}
+            {{- i18n .Data.Plural 1 | title -}}
+            {{- print ": " -}}
+            {{- end -}}
+            {{- i18n (lower .Title) | default .Title | title -}}
+        </a>
+    </h1>
+    {{ .Content }}
+    <ul class="arts">
+        {{ $list := (.Paginator.Pages) }}
+        {{ $len := (len $list) }}
+        {{ range $i, $element := $list }}
+        <li>
+            <a href="{{ .Params.externalLink | default .RelPermalink }}">
+                {{ $image := .Page.Resources.GetMatch .Params.coverImage }}
+                {{ $title := .Params.title }}
+                {{ $date := .Date | time.Format "Jan 06" }}
+                {{ with $image.Fill (printf "%dx%d webp Center" 480 480) }}
+                <img src="{{ .RelPermalink }}" alt="Arts image" />
+                <div class="overlay">
+                    <span>
+                        {{ $title }} &nbsp;·&nbsp; {{ $date }}
+                    </span>
+                    
+                </div>
+                {{ end }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+</section>
+{{ end }}

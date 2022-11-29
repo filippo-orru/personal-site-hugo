@@ -1,0 +1,17 @@
+<header>
+    <div class="post-title">
+        {{ partial "posts/article-back.html" . }}
+        {{ partial "posts/header-message.html" . }}
+        <h1 class="display title overlined">
+            <a class="title-link" href="{{ .Permalink | safeURL }}">
+                {{ .Title }}
+            </a>
+        </h1>
+        {{ with $.Params.subtitle }}
+        <h6 class="subtitle">
+            {{ . }}
+        </h6>
+        {{ end }}
+    </div>
+    {{ partial "posts/article-header-meta.html" . }}
+</header>

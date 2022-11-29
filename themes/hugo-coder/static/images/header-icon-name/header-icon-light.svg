@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1045 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1146,-229)">
+        <g transform="matrix(0.92274,0,0,0.92274,1211.94,38.8642)">
+            <g id="light">
+                <g opacity="0.9">
+                    <g id="moon">
+                        <path d="M214.93,206.79C372.685,206.79 235.933,332.771 235.933,490.525C235.933,648.279 372.685,778.452 214.93,778.452C57.176,778.452 -70.9,650.375 -70.9,492.621C-70.9,334.867 57.176,206.79 214.93,206.79Z" style="fill:rgb(238,238,113);"/>
+                    </g>
+                </g>
+                <g id="text-90-" serif:id="text 90%" opacity="0.82">
+                    <g transform="matrix(0.998826,0,0,0.998826,-1226.29,36.2639)">
+                        <text x="1242.3px" y="465.07px" style="font-family:'BelyDisplayW00-Regular';font-size:292.438px;">Filippo</text>
+                        <g transform="matrix(292.438,0,0,292.438,1945.61,757.508)">
+                        </g>
+                        <text x="1242.3px" y="757.508px" style="font-family:'BelyDisplayW00-Regular';font-size:292.438px;">Orru</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

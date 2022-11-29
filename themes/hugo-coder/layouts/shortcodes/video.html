@@ -1,0 +1,15 @@
+<!-- Get src param from shortcode -->
+{{ $src := $.Get "src"}}
+
+<!-- Get alt param from shortcode -->
+{{ $alt := $.Get "alt"}}
+
+<!-- Get image -->
+<figure>
+    {{ with .Page.Resources.GetMatch $src }}
+      <video class="video-resource" aria-label="{{ $alt }}" controls src="{{ .RelPermalink }}"></video>
+    {{ end }}
+    {{ with .Inner }}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+</figure>
