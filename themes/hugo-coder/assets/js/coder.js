@@ -2,6 +2,10 @@ const body = document.body;
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
+window.setTimeout(() => {
+    body.classList.add("ready"); // Enables animation on click, but don't animate on page load
+}, 220);
+
 // Check if user preference is set, if not check value of body class for light or dark else it means that colorscheme = auto
 if (localStorage.getItem("colorscheme")) {
     setTheme(localStorage.getItem("colorscheme"));

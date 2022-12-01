@@ -428,11 +428,16 @@
   justify-content: center;
   height: calc(100vh - 240px);
 
+  &.home {
+    position: relative;
+  }
+
   .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
 
     h1 {
       margin-top: 2rem;
@@ -510,6 +515,7 @@
         }
       }
     }
+
   }
 
   .error {
@@ -539,4 +545,39 @@
 
 .container-vertical {
   width: 100%;
+}
+
+.about-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    img {
+      height: 170px;
+    }
+  }
+
+  #left {
+    position: absolute;
+    left: -10%;
+
+    @media only screen and (max-width: 570px) {
+      left: -40%;
+    }
+  }
+  
+  #right {
+    position: absolute;
+    right: -8%;
+    bottom: 5%;
+    
+
+    @media only screen and (max-width: 570px) {
+      right: -28%;
+    }
+  }
 }

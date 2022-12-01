@@ -4,8 +4,8 @@
     {{ if ne (.Page) (.GetPage "/" ) }}
       <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
         <!-- {{ .Site.Title }} -->
-        <img class="header-icon-name light" src="/images/header-icon-name/header-icon-light.svg" width="92" height="48" />
-        <img class="header-icon-name dark" src="/images/header-icon-name/header-icon-dark.svg" width="92" height="48" />
+        <img class="header-icon-name img-light" src="/images/header-icon-name/header-icon-light.svg" width="92" height="48" />
+        <img class="header-icon-name img-dark" src="/images/header-icon-name/header-icon-dark.svg" width="92" height="48" />
       </a>
     {{ end }}
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
