@@ -4,12 +4,13 @@
 <!-- Get alt param from shortcode -->
 {{ $alt := $.Get "alt"}}
 
+{{ $hidecontrols := $.Get "hidecontrols" }}
+
 <!-- Get image -->
 <figure>
-    {{ with .Page.Resources.GetMatch $src }}
-      <video class="video-resource" aria-label="{{ $alt }}" controls src="{{ .RelPermalink }}"></video>
-    {{ end }}
-    {{ with .Inner }}
-      <figcaption>{{ . | markdownify }}</figcaption>
-    {{ end }}
+  <video class="video-resource" aria-label="{{ $alt }}" {{ if ne $hidecontrols "true" }} controls {{ else }} autoplay loop {{end }}
+    src="{{ (.Page.Resources.GetMatch $src).RelPermalink }}"></video>
+  {{ with .Inner }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{ end }}
 </figure>
