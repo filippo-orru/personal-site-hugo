@@ -52,8 +52,11 @@ What really delighted me on Daniel's page was a very small detail. When loading 
 This small animation adds a lot to the page's vibe in my opinion. So I did what all great artists must do... I recreated the effect and integrated into my site's templates. Some tweaks for supporting both dark and light mode were necessary, now the bar appears when any project post or blog post first loads.
 
 # Designing the page logo {#logo}
-Having decided to use Bely as my expressive display font, I started creating a logo to replace the plain text mark used previously. 
+Having decided to use Bely as my expressive display font, I started creating a logo to replace the previous plain text. 
+
+{{< compare-images left="comparisons/home-old.png" right="comparisons/home-new.png" >}}
 - keeping dark mode consistent
+- favicon
 
 # A place for art {#art}
 - adapting the hugo theme to accomodate art / images
