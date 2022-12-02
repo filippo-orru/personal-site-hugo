@@ -1,6 +1,6 @@
 {{ $leftImage := .Get "left" }}
 {{ $rightImage := .Get "right" }}
-{{- $id := print (substr (md5 $leftImage) 0 16) -}}
+{{- $id := print "id-" (substr (md5 $leftImage) 0 16) -}}
 
 <div id="{{ $id }}" class="image-comparison">
     <div class="image-comparison-slider">
@@ -29,48 +29,50 @@
 </div>
 
 <script>
-    const root = document.querySelector("{{ $id }}");
-    const slider = document.querySelector(".image-comparison-slider");
-    const sliderImgWrapper = document.querySelector(".image-comparison-slider .img-wrapper");
-    const sliderHandle = document.querySelector(".image-comparison-slider .handle");
+    (function () {
+        const root = document.querySelector("#{{ $id }}");
+        const slider = root.querySelector(".image-comparison-slider");
+        const sliderImgWrapper = root.querySelector(".image-comparison-slider .img-wrapper");
+        const sliderHandle = root.querySelector(".image-comparison-slider .handle");
 
-    slider.addEventListener("mousemove", sliderMouseMove);
-    slider.addEventListener("touchmove", sliderMouseMove);
+        slider.addEventListener("mousemove", sliderMouseMove);
+        slider.addEventListener("touchmove", sliderMouseMove);
 
-    function sliderMouseMove(event) {
+        function sliderMouseMove(event) {
 
-        if (isSliderLocked) return;
+            if (isSliderLocked) return;
 
-        const sliderLeftX = slider.offsetLeft;
-        const sliderWidth = slider.clientWidth;
-        const sliderHandleWidth = sliderHandle.clientWidth;
+            const sliderLeftX = slider.offsetLeft;
+            const sliderWidth = slider.clientWidth;
+            const sliderHandleWidth = sliderHandle.clientWidth;
 
-        let mouseX = (event.clientX || event.touches[0].clientX) - sliderLeftX;
-        if (mouseX < 0) mouseX = 0;
-        else if (mouseX > sliderWidth) mouseX = sliderWidth;
+            let mouseX = (event.clientX || event.touches[0].clientX) - sliderLeftX;
+            if (mouseX < 0) mouseX = 0;
+            else if (mouseX > sliderWidth) mouseX = sliderWidth;
 
-        sliderImgWrapper.style.width = `${((1 - mouseX / sliderWidth) * 100).toFixed(4)}%`;
-        sliderHandle.style.left = `calc(${((mouseX / sliderWidth) * 100).toFixed(4)}% - ${sliderHandleWidth / 2}px)`;
-    }
+            sliderImgWrapper.style.width = `${((1 - mouseX / sliderWidth) * 100).toFixed(4)}%`;
+            sliderHandle.style.left = `calc(${((mouseX / sliderWidth) * 100).toFixed(4)}% - ${sliderHandleWidth / 2}px)`;
+        }
 
-    let isSliderLocked = false;
+        let isSliderLocked = false;
 
-    slider.addEventListener("mousedown", sliderMouseDown);
-    slider.addEventListener("touchstart", sliderMouseDown);
-    slider.addEventListener("mouseup", sliderMouseUp);
-    slider.addEventListener("touchend", sliderMouseUp);
-    slider.addEventListener("mouseleave", sliderMouseLeave);
+        slider.addEventListener("mousedown", sliderMouseDown);
+        slider.addEventListener("touchstart", sliderMouseDown);
+        slider.addEventListener("mouseup", sliderMouseUp);
+        slider.addEventListener("touchend", sliderMouseUp);
+        slider.addEventListener("mouseleave", sliderMouseLeave);
 
-    function sliderMouseDown(event) {
-        if (isSliderLocked) isSliderLocked = false;
-        sliderMouseMove(event);
-    }
+        function sliderMouseDown(event) {
+            if (isSliderLocked) isSliderLocked = false;
+            sliderMouseMove(event);
+        }
 
-    function sliderMouseUp() {
-        if (!isSliderLocked) isSliderLocked = true;
-    }
+        function sliderMouseUp() {
+            if (!isSliderLocked) isSliderLocked = true;
+        }
 
-    function sliderMouseLeave() {
-        if (isSliderLocked) isSliderLocked = false;
-    }
+        function sliderMouseLeave() {
+            if (isSliderLocked) isSliderLocked = false;
+        }
+    })();
 </script>

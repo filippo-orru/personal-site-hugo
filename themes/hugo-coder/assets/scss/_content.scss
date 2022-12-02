@@ -82,11 +82,6 @@
       }
     }
 
-    .video-resource {
-      max-width: 400px;
-      max-height: 400px;
-    }
-
     footer {
       margin-top: 4rem;
 
@@ -109,12 +104,6 @@
       font-size: 1.5rem;
       text-align: right;
       opacity: 0.8;
-    }
-
-    img,
-    video {
-      border-radius: 4px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.17);
     }
 
     .arts-post {
@@ -193,11 +182,15 @@
     margin: 0;
     padding: 0;
 
-    img {
+    img,
+    video {
       width: auto;
       height: auto;
       max-height: 450px;
-      max-width: 80%
+      max-width: 80%;
+
+      border-radius: 4px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
     }
   }
 
@@ -584,24 +577,26 @@
 }
 
 .image-comparison {
-  width: 100%;
+  width: auto;
+  height: auto;
+  // max-height: 450px;
+  // max-width: 80%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 32px;
 
   .image-comparison-slider {
     $handle-width: 50px;
-
+    
     position: relative;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    box-shadow: -7px 5px 16px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
     cursor: col-resize;
 
     img {
       display: block;
-      height: auto;
-      max-height: 80vh;
       object-fit: cover;
       pointer-events: none;
       user-select: none;

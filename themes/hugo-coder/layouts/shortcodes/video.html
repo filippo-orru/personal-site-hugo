@@ -8,7 +8,7 @@
 
 <!-- Get image -->
 <figure>
-  <video class="video-resource" aria-label="{{ $alt }}" {{ if ne $hidecontrols "true" }} controls {{ else }} autoplay loop {{end }}
+  <video aria-label="{{ $alt }}" {{ if ne $hidecontrols "true" }} controls {{ else }} autoplay loop {{end }}
     src="{{ (.Page.Resources.GetMatch $src).RelPermalink }}"></video>
   {{ with .Inner }}
   <figcaption>{{ . | markdownify }}</figcaption>
