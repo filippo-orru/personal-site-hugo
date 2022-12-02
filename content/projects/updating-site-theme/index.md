@@ -54,7 +54,12 @@ This small animation adds a lot to the page's vibe in my opinion. So I did what 
 # Designing the page logo {#logo}
 Having decided to use Bely as my expressive display font, I started creating a logo to replace the previous plain text. 
 
-{{< compare-images left="comparisons/home-old.png" right="comparisons/home-new.png" >}}
+{{< compare-images left="comparisons/home-old.png" right="comparisons/home-new.png" >}}{{< /compare-images >}}
+
+{{< compare-images left="comparisons/post-old.png" right="comparisons/post-new.png" >}}
+test
+{{< /compare-images >}}
+
 - keeping dark mode consistent
 - favicon
 
