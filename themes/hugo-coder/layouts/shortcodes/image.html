@@ -4,19 +4,19 @@
 <!-- Get alt param from shortcode -->
 {{ $alt := $.Get "alt"}}
 
+{{ $img := .Page.Resources.GetMatch $src }}
+
 <!-- Get image -->
 <figure>
-    {{ with .Page.Resources.GetMatch $src }}
-        <picture>
-            {{ with .Resize "400x webp" }}
-                <source media="(max-width:400px)" srcset="{{ .RelPermalink }}">
-            {{ end }}
-            {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
-                <img src="{{ .RelPermalink }}" alt="{{ $alt }}"  width="{{ .Width }}" height="{{ .Height }}">
-            {{ end }}
-        </picture>
-    {{ end }}
+    <picture>
+        {{ with $img.Resize "400x webp" }}
+        <source media="(max-width:400px)" srcset="{{ $img.RelPermalink }}">
+        {{ end }}
+        {{ with $img.Resize (printf "%dx%d webp" $img.Width $img.Height) }}
+        <img src="{{ .RelPermalink }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}">
+        {{ end }}
+    </picture>
     {{ with .Inner }}
-        <figcaption>{{ . | markdownify }}</figcaption>
+    <figcaption>{{ . | markdownify }}</figcaption>
     {{ end }}
 </figure>

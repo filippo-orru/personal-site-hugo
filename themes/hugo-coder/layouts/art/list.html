@@ -23,18 +23,16 @@
         {{ range $i, $element := $list }}
         <li>
             <a href="{{ .Params.externalLink | default .RelPermalink }}">
-                {{ $image := .Page.Resources.GetMatch .Params.coverImage }}
+                {{ $image := (.Page.Resources.GetMatch .Params.coverImage).Fill "480x480 webp Center" }}
                 {{ $title := .Params.title }}
                 {{ $date := .Date | time.Format "Jan 06" }}
-                {{ with $image.Fill (printf "%dx%d webp Center" 480 480) }}
-                <img src="{{ .RelPermalink }}" alt="Arts image" />
+                <img src="{{ $image.RelPermalink }}" alt="Arts image" />
                 <div class="overlay">
                     <span>
                         {{ $title }} &nbsp;·&nbsp; {{ $date }}
                     </span>
                     
                 </div>
-                {{ end }}
             </a>
         </li>
         {{ end }}
