@@ -39,14 +39,6 @@
         </div>
       </a>
     </li>
-    {{ if ne (add $i 1) $len }}
-    <li class="separator">
-      <div class="left">
-        <span>|</span>
-      </div>
-      <div class="right"></div>
-    </li>
-    {{ end }}
     {{ end }}
   </ul>
   {{ partial "pagination.html" . }}

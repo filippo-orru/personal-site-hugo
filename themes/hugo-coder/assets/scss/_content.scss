@@ -116,7 +116,7 @@
           width: auto;
           height: auto;
           max-height: 90vh;
-          
+
           border-radius: 4px;
           box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
         }
@@ -265,6 +265,7 @@
           font-size: 1.8rem;
           display: flex;
           padding: 4px 0;
+          margin-bottom: 32px;
           border: 1px solid transparent;
           border-radius: 6px;
           transition: background-color 0.11s,
@@ -641,7 +642,7 @@
       border-radius: 0.25rem;
       padding: 0.5rem 0.75rem;
       user-select: none;
-      opacity: 0;
+      opacity: 0.5;
       transition: 0.25s cubic-bezier(.68, .26, .58, 1.22);
     }
 
