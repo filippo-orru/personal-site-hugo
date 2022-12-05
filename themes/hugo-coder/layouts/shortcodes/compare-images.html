@@ -1,15 +1,19 @@
-{{ $leftImage := .Get "left" }}
-{{ $rightImage := .Get "right" }}
-{{- $id := print "id-" (substr (md5 $leftImage) 0 16) -}}
+{{ $leftImagePath := .Get "left" }}
+{{ $rightImagePath := .Get "right" }}
+
+{{ $leftImage := .Page.Resources.GetMatch $leftImagePath }}
+{{ $rightImage := .Page.Resources.GetMatch $rightImagePath }}
+
+{{- $id := print "id-" (substr (md5 $leftImagePath) 0 16) -}}
 
 <div id="{{ $id }}" class="image-comparison">
     <div class="image-comparison-slider">
-        {{ with .Page.Resources.GetMatch $leftImage }}
-        <img src="{{ . }}" alt="before">
+        {{ with $leftImage.Resize (printf "%dx%d webp" $leftImage.Width $leftImage.Height) }}
+        <img src="{{ .RelPermalink }}" alt="before">
         {{ end }}
         <div class="img-wrapper">
-            {{ with .Page.Resources.GetMatch $rightImage }}
-            <img src="{{ . }}" alt="after">
+            {{ with $rightImage.Resize (printf "%dx%d webp" $rightImage.Width $rightImage.Height) }}
+            <img src="{{ .RelPermalink }}" alt="after">
             {{ end }}
         </div>
         <span class="label label-before">Before</span>
