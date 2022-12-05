@@ -9,10 +9,10 @@
 <!-- Get image -->
 <figure>
     <picture>
-        {{ with $img.Resize "400x webp" }}
-        <source media="(max-width:400px)" srcset="{{ $img.RelPermalink }}">
-        {{ end }}
         {{ with $img.Resize (printf "%dx%d webp" $img.Width $img.Height) }}
+        <source media="(min-width:400px)" srcset="{{ .RelPermalink }}">
+        {{ end }}
+        {{ with $img.Resize "500x webp" }}
         <img src="{{ .RelPermalink }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
     </picture>
