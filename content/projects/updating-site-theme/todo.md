@@ -9,3 +9,10 @@ As a final step, I set up Plausible to collect some very basic, privacy-centered
 # Adding self-hosted analytics in under 30 minutes {#analytics}
 - using plausible.io
 - new subdomain, quick configuration & docker setup on my server
+
+write about perfectionism
+
+write about app suggestions
+
+TILs
+- advent lottery
