@@ -1,14 +1,66 @@
 {{ define "title" }}
-  {{- if eq .Kind "term" -}}
-    {{- i18n .Data.Plural 1 | title -}}
-    {{- print ": " -}}
-  {{- end -}}
-  {{ if .Params.siteTitleFirst }}  
-    {{ .Site.Title }} · {{ .Title }}
-  {{ else }}
-    {{ .Site.Title -}} · {{- i18n (lower .Title) | default .Title | title }}
-  {{ end }}
+{{ if .Params.siteTitleFirst }}
+{{ .Site.Title }} · {{ .Title }}
+{{ else }}
+{{ .Title }} · {{ .Site.Title }}
+{{ end }}
 {{ end }}
 {{ define "content" }}
-  {{ partial "list.html" . }}
+<section class="container list">
+  <div class="title-with-tags">
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{- if eq .Kind "term" -}}
+        {{- i18n .Data.Plural 1 | title -}}
+        {{- print ": " -}}
+        {{- end -}}
+        {{- i18n (lower .Title) | default .Title | title -}}
+      </a>
+    </h1>
+
+    {{- if eq .Kind "section" -}}
+    <div class="tagbuttons">
+      {{ $outside := . }}
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      {{ $pages := where $outside.Paginator.Pages "Params.categories" "intersect" (slice $name) }}
+      {{ if gt (len $pages) 0 }}
+      {{ with $outside.GetPage (printf "/categories/%s" $name) }}
+      <a href="{{ .RelPermalink }}" title="All {{ i18n $name }}s"> 
+        <!-- hashtag fontawesome icon -->
+        <i class="fa fa-hashtag"></i>
+        {{ $name }}s
+      </a>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </div>
+    {{- end -}}
+  </div>
+
+
+  {{ .Content }}
+  <ul class="posts">
+    {{ $list := (.Paginator.Pages) }}
+    {{ $len := (len $list) }}
+    {{ range $i, $element := $list }}
+    {{ $featuredClass := "" }}
+    {{ if $element.Params.featured }}
+    {{ $featuredClass = " featured" }}
+    {{ end }}
+    <li>
+      <a class="{{ $featuredClass }}" href="{{ .Params.externalLink | default .RelPermalink }}">
+        <div class="bg"> </div>
+        <span class="date">{{ .Date | time.Format ("January 2006" ) }}
+          {{ if $element.Params.ongoing }}
+          (ongoing)
+          {{ end }}
+        </span>
+        <h5 class="title">{{ .Title }}</h5>
+        <p class="summary">{{ .Summary }}</p>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>
 {{ end }}

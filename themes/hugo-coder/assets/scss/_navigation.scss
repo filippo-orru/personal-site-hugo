@@ -146,3 +146,26 @@
     }
   }
 }
+
+.title-with-tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    display: inline-block;
+  }
+
+  .tagbuttons {
+    float: right;
+    display: flex;
+    gap: 16px;
+
+    a {
+      color: $fg-color !important;
+      padding: 6px 9px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

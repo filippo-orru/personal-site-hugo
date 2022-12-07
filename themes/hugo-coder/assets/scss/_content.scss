@@ -240,7 +240,7 @@
     list-style: none;
     padding: 0;
 
-    &.projects {
+    &.posts {
       li {
         a {
           @media only screen and (max-width: 768px) {
@@ -293,8 +293,6 @@
             z-index: -1;
             border: 1px solid transparent;
             border-radius: 6px;
-            transition: background-color 0.11s, border-color 0.11s,
-              top 0.11s, bottom 0.11s, left 0.11s, right 0.11s;
           }
 
           &:hover,

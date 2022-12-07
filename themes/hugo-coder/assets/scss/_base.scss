@@ -354,4 +354,9 @@ figure {
 
 body.ready {
   transition: background-color 0.2s;
+
+  .content .list ul.posts li a .bg {
+    transition: background-color 0.11s, border-color 0.11s,
+      top 0.11s, bottom 0.11s, left 0.11s, right 0.11s;
+  }
 }

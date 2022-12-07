@@ -4,7 +4,7 @@ subtitle: "Pretty fonts for a modern look?"
 slug: giving-my-blog-a-facelift
 date: 2022-12-05T13:36:00+07:00
 draft: false
-tags: ['project']
+categories: ['project']
 ---
 
 <!-- # Inspiration -->

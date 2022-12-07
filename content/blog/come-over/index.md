@@ -7,7 +7,7 @@ featuredImage: featured.png
 featuredImageSource: ['Daniel McCullough', 'https://unsplash.com/@d_mccullough?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 draft: false
 ongoing: false
-tags: ['project']
+categories: ['project']
 ---
 
 Say you're part of a friend group that meets semi-regularly. Establishing *when* to meet takes anywhere from 10 to 50 messages over the course of an hour up to a week. Looks something like this:

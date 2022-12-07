@@ -16,5 +16,5 @@ Want an app suggestion? I like using [Harmonic](https://play.google.com/store/ap
 
 ## More
 - If you want to see my CV, check out my [LinkedIn profile](https://linkedin.com/in/filippo-orru).
-- If you're curious about what I've been up to, take a look at [projects listed on my blog]({{< ref "/blog/?tag=projects" >}}).
+- If you're curious about what I've been up to, take a look at [my recent projects]({{< ref "/categories/project/" >}}).
 - Read a summary of my [bachelor thesis]({{< ref "/blog/bachelor-thesis" >}}). I built a survey creation tool and compared it to Google Forms and SurveyJS with some interesting findings.
