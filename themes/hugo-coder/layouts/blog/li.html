@@ -1,8 +1,0 @@
-<tr>
-  <td>
-    <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-  </td>
-  <td>
-    <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
-  </td>
-</tr>

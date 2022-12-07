@@ -19,4 +19,4 @@ The final product will be used by company partners of Studo who publish their po
 Features of the Studo app, taken from [Google Play](https://play.google.com/store/apps/details?id=com.moshbit.studo)
 {{< /image >}}
 
-The survey tool is integrated into the Studo Newsroom architecture and allows us and our company partners to create surveys, which can then be published to the Studo Newsfeed and filled out by students. Check out this article with [more info about the survey creation framework]({{< ref "/projects/survey-creation-framework" >}}). To analyze its performance, I will pit it against other solutions like [Google Forms](https://forms.google.com/) and [SurveyJS](https://surveyjs.io/).
+The survey tool is integrated into the Studo Newsroom architecture and allows us and our company partners to create surveys, which can then be published to the Studo Newsfeed and filled out by students. Check out this article with [more info about the survey creation framework]({{< ref "/blog/survey-creation-framework" >}}). To analyze its performance, I will pit it against other solutions like [Google Forms](https://forms.google.com/) and [SurveyJS](https://surveyjs.io/).

@@ -5,7 +5,7 @@ draft: false
 tags: ['project']
 ---
 
-*To start building a sort of online presence for myself, I built this personal website to showcase myself and my [recent projects]({{< ref "/projects" >}}).*
+*To start building a sort of online presence for myself, I built this personal website to showcase myself and my [recent projects]({{< ref "/blog/?tag=projects" >}}).*
 
 # Stack
 - [Hugo](https://github.com/gohugoio/hugo)  
@@ -16,4 +16,4 @@ tags: ['project']
 - [Coder](https://github.com/luizdepra/hugo-coder)  
   A minimal theme for Hugo which I adapted to my needs.
 
-I recently updated my site's theme with some expressive new fonts and delighting animations. Read more about that [here]({{< ref "/projects/updating-site-theme" >}})
+I recently updated my site's theme with some expressive new fonts and delighting animations. Read more about that [here]({{< ref "/blog/updating-site-theme" >}})

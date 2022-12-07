@@ -117,4 +117,4 @@ There are some other changes that didn't fit into this post. The matrix dots on 
 
 If you'd like, you can check out the repo here: [github.com/ffactory-ofcl/personal-site-hugo](https://github.com/ffactory-ofcl/personal-site-hugo). It even has some simple homemade CD that notifies my VPS and re-deploys whenever I push to `master`.
 
-To learn about bigger project of mine, check out this post: [Comparing Survey Creation Platforms]({{< ref "/projects/bachelor-thesis" >}}). I built a survey creation platform, deployed it to >300k users and compared it to Google Forms and SurveyJS.
+To learn about bigger project of mine, check out this post: [Comparing Survey Creation Platforms]({{< ref "/blog/bachelor-thesis" >}}). I built a survey creation platform, deployed it to >300k users and compared it to Google Forms and SurveyJS.

@@ -13,7 +13,7 @@ info = 'Full Stack Developer'
 subInfo = 'Graz, Austria'
 colorScheme = "dark"
 # avatarURL = "images/avatar.png"
-featuredPage = "/projects/four-in-a-row"
+featuredPage = "/blog/four-in-a-row"
 # postHeaderMessageTitle = "Welcome :)"
 postHeaderMessage = "Hi, I'm Filippo. A software engineer living in Graz, Austria. On this blog I write about my programming projects and other interests."
 
@@ -26,23 +26,18 @@ category = "categories"
 series = "series"
 
 [[languages.en.menu.main]]
-name = "Projects"
-weight = 1
-url = "projects/"
-
-[[languages.en.menu.main]]
 name = "Blog"
-weight = 2
+weight = 1
 url = "blog/"
 
 [[languages.en.menu.main]]
 name = "Art"
-weight = 3
+weight = 2
 url = "art/"
 
 [[languages.en.menu.main]]
 name = "About me"
-weight = 4
+weight = 3
 url = "about-me"
 
 [[params.social]]
