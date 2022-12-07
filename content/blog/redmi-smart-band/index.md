@@ -3,6 +3,8 @@ title: "How to enable Android's Smart Lock with the Redmi Smart Band Pro"
 date: 2022-07-19T17:06:03+02:00
 draft: false
 featuredImage: featured.png
+slug: redmi-smart-band-pro-android-smart-lock
+images: ['blog/redmi-smart-band-pro-android-smart-lock/social.png']
 ---
 
 I've been a happy user of a few generations of Mi Bands for many years now. Starting with the Mi Band 2 and its tiny black and white display, next the Mi Band 3 which was comparatively comfortable. After that, I've been wearing the Mi Band 5 for one and a half years. The screen is great. What I value most about the series was not the fitness aspect or heart rate tracking, but rather the super cheap price and phone notification access. But the feature that may be most important for me is the ability to use Android's Smart Lock.

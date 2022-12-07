@@ -1,6 +1,6 @@
 <div class="arts-post">
 
-    {{ $imageRef := .Page.Resources.GetMatch .Params.coverImage }}
+    {{ $imageRef := .Page.Resources.GetMatch .Params.featuredImage }}
     {{ $image := $imageRef.Resize (printf "%dx%d webp" $imageRef.Width $imageRef.Height) }}
     <div class="cover-image">
         <img src="{{ $image.RelPermalink }}" alt="Arts image" width="{{ $image.Width }}" height="{{ $image.Height }}" />

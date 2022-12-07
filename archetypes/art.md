@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true # TODO change
-coverImage: cover.jpg
+featuredImage: featured.jpg
 ---
 
 # TODO Description

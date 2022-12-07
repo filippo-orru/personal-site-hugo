@@ -2,6 +2,7 @@
 title: "This Website"
 date: 2022-04-23T08:00:00+02:00
 draft: false
+tags: ['project']
 ---
 
 *To start building a sort of online presence for myself, I built this personal website to showcase myself and my [recent projects]({{< ref "/projects" >}}).*

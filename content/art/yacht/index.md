@@ -2,7 +2,7 @@
 title: "Yacht"
 date: 2022-11-26T08:44:03+07:00
 draft: false
-coverImage: cover.jpg
+featuredImage: featured.jpg
 ---
 
 {{< image src="wireframe.png" alt="Wireframe view" >}}

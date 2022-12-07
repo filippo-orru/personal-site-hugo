@@ -4,6 +4,7 @@ subtitle: "How 'Studo Survey' outperformed Google Forms in terms of UX"
 description: "Can custom development still shine in a world dominated by SaaS? Read how 'Studo Survey' outperformed Google Forms in terms of UX."
 date: 2022-10-26T10:00:00+02:00
 draft: false
+tags: ['project']
 ---
 
 <!--Introduction-->

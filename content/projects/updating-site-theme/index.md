@@ -4,6 +4,7 @@ subtitle: "Pretty fonts for a modern look?"
 slug: giving-my-blog-a-facelift
 date: 2022-12-05T13:36:00+07:00
 draft: false
+tags: ['project']
 ---
 
 <!-- # Inspiration -->
@@ -44,7 +45,7 @@ The search for a free alternative began. I tried fontspring's [Matcherator](http
 
 They say "to travel far, you need to travel together", so the next step was finding a font for the body text and secondary headlines. I landed on [Merriweather](https://fonts.google.com/specimen/Merriweather) after playing around with some other fonts offered by Google Fonts. However, I'm still not fully convinced that these two make the best pair. 
 
-Edit: I've since switched to [Poppins](https://fonts.google.com/specimen/Poppins). It feels less clunky than Merriweather and more modern, which fits site's theme. 
+While writing this article, I switched the body font from Merriweather to [Poppins](https://fonts.google.com/specimen/Poppins). It feels less clunky than before and more modern, which fits site's theme. I've update the screenshots to reflect that. 
 
 # Good artists copy, great artists steal {#animations}
 What really delighted me on Daniel's page was a very small detail. When loading the page, a lightly colored bar between the article's title and content appears. 
@@ -96,13 +97,13 @@ The `list.html` template defines how the list of all posts in a category should 
 A benefit of hugo is making it easy to follow best practices in web development. The Art page shows thumbnails of each image, which don't need to have high resolution. While Wordpress requires plugins like WP Rocket to work some behind-the-scenes magic, in hugo you write the following:
 
 ```html
-{{ $imagePath := .Params.coverImage }}
+{{ $imagePath := .Params.featuredImage }}
 {{ $imageResource := .Page.Resources.GetMatch $imagePath }}
 {{ $image := $imageResource.Fill "480x480 webp Center" }}
 <img src="{{ $image.RelPermalink }}" />
 ```
 
-Each new art post needs to define the parameter `coverImage`. When a hugo page is built / compiled, that image is converted to webp and resized to 480x480 pixels, which lowers the file sizes and optimizes delivery.
+Each new art post needs to define the parameter `featuredImage`. When a hugo page is built / compiled, that image is converted to webp and resized to 480x480 pixels, which lowers the file sizes and optimizes delivery.
 
 
 # Conclusion

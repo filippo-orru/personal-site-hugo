@@ -3,6 +3,7 @@ title: "Survey Creation Framework"
 description: ""
 date: 2022-02-24T09:26:10+02:00
 draft: true
+tags: ['project']
 ---
 
 <!-- 
