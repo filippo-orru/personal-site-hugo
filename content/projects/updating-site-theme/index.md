@@ -44,6 +44,8 @@ The search for a free alternative began. I tried fontspring's [Matcherator](http
 
 They say "to travel far, you need to travel together", so the next step was finding a font for the body text and secondary headlines. I landed on [Merriweather](https://fonts.google.com/specimen/Merriweather) after playing around with some other fonts offered by Google Fonts. However, I'm still not fully convinced that these two make the best pair. 
 
+Edit: I've since switched to [Poppins](https://fonts.google.com/specimen/Poppins). It feels less clunky than Merriweather and more modern, which fits site's theme. 
+
 # Good artists copy, great artists steal {#animations}
 What really delighted me on Daniel's page was a very small detail. When loading the page, a lightly colored bar between the article's title and content appears. 
 
