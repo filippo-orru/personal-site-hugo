@@ -1,0 +1,18 @@
+@mixin pagination_dark {
+    .pagination {
+        a {
+            background-color: #d5d5d540;
+        }
+    }
+  }
+  
+  body.colorscheme-dark {
+    @include pagination_dark();
+  }
+  
+  body.colorscheme-auto {
+    @media (prefers-color-scheme: dark) {
+      @include pagination_dark();
+    }
+  }
+  

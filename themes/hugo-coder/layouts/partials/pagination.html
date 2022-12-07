@@ -32,7 +32,7 @@
     {{ end }}
     {{ if eq ($.Scratch.Get "page_number_flag") true }}
       {{ if eq . $paginator }}
-      <li>{{ .PageNumber }}</li>
+      <li class="current">{{ .PageNumber }}</li>
       {{ else }}
       <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
       {{ end }}
