@@ -46,18 +46,32 @@
 
             &:hover,
             &:focus {
-              background-color: #4d4d4d;
-              color: $fg-color-dark;
+              .bg {
+                background-color: rgb(48, 48, 48);
+                color: $fg-color-dark;
+              }
             }
 
             &.featured {
-              background-color: #3a3a3a;
-              border: 1px solid #ffff0030;
+              .bg {
+                background-color: #3a3a3a40;
+                border-color: #ffff0030;
+              }
 
               &:hover,
               &:focus {
-                background-color: #5a5344;
+                .bg {
+                  background-color: #5a5344;
+                }
               }
+            }
+
+            .date {
+              color: #ffffff82;
+            }
+
+            .summary {
+              color: #ffffff88;
             }
           }
         }

@@ -27,16 +27,14 @@
     {{ end }}
     <li>
       <a class="{{ $featuredClass }}" href="{{ .Params.externalLink | default .RelPermalink }}">
-        <div class="left">
-          <span>{{ .Date | time.Format ("January 2006" ) }}
+        <div class="bg">  </div>
+        <span class="date">{{ .Date | time.Format ("January 2006" ) }}
             {{ if $element.Params.ongoing }}
             (ongoing)
             {{ end }}
           </span>
-        </div>
-        <div class="right">
-          <span class="title">{{ .Title }}</span>
-        </div>
+          <h5 class="title">{{ .Title }}</h5>
+          <p class="summary">{{ .Summary }}</p>
       </a>
     </li>
     {{ end }}
