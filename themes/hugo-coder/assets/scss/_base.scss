@@ -345,7 +345,7 @@ figure {
     /* Pretty Modern Browsers */
     url('/fonts/BelyDisplay-Regular.svg#svgFontName') format('svg');
   /* Legacy iOS */
-  font-display: swap;
+  font-display: block;
 }
 
 body.ready {
