@@ -3,6 +3,7 @@
   display: flex;
   margin-top: 1.6rem;
   margin-bottom: 3.2rem;
+  overflow: hidden;
 
   article {
     details {
@@ -209,6 +210,11 @@
     font-size: 1.6rem;
     margin: 0;
   }
+
+  img.featured {
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
+  }
 }
 
 .avatar {
@@ -244,8 +250,7 @@
       li {
         a {
           @media only screen and (max-width: 768px) {
-            margin: 1.6rem 0 1.6rem 0;
-            display: block;
+            margin-bottom: 40px;
           }
 
           &.featured {
@@ -293,6 +298,15 @@
             z-index: -1;
             border: 1px solid transparent;
             border-radius: 6px;
+
+            $selector: &;
+
+            @at-root {
+              body.ready #{$selector} {
+                transition: background-color ease 0.11s, border-color 0.11s,
+                  top ease 0.11s, bottom ease 0.11s, left ease 0.11s, right ease 0.11s;
+              }
+            }
           }
 
           &:hover,
@@ -393,81 +407,12 @@
       }
     }
 
-    &.posts {
-      li {
-        margin-bottom: 0.75rem;
-      }
-    }
-
-    .left {
-      display: inline-block;
-      flex: 1;
-      width: 20rem;
-      text-align: right;
-      margin-right: 3rem;
-      min-width: max-content;
-      margin-left: 1rem;
-
-      @media only screen and (max-width: 768px) {
-        text-align: left;
-        margin-bottom: 0.5rem;
-      }
-
-    }
-
-    .right {
-      flex: 2;
-      // min-width: max-content;
-
-      @media only screen and (max-width: 768px) {
-        margin-left: 1rem;
-      }
-
-      .title {
-        font-size: 1.8rem;
-        // font-family: $font-family;
-        font-weight: 700;
-      }
-
-      .spacer {
-        flex: 2;
-      }
-    }
-
-    li.separator {
-      display: flex;
-
-      @media only screen and (max-width: 768px) {
-        border-bottom: 1px solid dimgray;
-        margin: 0 2rem;
-
-        .left {
-          display: none;
-        }
-      }
-    }
-
     ul:not(.pagination) {
       li {
         @media only screen and (min-width: 768.1px) {
           display: flex;
         }
       }
-    }
-  }
-
-  table.posts {
-    width: 100%;
-
-    tr {
-      td:first-of-type {
-        text-align: right;
-      }
-    }
-
-    td {
-      border: none;
-      padding: 1rem 2rem;
     }
   }
 }

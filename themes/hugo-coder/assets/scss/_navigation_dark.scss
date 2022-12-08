@@ -55,6 +55,15 @@
       }
     }
   }
+
+  .title-with-tags {
+    .tagbuttons {
+      a {
+        color: $fg-color-dark !important;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
 }
 
 body.colorscheme-dark {
@@ -64,14 +73,5 @@ body.colorscheme-dark {
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
     @include navigation_dark();
-  }
-}
-
-.title-with-tags {
-  .tagbuttons {
-    a {
-      color: $fg-color-dark !important;
-      background-color: rgba(255, 255, 255, 0.1);
-    }
   }
 }

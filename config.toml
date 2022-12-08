@@ -4,7 +4,7 @@ title = 'Filippo Orru'
 theme = 'hugo-coder'
 buildDraft = false
 summaryLength = 30
-paginate = 10
+paginate = 15
 
 [params]
 author = 'Filippo Orru'

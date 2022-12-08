@@ -1,7 +1,7 @@
 @mixin pagination_dark {
     .pagination {
         a {
-            background-color: #d5d5d540;
+            background-color: rgba(255, 255, 255, 0.06);
         }
     }
   }

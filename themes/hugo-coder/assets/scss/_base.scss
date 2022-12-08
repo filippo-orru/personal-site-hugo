@@ -39,10 +39,6 @@ p {
   margin: 2rem 0 2rem 0;
 }
 
-.navigation-title {
-  height: 48px;
-}
-
 .img-dark {
   display: none;
 }
@@ -194,11 +190,13 @@ code {
 }
 
 blockquote {
-  border-left: 2px solid $alt-bg-color;
+  color: $fg-color-secondary;
+  border-left: 2px solid #b6b6b6;
   padding-left: 2rem;
   line-height: 2.2rem;
   font-weight: 400;
-  font-style: italic;
+  // font-style: italic;
+  margin: 16px 20px;
 }
 
 th,
@@ -271,6 +269,11 @@ figure {
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
 
 .fab {
@@ -356,7 +359,7 @@ body.ready {
   transition: background-color 0.2s;
 
   .content .list ul.posts li a .bg {
-    transition: background-color 0.11s, border-color 0.11s,
-      top 0.11s, bottom 0.11s, left 0.11s, right 0.11s;
+    // transition: background-color 0.11s, border-color 0.11s,
+    //   top 0.11s, bottom 0.11s, left 0.11s, right 0.11s;
   }
 }
