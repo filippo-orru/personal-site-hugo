@@ -72,7 +72,7 @@ Suddenly, my own blog felt antiquated and stiff and I felt inspired to improve i
 
 
 # Redesigning the blog {#redesign-blog-list}
-I was almost done writing this article, when I decided to redesign the blog list page. I wanted to make it more appealing and include a summary of each post, so the layout had to change. Previously, I had two separate pages for projects and blog posts, but I decided to merge them into one. The old projects list was inspired by CVs and kept very compact, showing only title and date of each project. The idea is that showing a description or summary of the post compels visitors to click on the post.
+I was almost done writing this article, when I decided to redesign the blog list page. I wanted to make it more appealing and include a summary of each post, so the layout had to change. Previously, I had two separate pages for projects and blog posts, but I decided to merge them into one. The old projects list was inspired by CVs, so it was very compact, showing only the title and date of each project. The idea is that showing a description or summary of the post compels visitors to click on the post.
 
 {{< compare-images left="img/comparisons/projects-old.png" right="img/comparisons/blog-new.png" >}}
 
@@ -107,7 +107,7 @@ Having decided to use Bely as my expressive display font, I started creating a l
 {{< /image >}}
 
 The site's theme is based on [hugo-coder](https://github.com/luizdepra/hugo-coder). It's free and supports both light and dark mode and has a minimal and clean look. A great starting point for customization.
-Most notably, the redesigned home page features the new logo in the center, which and really draws attention to the name. Around it, I added some matrix dots inspired by a recent [newsletter by Erik D. Kennedy](https://www.learnui.design/newsletter.html).
+Most notably, the redesigned home page features the new logo in the center, which really draws attention to the name. Around it, I added some matrix dots inspired by a recent [newsletter by Erik D. Kennedy](https://www.learnui.design/newsletter.html).
 
 {{< image src="img/comparisons/home-new.png" alt="New home page." >}}
   New home page.
@@ -119,14 +119,14 @@ There were some challenges while designing. I wanted the logo's yellow splash to
 # Good artists copy, great artists steal {#animations}
 Something that delighted me on Daniel's page was a very small detail. When loading the page, a pastel colored bar between the article's title and content appears. 
 
-{{< video src="img/underline-animation.m4v" hidecontrols="true" >}}
+{{< video src="img/underline-animation.mp4" hidecontrols="true" >}}
 Animation on [Daniel's blog](https://daniel.do/article/laying-myself-off-from-amazon/)
 {{< /video >}}
 
 
 This small animation adds a lot to the page's vibe in my opinion. So I did what all great artists must do... I ~~*stole*~~ recreated the effect. Some tweaks for supporting both dark and light mode were necessary, now the bar appears above all post titles.
 
-{{< video src="img/underline-animation-mine.m4v" hidecontrols="true" >}}
+{{< video src="img/underline-animation-mine.mp4" hidecontrols="true" >}}
 Recreation of the animation on my page
 {{< /video >}}
 
