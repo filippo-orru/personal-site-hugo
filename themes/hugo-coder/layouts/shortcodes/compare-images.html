@@ -53,8 +53,20 @@
         slider.addEventListener("mouseleave", sliderMouseLeave);
         slider.addEventListener("touchend", sliderMouseUp);
 
-        let lastTouchMoveX = null;
-        let lastTouchMoveY = null;
+        let touchStartX = null;
+        let touchStartY = null;
+
+        function sliderMouseDown(event) {
+            hasDecidedToScroll = false;
+            hasDecidedToUse = false;
+
+            touchStartX = event.screenX || event.touches[0].screenX;
+            touchStartY = event.screenY || event.touches[0].screenY;
+
+            if (isSliderLocked) isSliderLocked = false;
+            sliderMouseMove(event);
+        }
+
         function sliderMouseMove(event) {
             if (isSliderLocked) return;
 
@@ -72,36 +84,27 @@
                 event.preventDefault();
             } else {
                 if (event.type === "touchmove") {
-                    if (lastTouchMoveX) {
-                        // Prevent scrolling if user has started to use slider
-                        const diff = Math.abs(lastTouchMoveX - mouseX);
-                        if (diff > 10) {
-                            hasDecidedToUse = true;
-                        }
-                    }
-                    lastTouchMoveX = mouseX;
+                    currentTouchX = event.screenX || event.touches[0].screenX;
+                    currentTouchY = event.screenY || event.touches[0].screenY;
 
-                    if (lastTouchMoveY) {
-                        // Prevent using if user has started to scroll
-                        const diff = Math.abs(lastTouchMoveY - mouseY);
-                        if (diff > 10) {
-                            hasDecidedToScroll = true;
-                        }
+                    // Prevent using if user has started to scroll
+                    let diffY = Math.abs(touchStartY - currentTouchY);
+                    if (diffY > 10) {
+                        hasDecidedToScroll = true;
                     }
-                    lastTouchMoveY = mouseY;
+
+                    // Prevent scrolling if user has started to use slider
+                    let diffX = Math.abs(touchStartX - currentTouchX);
+                    if (diffX > 10) {
+                        hasDecidedToUse = true;
+                        return
+                    }
                 }
             }
 
             let previousWidth = sliderImgWrapper.style.width;
             sliderImgWrapper.style.width = `${((1 - mouseX / sliderWidth) * 100).toFixed(4)}%`;
             sliderHandle.style.left = `calc(${((mouseX / sliderWidth) * 100).toFixed(4)}% - ${sliderHandleWidth / 2}px)`;
-        }
-
-        function sliderMouseDown(event) {
-            hasDecidedToScroll = false;
-            hasDecidedToUse = false;
-            if (isSliderLocked) isSliderLocked = false;
-            sliderMouseMove(event);
         }
 
         function sliderMouseUp(event) {
