@@ -298,12 +298,13 @@
             z-index: -1;
             border: 1px solid transparent;
             border-radius: 6px;
+            transform: perspective(400px) rotateX(-2deg);
 
             $selector: &;
 
             @at-root {
               body.ready #{$selector} {
-                transition: background-color ease 0.11s, border-color 0.11s,
+                transition: background-color ease 0.11s, border-color 0.11s, transform ease 0.05s,
                   top ease 0.11s, bottom ease 0.11s, left ease 0.11s, right ease 0.11s;
               }
             }
@@ -316,17 +317,26 @@
               bottom: -16px;
               left: -23px;
               right: -23px;
-              background-color: rgba(0, 0, 0, 0.01);
-              border-color: rgba(0, 0, 0, 0.1);
+              background-color: #f7f7f7;
+              border-color: #dbdbdb;
+              transform: perspective(400px) rotateX(0deg);
             }
 
-            .title {
+            .title span {
               text-decoration: underline;
             }
           }
 
           .title {
-            margin: 0.5rem 0;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+
+            i {
+              height: 100%;
+              margin-right: 12px;
+              opacity: 0.4;
+            }
           }
 
           .date {
@@ -334,7 +344,7 @@
           }
 
           .summary {
-            margin-bottom: 0;
+            margin: 0;
             color: #00000088;
           }
         }

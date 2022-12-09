@@ -47,7 +47,8 @@
             &:hover,
             &:focus {
               .bg {
-                background-color: rgb(48, 48, 48);
+                background-color: #303030;
+                border-color: #393939;
                 color: $fg-color-dark;
               }
             }

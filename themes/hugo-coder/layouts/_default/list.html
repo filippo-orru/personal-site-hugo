@@ -25,7 +25,7 @@
       {{ $pages := where $outside.Paginator.Pages "Params.categories" "intersect" (slice $name) }}
       {{ if gt (len $pages) 0 }}
       {{ with $outside.GetPage (printf "/categories/%s" $name) }}
-      <a href="{{ .RelPermalink }}" title="All {{ i18n $name }}s"> 
+      <a href="{{ .RelPermalink }}" title="All {{ i18n $name }}s">
         <!-- hashtag fontawesome icon -->
         <i class="fa fa-hashtag"></i>
         {{ $name }}s
@@ -48,6 +48,7 @@
     {{ $featuredClass = " featured" }}
     {{ end }}
     <li>
+      
       <a class="{{ $featuredClass }}" href="{{ .Params.externalLink | default .RelPermalink }}">
         <div class="bg"> </div>
         <span class="date">{{ .Date | time.Format ("January 2006" ) }}
@@ -55,8 +56,11 @@
           (ongoing)
           {{ end }}
         </span>
-        <h5 class="title">{{ .Title }}</h5>
-        <p class="summary">{{ .Summary }}</p>
+        <h5 class="title">
+          <i class="fa fa-caret-right" aria-hidden="true"></i>
+          <span>{{- .Title -}}</span>
+        </h5>
+        <p class="summary">{{ .Description | default .Summary }}</p>
       </a>
     </li>
     {{ end }}

@@ -1,7 +1,7 @@
 ---
 title: "What things did I bring? 4 months as a digital nomad in south-east Asia"
 subtitle: "Working 20 hours a week while traveling Thailand, Laos, South Korea, Japan."
-# description: ""
+# TODO description: 
 date: 2022-11-24T08:44:03+07:00
 draft: true
 # featuredImage: featured.webp

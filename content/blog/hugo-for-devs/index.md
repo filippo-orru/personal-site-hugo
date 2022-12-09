@@ -1,9 +1,8 @@
 ---
 title: "Hugo blogging explained for developers"
-description: "(missing description)"
+# TODO description: 
 date: 2022-12-09T10:16:10+07:00
 draft: true # TODO change
-summary: #TODO
 slug: hugo-blogging-explained-for-developers
 
 ongoing: false

@@ -1,9 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: "(missing description)"
 date: {{ .Date }}
 draft: true
-summary: #TODO
+# TODO description: 
 
 ongoing: false
 featured: false

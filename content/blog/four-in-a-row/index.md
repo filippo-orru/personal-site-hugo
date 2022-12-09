@@ -5,7 +5,7 @@ ongoing: false
 featured: true
 featuredImage: fiar-featured.webp
 featuredImageSource: ['Fotis Fotopoulos', 'https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
-summary: "A beautiful redesign of the all-time classic Four in a Row, written in Flutter. This is a pet project of mine, which I started during the first lockdown in March of 2020. It's available on Google Play and the web."
+description: "A beautiful redesign of the all-time classic Four in a Row, written in Flutter. This is a pet project of mine, which I started during the first lockdown in March of 2020. It's available on Google Play and the web."
 draft: false
 categories: ['project']
 ---

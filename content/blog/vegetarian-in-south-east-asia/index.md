@@ -1,6 +1,6 @@
 ---
 title: "On being Vegetarian in south-east Asia"
-# description: "(missing description)"
+# TODO description: 
 date: 2022-12-06T13:07:55+07:00
 draft: true
 # images: ['preview.png'] # 1200 x 600 px
