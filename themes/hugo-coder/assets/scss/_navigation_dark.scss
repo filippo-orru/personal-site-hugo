@@ -17,8 +17,7 @@
     .navigation-list {
       @media only screen and (max-width: 768px) {
         background-color: $bg-color-dark;
-        border-top: solid 2px $alt-bg-color-dark;
-        border-bottom: solid 2px $alt-bg-color-dark;
+        border: solid 2px $alt-bg-color-dark;
       }
 
       .menu-separator {

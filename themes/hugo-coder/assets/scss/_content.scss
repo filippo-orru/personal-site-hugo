@@ -199,6 +199,10 @@
       max-height: 450px;
       max-width: 80%;
 
+      @media only screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+
       border-radius: 4px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
     }
@@ -249,6 +253,8 @@
     &.posts {
       li {
         a {
+          -webkit-tap-highlight-color: transparent;
+
           @media only screen and (max-width: 768px) {
             margin-bottom: 40px;
           }
@@ -608,6 +614,10 @@
   justify-content: center;
   margin: 32px;
 
+  @media only screen and (max-width: 768px) {
+    margin: 32px 0;
+  }
+
   .image-comparison-slider {
     $handle-width: 50px;
 
@@ -649,22 +659,24 @@
       font-family: $font-code;
       font-weight: bold;
       font-size: 1.25rem;
-      text-align: center;
+      user-select: none;
 
       position: absolute;
       top: 1rem;
+      padding: 2px 8px;
       z-index: 3;
+
       color: #fff;
       background-color: rgba(0, 0, 0, 0.33);
-      border-radius: 0.25rem;
-      padding: 0.5rem 0.75rem;
-      user-select: none;
+      border-radius: 3px;
       opacity: 0.5;
       transition: 0.25s cubic-bezier(.68, .26, .58, 1.22);
     }
 
-    &:hover .label {
-      opacity: 1;
+    @media (hover: hover) {
+      &:hover .label {
+        opacity: 0.8;
+      }
     }
 
     .label.label-before {
@@ -693,9 +705,11 @@
       opacity: 0.5;
     }
 
-    &:hover .handle {
-      transition-delay: 0s;
-      opacity: 1;
+    @media (hover: hover) {
+      &:hover .handle {
+        transition-delay: 0s;
+        opacity: 1;
+      }
     }
 
     .handle-line {
