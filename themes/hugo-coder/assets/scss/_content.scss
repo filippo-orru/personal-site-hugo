@@ -270,6 +270,7 @@
               bottom: -12px;
               left: -16px;
               right: -16px;
+              transform: perspective(400px) rotateX(0deg);
             }
 
             &:hover,
