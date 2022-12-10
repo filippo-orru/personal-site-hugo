@@ -1,0 +1,10 @@
+{{ $font := resources.Get "Poppins-Bold.ttf" }}
+{{ $img := resources.Get "social.jpg" | images.Filter (images.Text .Title (dict
+    "color" "#d0d0d0"
+    "size" 59
+    "x" 60
+    "y" 55
+    "linespacing" 25
+    "font" $font
+))}}
+<img src="{{ $img.RelPermalink }}" height="400" />
