@@ -4,6 +4,7 @@ title: "Adding self-hosted analytics to my blog in under 30 minutes"
 date: 2022-12-09T10:17:27+07:00
 draft: true
 slug: adding-self-hosted-analytics-to-my-blog-in-under-30-minutes
+categories: ['project']
 
 ongoing: false
 featured: false

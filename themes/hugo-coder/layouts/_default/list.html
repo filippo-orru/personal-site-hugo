@@ -52,9 +52,14 @@
       <a class="{{ $featuredClass }}" href="{{ .Params.externalLink | default .RelPermalink }}">
         <div class="bg"> </div>
         <span class="date">{{ .Date | time.Format ("January 2006" ) }}
-          {{ if $element.Params.ongoing }}
-          (ongoing)
+          {{ if isset .Params.categories 0 }}
+          · {{ index .Params.categories 0 | title }}
           {{ end }}
+
+          {{ if $element.Params.ongoing }}
+          · Ongoing
+          {{ end }}
+
         </span>
         <h5 class="title">
           <i class="fa fa-caret-right" aria-hidden="true"></i>

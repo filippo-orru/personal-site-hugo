@@ -3,7 +3,6 @@ title: "On being Vegetarian in south-east Asia"
 # TODO description: 
 date: 2022-12-06T13:07:55+07:00
 draft: true
-# images: ['preview.png'] # 1200 x 600 px
 # featuredImage: featured.jpg # 1770 x 500 px
 # featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 ---
