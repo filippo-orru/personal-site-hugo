@@ -12,7 +12,6 @@ featured: false
 # featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 ---
 
-# Adding self-hosted analytics to my blog in under 30 minutes
-> As a final step, I set up Plausible to collect some very basic, privacy-centered analytics that I self-host. 
+... As a final step, I set up Plausible to collect some very basic, privacy-centered analytics that I self-host. 
 - using plausible.io
 - new subdomain, quick configuration & docker setup on my server

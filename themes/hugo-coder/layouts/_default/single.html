@@ -2,13 +2,5 @@
 {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-<section class="container post">
-  <article>
-    {{ partial "posts/article-header.html" . }}
-    {{ partial "posts/article-body.html" . }}
-    {{ partial "posts/article-footer.html" . }}
-  </article>
-
-  {{ partial "posts/math.html" . }}
-</section>
+{{ partial "single-default.html" . }}
 {{ end }}

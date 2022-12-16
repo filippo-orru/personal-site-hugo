@@ -1,0 +1,70 @@
+
+{{ $paginator := .Paginate (where .Pages "Section" .Section) }}
+<section class="container list">
+  <div class="title-with-tags">
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{- if eq .Kind "term" -}}
+        {{- i18n .Data.Plural 1 | title -}}
+        {{- print ": " -}}
+        {{- end -}}
+        {{- i18n (lower .Title) | default .Title | title -}}
+      </a>
+    </h1>
+
+    {{- if eq .Kind "section" -}}
+    <div class="tagbuttons">
+      {{ $outside := . }}
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      {{ $pages := where $paginator.Pages "Params.categories" "intersect" (slice $name) }}
+      {{ if gt (len $pages) 0 }}
+      {{ with $outside.GetPage (printf "/categories/%s" $name) }}
+      <a href="{{ .RelPermalink }}" title="All {{ i18n $name }}s">
+        <!-- hashtag fontawesome icon -->
+        <i class="fa fa-hashtag"></i>
+        {{ $name }}s
+      </a>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </div>
+    {{- end -}}
+  </div>
+
+
+  {{ .Content }}
+  <ul class="posts">
+    {{ $list := ($paginator.Pages) }}
+    {{ $len := (len $list) }}
+    {{ range $i, $element := $list }}
+    {{ $featuredClass := "" }}
+    {{ if $element.Params.featured }}
+    {{ $featuredClass = " featured" }}
+    {{ end }}
+    <li>
+      
+      <a class="{{ $featuredClass }}" href="{{ .Params.externalLink | default .RelPermalink }}">
+        <div class="bg"> </div>
+        <span class="date">{{ .Date | time.Format ("January 2006" ) }}
+          {{ if isset .Params "categories" }}
+            {{ if isset .Params.categories 0 }}
+            · {{ index .Params.categories 0 | title }}
+            {{ end }}
+          {{ end }}
+
+          {{ if $element.Params.ongoing }}
+          · Ongoing
+          {{ end }}
+
+        </span>
+        <h5 class="title">
+          <i class="fa fa-caret-right" aria-hidden="true"></i>
+          <span>{{- .Title -}}</span>
+        </h5>
+        <p class="summary">{{ .Description | default .Summary }}</p>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

@@ -92,7 +92,7 @@ Considering my blog had 23 unique visitors in the past 7 days (17 of which were 
 
 The search for a free alternative began. I tried fontspring's [Matcherator](https://www.fontsquirrel.com/matcherator), which takes a screenshot of some text and returns a list of similar-looking fonts. This turned out to be quite sobering. None of the fonts, free or paid, compared to Bely. Most felt crude, not as sharp and expressive. The only somewhat similar font I could find is [Nocturne Serif](https://www.fontspring.com/fonts/machalski/nocturne-serif). I guess you just can't beat love at first sight, so in the end I bought the license for Bely Display. 
 
-{{< image src="img/similar-fonts.jpg" alt="List of fonts similar to Bely Display, created using fontspring's matcherator." >}}
+{{< image src="img/similar-fonts.jpg" alt="List of fonts similar to Bely Display, created using fontspring's Matcherator." >}}
   Fonts similar to Bely Display (top). Closest match highlighted: Nocturne Serif (middle).
 {{< /image >}}
 
@@ -142,7 +142,7 @@ I drafted a page with a grid of images that lists all my art posts. I took some 
   List of art posts, laid out as a grid of images.
 {{< /image >}}
 
-Hugo makes it easy to compress images I supply. In the grid shown above, an individual image is never larger than 400x400 pixels. So when the page is built, all images are compressed to this size and converted to webp, which makes for minimal file sizes and quick page loads. Of course, when viewing an individual artwork, the full-size image is used. 
+Hugo makes it easy to compress images I supply. In the grid shown above, an individual image is never larger than 400x400 pixels. So when the page is built, all images are compressed to this size and converted to `.webp`, which makes for minimal file sizes and quick page loads. Of course, when viewing an individual artwork, the full-size image is used. 
 
 
 # Conclusion
