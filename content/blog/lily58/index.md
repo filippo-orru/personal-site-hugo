@@ -1,11 +1,10 @@
 ---
-title: "'Build your own split keyboard', they said"
-subtitle: "'It'll be easy', they said."
+title: "What's a split keyboard and how did it take me 4 months and 400€ to build one?"
+subtitle: "'Build your own split keyboard', they said. 'It'll be easy', they said."
 slug: "build-your-own-split-keyboard-they-said"
 date: 2022-12-11T08:16:25+07:00
 draft: false
-description: What's a split keyboard and how did it take me 4 months and 400€ to build one? Stupidity can be expensive.
-categories: ['project']
+description: "'Build your own split keyboard', they said. Notes and pictures of my journey towards awesome ergonomic typing."
 # _build:
 #   publishResources: true
 # images: ['blog/build-your-own-split-keyboard-they-said/images/featured.jpg']
