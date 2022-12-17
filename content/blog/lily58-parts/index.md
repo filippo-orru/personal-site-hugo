@@ -2,7 +2,7 @@
 title: "List of Parts and Tools"
 subtitle: "Turns out building a split keyboard is expensive"
 date: 2022-12-11T08:16:25+07:00
-draft: true
+draft: false
 slug: "build-your-own-split-keyboard-they-said/list-of-parts"
 hideInList: true # TODO
 
