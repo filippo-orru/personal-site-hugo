@@ -3,7 +3,7 @@ title: "List of Parts and Tools"
 subtitle: "Turns out building a split keyboard is expensive"
 date: 2022-12-11T08:16:25+07:00
 draft: true
-slug: "building-a-split-keyboard-in-4-months/list-of-parts"
+slug: "build-your-own-split-keyboard-they-said/list-of-parts"
 hideInList: true # TODO
 
 # featuredImage: featured.jpg
@@ -26,6 +26,8 @@ This is the list of parts and tools I bought to build my first split keyboard, t
         - Arduino Pro Micro 5v
     - 4th Order - 39.90€
         - Lily58 Plate Case - Triangle Edition Gold/Black
+- [kriscables.com](https://kriscables.com/) - 52€
+    - Elite-C v4 micro controller (2x)
 - [kbdfans.com](https://kbdfans.com/) - 38€
     - NP PBT Blank White KEYCAPS SET 124 Keys
 - [splitkb.com](https://splitkb.com/) - 61€
@@ -34,12 +36,15 @@ This is the list of parts and tools I bought to build my first split keyboard, t
     - 2x serial OLED display (1 broken, 1 in use)
     - Cherry MX Rubber O-Rings (unused)
     - Black blank PBT keycaps (unused)
-- Amazon - 38,30€
+- Amazon - 53.90€
     - Soldering set: iron, pincers, multimeter
     - USB C to C cable 
     - braided TRRS cable
     - Soldering grease
     - Desoldering wick
-    - Hot air desoldering station (returned, didn't work at all)
+    - Small memory foam wrist rest (2x)
+    - Hot air desoldering station \
+        Not included in cost since it didn't work at all -> returned it.
 
-**The total comes to around 331€**
+## **The total comes to around 398€.**
+This also includes taxes and shipping costs.
