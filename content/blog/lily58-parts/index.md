@@ -3,13 +3,14 @@ title: "List of Parts and Tools"
 subtitle: "Turns out building a split keyboard is expensive"
 date: 2022-12-11T08:16:25+07:00
 draft: true
-slug: "list-of-parts"
+slug: "building-a-split-keyboard-in-4-months/list-of-parts"
+hideInList: true # TODO
 
 # featuredImage: featured.jpg
 # featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 ---
 
-This is the list of parts and tools I bought to build my first split keyboard, the Lily58L. See the main post for a writeup of my build process
+This is the list of parts and tools I bought to build my first split keyboard, the Lily58L. See the [main post]() for a writeup of my build process
 
 - [keycapsss.com](https://keycapsss.com/)
     - 1st Order - 70.90€
