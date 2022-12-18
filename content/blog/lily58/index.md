@@ -98,3 +98,8 @@ My first hardware project is done. But at what cost? Building this keyboard cost
 I'm super happy with my Lily58L as a daily driver at work. The only other change I did was replacing the thick acrylic case with a thinner one half a year later.
 
 The keyboard runs on [QMK](https://docs.qmk.fm/#/newbs), a highly customizable firmware. It allows me to write using the amazing [Bone 2 keyboard layout](https://neo-layout.org/Layouts/bone/), create my own keyboard layers, move the mouse, and much more. I may write a post about it in the future.
+
+# More
+- [Comparing Survey Creation Platforms]({{< ref "/blog/bachelor-thesis" >}}). I spent two months developing a survey creation platform, deployed it to >300k users and compared it to Google Forms and SurveyJS.
+
+- Check out a [recent art post]({{< ref "/art/yacht" >}}) of mine.
