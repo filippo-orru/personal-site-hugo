@@ -29,9 +29,9 @@ categories: []
 - 
 - conclusion
 
-{{< image src="images/image.jpg" alt="ALT" >}}
+{< image src="images/image.jpg" alt="ALT" >}}
   DESCRIPTION
-{{< /image >}}
+{< /image >}}
 
 -->
 
