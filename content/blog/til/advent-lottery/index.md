@@ -1,5 +1,5 @@
 ---
-title: "How the Advent lottery raws out suspension"
+title: "How the Advent lottery draws out suspension"
 # TODO subtitle: ""
 date: 2022-12-18T10:58:28+07:00
 draft: true

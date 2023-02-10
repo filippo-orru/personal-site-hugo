@@ -11,7 +11,9 @@
   {{ end }}
   {{ .Content }}
   
-  <hr class="content-end"/>
+  {{ if (ne .Page.RelPermalink "/about-me/") }}
+    <hr class="content-end"/>
 
-  {{ partial "posts/header-message.html" . }}
+    {{ partial "posts/header-message.html" . }}
+  {{ end }}
 </div>

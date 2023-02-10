@@ -6,7 +6,8 @@ $font-code: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
 
 // Colors
 $bg-color: #fafafa !default;
-$fg-color: #212121 !default;
+$fg-color: #3a3a3a !default;
+$fg-color-strong: #2e2e2e !default;
 $fg-color-secondary: #505050 !default;
 $alt-bg-color: #e0e0e0 !default;
 $alt-fg-color: #000 !default;
@@ -15,7 +16,8 @@ $fg-color-header-underline-light: #eaea2d;
 
 // Dark colors
 $bg-color-dark: #212121 !default;
-$fg-color-dark: #dadada !default;
+$fg-color-dark: #cbcbcb !default;
+$fg-color-strong-dark: #e4e4e4 !default;
 $fg-color-secondary-dark: #bbbbbb !default;
 $alt-bg-color-dark: #424242 !default;
 $alt-fg-color-dark: #dadada !default;

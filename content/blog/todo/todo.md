@@ -15,3 +15,7 @@ draft: true
 - Every day carry + backpack
 - TILs
   - advent lottery system
+
+about me:
+- parsers in Germany?
+- more personal projects
