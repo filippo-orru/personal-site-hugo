@@ -8,26 +8,30 @@ siteTitleFirst: true
 My name's Filippo and I'm currently {{< age-years 2001-07-25 />}} years old. This is my hub for showcasing my latest personal projects, blog articles, and attempts at art.
 
 ## Hobbies & interests
-I usually live in Graz, Austria but now that I'm done with my Bachelor's degree, I'm working remotely from Southeast Asia for five months. I started in November 2022 and will be back by March 2023. When I'm not working, I like to go rock climbing, code my personal projects, and go out with friends. 
+I usually live in Graz, Austria, but now that I have completed my Bachelor's degree, I'm work-traveling through Southeast Asia for five months. I started in November 2022 and will be back by March 2023. In my free time I like going rock climbing, coding my personal projects, and going out with friends. 
 
 
 ## Experience
 
-I started at [Studo](https://studo.com/en/) in 2020 as a **Fullstack Software Engineer**, working on new features for all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. These include the roles of **Project Lead Developer**, handling project communication with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
+I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features for all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. These include the roles of **Project Lead Developer**, handling project communication with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 
-The Studo App is used by more than 300 thousand students across Europe and integrates all university services and information (calendar, grades, courses & more) into one place. Studo also works with universities to bring processes like *attendance tracking* to the digital age.
+The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) and all university services into one place. The app is used by more than 300 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
 
 
 #### Mobile App Development
-Native Android and iOS development using Kotlin and Swift respectively. Flutter for beautiful cross-platform apps.
+{{< notice warning >}}
+Kotlin • Swift • SwiftUI • Flutter • Dart • Realm • Java
+{{</ notice >}}
+
+I worked on new features and bug fixes for our native Android and iOS apps. My pretty cross-platform game 'Four in a Row' is written in Flutter.
 
 - I worked on extending the app's mail client to support authentication via OAuth. Includes Azure app registration, authorization via web view, refresh token handling, error recovery, and adaptation of the existing mail problem diagnosis.
 
 - We created a digital student card in a one-week hackathon. My main focus was to implement a holographic verification effect using layered canvas drawing and the device's gyroscope sensors.
 
-- The app is monetized via a freemium model. Free users see in-app banner ads and I was tasked with the integration of a new third-party ads SDK. 
+- The app is monetized via a freemium model. Free users see in-app banner ads and I was tasked with the integration of a new third-party ad provider SDK. 
 
-- In 2020 I developed a game using Flutter and published it on the Play Store. This taught me so much about the following topics.
+- In 2020, I developed a game using Flutter and published it on the Play Store. This taught me so much about the following topics.
     - Mobile development with Flutter, including advanced state handling and animations.
     - UI/UX design.
     - Networking, reconnection handling, ensuring stable connections.
@@ -39,18 +43,34 @@ Native Android and iOS development using Kotlin and Swift respectively. Flutter 
 
 
 #### Modern Web Development
-Kotlin, React, JavaScript, and Elm.
+{{< notice warning >}}
+Kotlin • React • JavaScript • Elm • Typescript • Svelte
+{{</ notice >}}
 
-As my biggest project, I created a custom survey creation platform and then wrote my thesis about it. [Read more about the survey creator]({{< ref "/blog/bachelor-thesis" >}}).
+As my biggest project, I created a custom survey creation platform and then wrote my thesis about it. [Read more about the survey creator]({{< ref "/blog/bachelor-thesis" >}}). It is integrated into the Studo Newsroom, which is a platform that allows partner companies to publish content for the Studo news feed. 
+
+Over the course of multiple months and a few UI iterations, I was responsible for development of the survey creator, survey fill-out page, and response evaluation views. Later, I worked with a colleague to integrate the survey fill-out page into the app, allowing users to respond right from the news feed. This proved to be very valuable, as it increased survey response rates. 
+
+{{< image src="images/survey-creator.png" alt="The survey creator" >}}
+    The survey creator.
+{{< /image >}}
+
+Like most of Studo's web projects, the survey creator is written in Kotlin and transpiled to JavaScript. Kotlin provides a number of benefits for developers, especially on smaller teams. Everything is type checked and because we can access the same class from both backend and frontend code, API contracts are kept at the compiler level. We use React through a Kotlin wrapper that ensures type safety for all properties and functions.
+
+In my Bachelor thesis, I compared the survey creator against Google Forms and SurveyJS. Spoiler alert: mine was found to be easiest to use, hitting one of the main goals. The thesis and thesis defense were both graded `very good` (1). I've summarized the creation process and thesis findings in a blog post, which you can read [here]({{< ref "/blog/bachelor-thesis" >}}). 
 
 
-#### Backend Services and Databases
-Kotlin, Rust, MongoDB, Ktor.
+#### Backend Services, Databases, DevOps
+{{< notice warning >}}
+Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • Unix • Nginx • Node
+{{</ notice >}}
 
-We were contracted by the [Unversity of Applied Sciences Campus02](https://en.campus02.at/) to create a digital attendance tracking solution. As part of this, I developed a service that syncs all data between the campus management system and Microsoft Teams. This included the following.
+We were contracted by the [University of Applied Sciences Campus02](https://en.campus02.at/) to create a digital attendance tracking solution. As part of this, I developed a service that syncs all data between the campus management system and Microsoft Teams. This included the following.
 - Ongoing communication with our client. Reacting to their wishes and bug reports.
 - Writing a custom wrapper for the MS Graph API featuring easy authentication, rate limiting, exponential backoff, and more.
 - Knowing when to ask for help from senior coworkers.
+
+I deployed the server for my game 'Four in a Row' on a cheap Ubuntu server. Writing systemd and nginx configuration from scratch introduced me to the world of DevOps. Later, I went on to writing my own CD tool that automatically publishes new server and app versions.
 
 
 #### Head of User Support
@@ -58,7 +78,11 @@ We were contracted by the [Unversity of Applied Sciences Campus02](https://en.ca
 I am in charge of coordinating first, second, and third-level support. I investigate challenging cross-project issues when they come up, and bring in my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced new processes, regarding ticket assignment, hand-off, and inter-team communication.
 
 
-#### Interpersonal
+#### Interpersonal & Development Processes
+
+{{< notice warning >}}
+Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring
+{{</ notice >}}
 
 As it turned out, there is much more than coding that makes a great Software Engineer. I learned how to communicate effectively with coworkers, across teams, and with clients. This was great for my personal growth.
 

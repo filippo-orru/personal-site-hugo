@@ -1,12 +1,7 @@
 <!-- Don't format this file, or the html whitespace gets broken-->
 
 {{- $id := print "age-years" (substr (md5 .Inner) 0 16) -}}
-<style>.inline-time {
-    padding: 2px;
-    border-radius: 4px;
-    margin: 1px;
-    background-color: #ffffff36;
-}</style><span id="{{ $id }}" class="inline-time"></span><script>
+<code id="{{ $id }}" class="inline-time"></code><script>
         /**
          * Calculates human age in years given a birth day. 
          *

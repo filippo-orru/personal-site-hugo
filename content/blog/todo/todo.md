@@ -8,14 +8,20 @@ draft: true
 - perfectionism
 - app suggestions
 - SEA articles
+  - vegetarian
+  - japan
+- Every day carry + backpack
 - keyboard
 - add more old art
-- apartments tinder project
-- four in a row tech details
-- Every day carry + backpack
-- TILs
-  - advent lottery system
+
+TILs:
+- advent lottery system
+
+personal projects:
+- four in a row: tech details
+- roomride - tinder for apartments
+- live collab
 
 about me:
+- personal projects
 - parsers in Germany?
-- more personal projects
