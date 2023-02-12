@@ -18,7 +18,7 @@ I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software E
 The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) and all university services into one place. The app is used by more than 300 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
 
 
-#### Mobile App Development
+### Mobile App Development
 {{< notice warning >}}
 Kotlin • Swift • SwiftUI • Flutter • Dart • Realm • Java
 {{</ notice >}}
@@ -42,7 +42,7 @@ I worked on new features and bug fixes for our native Android and iOS apps. My p
     - [Read more about my game Four in a Row]({{< ref "/blog/four-in-a-row" >}})
 
 
-#### Modern Web Development
+### Modern Web Development
 {{< notice warning >}}
 Kotlin • React • JavaScript • Elm • Typescript • Svelte
 {{</ notice >}}
@@ -60,7 +60,7 @@ Like most of Studo's web projects, the survey creator is written in Kotlin and t
 In my Bachelor thesis, I compared the survey creator against Google Forms and SurveyJS. Spoiler alert: mine was found to be easiest to use, hitting one of the main goals. The thesis and thesis defense were both graded `very good` (1). I've summarized the creation process and thesis findings in a blog post, which you can read [here]({{< ref "/blog/bachelor-thesis" >}}). 
 
 
-#### Backend Services, Databases, DevOps
+### Backend Services, Databases, DevOps
 {{< notice warning >}}
 Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • Unix • Nginx • Node
 {{</ notice >}}
@@ -73,12 +73,12 @@ We were contracted by the [University of Applied Sciences Campus02](https://en.c
 I deployed the server for my game 'Four in a Row' on a cheap Ubuntu server. Writing systemd and nginx configuration from scratch introduced me to the world of DevOps. Later, I went on to writing my own CD tool that automatically publishes new server and app versions.
 
 
-#### Head of User Support
+### Head of User Support
 
 I am in charge of coordinating first, second, and third-level support. I investigate challenging cross-project issues when they come up, and bring in my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced new processes, regarding ticket assignment, hand-off, and inter-team communication.
 
 
-#### Interpersonal & Development Processes
+### Interpersonal & Development Processes
 
 {{< notice warning >}}
 Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring
