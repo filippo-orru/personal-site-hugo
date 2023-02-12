@@ -1,3 +1,8 @@
+@mixin content-element {
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
+}
+
 .content {
   flex: 1;
   display: flex;
@@ -124,8 +129,7 @@
           height: auto;
           max-height: 90vh;
 
-          border-radius: 4px;
-          box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
+          @include content-element();
         }
       }
     }
@@ -218,6 +222,10 @@
   img.featured {
     border-radius: 4px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
+  }
+
+  .felt-map {
+    @include content-element();
   }
 }
 
