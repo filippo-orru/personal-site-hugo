@@ -72,11 +72,10 @@
           right: 0;
           width: 5rem;
           border-radius: 1px;
+          transform-origin: left;
 
           @media (prefers-reduced-motion) {
             animation: none;
-            opacity: 1;
-            width: 5rem;
           }
         }
       }
@@ -84,12 +83,12 @@
       @keyframes widenHeaderUnderline {
         0% {
           opacity: 0;
-          width: 0;
+          scale: 0 1;
         }
 
         to {
           opacity: 1;
-          width: 5rem;
+          scale: 1 1;
         }
       }
     }
