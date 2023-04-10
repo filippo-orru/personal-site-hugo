@@ -8,7 +8,7 @@ siteTitleFirst: true
 My name's Filippo and I'm currently {{< age-years 2001-07-25 />}} years old. This is my hub for showcasing my latest personal projects, blog articles, and attempts at art.
 
 ## Hobbies & interests
-I usually live in Graz, Austria, but now that I have completed my Bachelor's degree, I'm work-traveling through Southeast Asia for five months. I started in November 2022 and will be back by March 2023. In my free time I like going rock climbing, coding my personal projects, and going out with friends. 
+I live in Graz, Austria. After completing my Bachelor's degree in October 2022, I work-traveled through Southeast Asia for five months. In my free time I like going rock climbing, coding my personal projects, and spending time with my friends. I also regularly fall down a rabbit holes for two to four weeks. When I emerge, I've usually learned a new programming language or how some obscure technology works.
 
 
 ## Experience
