@@ -5,7 +5,7 @@
 <div class="notice {{ $type }}">
   {{- if ne $title "" -}}
   <div class="notice-title">
-    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>{{ i18n $title | default $title | humanize }}
+    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>{{ i18n $title | default $title }}
   </div>
   {{- end -}}
   <div class="notice-content">
