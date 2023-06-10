@@ -1,13 +1,14 @@
 ---
-title: "How to inspect the database used by Paste"
-subtitle: "... and find long-lost passwords."
+title: "How to find long-lost passwords in your clipboard history"
+subtitle: "Inspecting the database used by Paste app."
 date: 2023-06-10T11:08:03+02:00
 draft: false
 description: "I was able to find a lost password in my clipboard history using creativity, some SQL, and command line tools. A lesson in problem-solving for me."
 ongoing: false
 featured: false
-# featuredImage: featured.jpg
-# featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
+slug: password-in-clipboard-history
+featuredImage: featured.png
+featuredImageSource: ['generated using DALL·E', 'https://labs.openai.com/s/KazatOfjTaMOC4O6xb2hUppx']
 categories: []
 ---
 
