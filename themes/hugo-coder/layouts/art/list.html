@@ -23,7 +23,7 @@
         {{ range $i, $element := $list }}
         <li>
             <a href="{{ .Params.externalLink | default .RelPermalink }}">
-                {{ $image := (.Page.Resources.GetMatch .Params.featuredImage).Fill "480x480 webp Center" }}
+                {{ $image := (.Page.Resources.GetMatch .Params.featuredImage).Fill "600x600 webp Center" }}
                 {{ $title := .Params.title }}
                 {{ $date := .Date | time.Format "Jan 06" }}
                 <img src="{{ $image.RelPermalink }}" alt="Artwork" height="480" width="480" />
