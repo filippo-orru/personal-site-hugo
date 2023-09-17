@@ -18,7 +18,7 @@ services:
       - 8080
     environment:
       - PORT=8080
-      - COMMAND="hugo -b filippo-orru.com --ignoreCache --minify -s /src -d /target"
+      - COMMAND="git pull && hugo -b filippo-orru.com --ignoreCache --minify -s /src -d /target"
     volumes:
       - ./:/src
       - ./public:/target
