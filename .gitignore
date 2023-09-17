@@ -3,3 +3,5 @@
 public/
 trash.txt
 .DS_Store
+
+webhook.secret
