@@ -17,12 +17,13 @@ services:
     expose:
       - 8080
     environment:
-      - PORT=8080
-      - COMMAND="cd /src && git config --global --add safe.directory /src && git pull && hugo -b filippo-orru.com --ignoreCache --minify -s /src -d /target"
+      - PORT: 8080
+      - COMMAND: "cd /src && git config --global --add safe.directory /src && git pull && hugo -b filippo-orru.com --ignoreCache --minify -s /src -d /target"
+      - SSH_AUTH_SOCK: /ssh-agent
     volumes:
-      - ./deploy/shared/ssh:/root/.ssh/
       - ./:/src
       - ./public:/target
+      - $SSH_AUTH_SOCK:/ssh-agent
     secrets:
       - webhook_secret
     labels:
