@@ -21,8 +21,7 @@ services:
       - COMMAND="cd /src && git config --global --add safe.directory /src && git pull && hugo -b filippo-orru.com --ignoreCache --minify -s /src -d /target"
     volumes:
       - ~/.ssh/config:/root/.ssh/config
-      - ~/.ssh/id_rsa.personal-site-hugo:/root/.ssh/id_rsa.personal-site-hugo
-      - ~/.ssh/id_rsa.personal-site-hugo.pub:/root/.ssh/id_rsa.personal-site-hugo.pub
+      - ~/deploy/shared/ssh:/root/.ssh/
       - ./:/src
       - ./public:/target
     secrets:
@@ -33,7 +32,7 @@ services:
       - "traefik.http.routers.filippo-orru-webhook.entrypoints=https"
       - "traefik.http.routers.filippo-orru-webhook.tls=true"
       - "traefik.http.services.filippo-orru-webhook.loadbalancer.server.port=8080"
-    
+
 secrets:
   webhook_secret:
     file: ./webhook.secret
