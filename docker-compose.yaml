@@ -23,7 +23,7 @@ services:
     volumes:
       - ./:/src
       - ./public:/target
-      - $SSH_AUTH_SOCK:/ssh-agent
+      - ${SSH_AUTH_SOCK}:/ssh-agent
     secrets:
       - webhook_secret
     labels:
