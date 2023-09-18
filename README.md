@@ -27,7 +27,7 @@ Before getting started, make sure you have the following installed on your machi
 1. Copy the ssh config files to the webhook listener.
 
     ```bash
-    cp deploy/shared/ssh webhook-listener/shared/ssh
+    cp deploy/shared/ssh/config webhook-listener/shared/ssh/config
     cp ~/.ssh/id_rsa.personal-site-hugo webhook-listener/shared/ssh/id_rsa.personal-site-hugo
     cp ~/.ssh/id_rsa.webhook-listener webhook-listener/shared/ssh/id_rsa.webhook-listener
     ```
