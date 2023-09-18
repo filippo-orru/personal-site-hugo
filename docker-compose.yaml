@@ -20,8 +20,7 @@ services:
       - PORT=8080
       - COMMAND="cd /src && git config --global --add safe.directory /src && git pull && hugo -b filippo-orru.com --ignoreCache --minify -s /src -d /target"
     volumes:
-      - ~/.ssh/config:/root/.ssh/config
-      - ~/deploy/shared/ssh:/root/.ssh/
+      - ./deploy/shared/ssh:/root/.ssh/
       - ./:/src
       - ./public:/target
     secrets:
