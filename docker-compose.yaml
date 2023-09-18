@@ -1,16 +1,19 @@
 version: '3'
 
+include:
+  - plausible/docker-compose.yaml
+
 services:
   nginx:
     image: nginx:alpine
     volumes:
       - ./public:/usr/share/nginx/html
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.filippo-orru.rule=Host(`filippo-orru.com`)"
-      - "traefik.http.routers.filippo-orru.entrypoints=https"
-      - "traefik.http.routers.filippo-orru.tls=true"
-      - "traefik.http.services.filippo-orru.loadbalancer.server.port=80"
+      traefik.enable: "true"
+      traefik.http.routers.filippo-orru.rule: "Host(`filippo-orru.com`)"
+      traefik.http.routers.filippo-orru.entrypoints: "https"
+      traefik.http.routers.filippo-orru.tls: "true"
+      traefik.http.services.filippo-orru.loadbalancer.server.port: 80
 
   webhook-listener:
     build: webhook-listener
@@ -25,11 +28,11 @@ services:
     secrets:
       - webhook_secret
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.filippo-orru-webhook.rule=Host(`filippo-orru.com`) && PathPrefix(`/webhook`)"
-      - "traefik.http.routers.filippo-orru-webhook.entrypoints=https"
-      - "traefik.http.routers.filippo-orru-webhook.tls=true"
-      - "traefik.http.services.filippo-orru-webhook.loadbalancer.server.port=8080"
+      traefik.enable: "true"
+      traefik.http.routers.filippo-orru-webhook.rule: "Host(`filippo-orru.com`) && PathPrefix(`/webhook`)"
+      traefik.http.routers.filippo-orru-webhook.entrypoints: "https"
+      traefik.http.routers.filippo-orru-webhook.tls: "true"
+      traefik.http.services.filippo-orru-webhook.loadbalancer.server.port: 8080
 
 secrets:
   webhook_secret:

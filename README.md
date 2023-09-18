@@ -32,6 +32,20 @@ Before getting started, make sure you have the following installed on your machi
     cp ~/.ssh/id_rsa.webhook-listener webhook-listener/shared/ssh/id_rsa.webhook-listener
     ```
 
+1. Configure Plausible analytics
+
+    1. Create the plausible env file:
+
+    ```bash
+    cp plausible/plausible-conf.demo.env plausible/plausible-conf.env
+    ```
+
+    1. Create a secret using the following command and copy it to the .env file.
+
+    ```bash
+    openssl rand -base64 64 | tr -d '\n' ; echo
+    ```
+
 1. Create systemd service file.
 
     1. Modify `WorkingDirectory` in `personal-site.service` to point to the root of this repository.
