@@ -24,11 +24,12 @@ Before getting started, make sure you have the following installed on your machi
 
 1. Create the file `webhook.secret` to store the Github webhook secret used by the webhook-listener.
 
-1. Copy the deploy key config and files to deploy/shared/ssh.
+1. Copy the ssh config files to the webhook listener.
 
     ```bash
-    cp ~/.ssh/id_rsa.personal-site-hugo deploy/shared/ssh/id_rsa.personal-site-hugo
-    cp ~/.ssh/id_rsa.webhook-listener deploy/shared/ssh/id_rsa.webhook-listener
+    cp deploy/shared/ssh webhook-listener/shared/ssh
+    cp ~/.ssh/id_rsa.personal-site-hugo webhook-listener/shared/ssh/id_rsa.personal-site-hugo
+    cp ~/.ssh/id_rsa.webhook-listener webhook-listener/shared/ssh/id_rsa.webhook-listener
     ```
 
 1. Create systemd service file.
