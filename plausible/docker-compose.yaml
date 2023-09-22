@@ -5,10 +5,20 @@ services:
     image: plausible/analytics:v2
     labels:
       traefik.enable: "true"
-      traefik.http.routers.plausible.rule: "Host(`statistics.filippo-orru.com`)"
+      traefik.http.services.plausible.loadbalancer.server.port: 8000
+
       traefik.http.routers.plausible.entrypoints: "https"
-      traefik.http.services.plausible.loadbalancer.server.port: "8000"
-    command: sh -c "sleep 10 && /entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh run"
+      traefik.http.routers.plausible.rule: "Host(`statistics.filippo-orru.com`)"
+      traefik.http.routers.plausible.service: plausible
+
+      # Proxy traffic from /psb.js to "http://plausible:8000/js/plausible.js"
+      traefik.http.routers.plausibleJs.entrypoints: "https"
+      traefik.http.routers.plausibleJs.rule: "Host(`statistics.filippo-orru.com`) && Path(`/psb.js`)"
+      traefik.http.routers.plausibleJs.service: plausible
+      traefik.http.middlewares.plausibleJsReplacement.replacepath.path: "/js/plausible.js"
+      traefik.http.routers.plausibleJs.middlewares: plausibleJsReplacement
+
+    command: sh -c "sleep 2 && /entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh run"
     expose:
       - 8000
     depends_on:
