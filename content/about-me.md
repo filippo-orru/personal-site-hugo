@@ -12,8 +12,8 @@ I live in Graz, Austria. In October 2023, I started pursuing a master's degree a
 
 After completing my bachelor's degree in October 2022, I spent five months exploring Southeast Asia. I combined work and travel, visiting Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
 
-{{< felt-map "https://felt.com/embed/map/Asia-qRplPaN1Qg9B2Szi4dBsvEC?lat=23.597137&lon=121.86255&zoom=3.933" >}}
-    My route through Asia.
+{{< felt-map "https://felt.com/embed/map/Asia-qRplPaN1Qg9B2Szi4dBsvEC?lat=21.21&lon=120.11&zoom=3.6" >}}
+    My route through Southeast Asia.
 {{< /felt-map >}}
 
 
