@@ -37,7 +37,7 @@ categories: []
 
 I traveled through Asia from November 2022 until March 2023. //TODO experience, how this was great etc
 
-{{< felt-map "https://felt.com/embed/map/Asia-qRplPaN1Qg9B2Szi4dBsvEC?lat=23.597137&lon=121.86255&zoom=3.933" >}}
+{{< felt-map "https://felt.com/embed/map/Asia-qRplPaN1Qg9B2Szi4dBsvEC?lat=23.597137&lon=121.86255&zoom=3.933" />}}
 
 # More
 - []()

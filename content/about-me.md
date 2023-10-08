@@ -5,22 +5,28 @@ draft: false
 siteTitleFirst: true
 ---
 
-My name's Filippo and I'm currently {{< age-years 2001-07-25 />}} years old. This is my hub for showcasing my latest personal projects, blog articles, and attempts at art.
+My name is Filippo, and I'm currently {{< age-years 2001-07-25 />}} years old. This is my hub for showcasing my latest personal projects, blog articles, and attempts at art.
 
-## Hobbies & interests
-I live in Graz, Austria. After completing my Bachelor's degree in October 2022, I work-traveled through Southeast Asia for five months. In my free time I like going rock climbing, coding my personal projects, and spending time with my friends. I also regularly fall down a rabbit holes for two to four weeks. When I emerge, I've usually learned a new programming language or how some obscure technology works.
+## Hobbies & Interests
+I live in Graz, Austria. In October 2023, I started pursuing a master's degree at Graz Technical University while working as a software developer. In my free time, I enjoy rock climbing, coding my personal projects, and spending time with my friends. Sometimes, when I stumble upon a new topic that sparks my interest, it draws me in for a few weeks and learn as much as I can about it. This could be a new programming language, 3D modeling, or compute shaders.
+
+After completing my bachelor's degree in October 2022, I spent five months exploring Southeast Asia. I combined work and travel, visiting Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
+
+{{< felt-map "https://felt.com/embed/map/Asia-qRplPaN1Qg9B2Szi4dBsvEC?lat=23.597137&lon=121.86255&zoom=3.933" >}}
+    My route through Asia.
+{{< /felt-map >}}
 
 
 ## Experience
 
-I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features for all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. These include the roles of **Project Lead Developer**, handling project communication with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
+I'm currently working at [Studo](https://studo.com/en/). I started in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. These include the roles of **Project Lead Developer**, handling project communication and development with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 
 The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) and all university services into one place. The app is used by more than 300 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
 
 
 ### Mobile App Development
 {{< notice warning >}}
-Kotlin • Swift • SwiftUI • Flutter • Dart • Realm • Java
+Keywords: Kotlin • Swift • SwiftUI • Flutter • Dart • Realm • Java
 {{</ notice >}}
 
 I worked on new features and bug fixes for our native Android and iOS apps. My pretty cross-platform game 'Four in a Row' is written in Flutter.
@@ -44,7 +50,7 @@ I worked on new features and bug fixes for our native Android and iOS apps. My p
 
 ### Modern Web Development
 {{< notice warning >}}
-Kotlin • React • JavaScript • Elm • Typescript • Svelte
+Keywords: Kotlin • React • JavaScript • Elm • Typescript • Svelte • HTML • CSS
 {{</ notice >}}
 
 As my biggest project, I created a custom survey creation platform and then wrote my thesis about it. [Read more about the survey creator]({{< ref "/blog/bachelor-thesis" >}}). It is integrated into the Studo Newsroom, which is a platform that allows partner companies to publish content for the Studo news feed. 
@@ -62,7 +68,7 @@ In my Bachelor thesis, I compared the survey creator against Google Forms and Su
 
 ### Backend Services, Databases, DevOps
 {{< notice warning >}}
-Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • Unix • Nginx • Node
+Keywords: Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • Unix • Nginx • Node • Traefik • Docker
 {{</ notice >}}
 
 We were contracted by the [University of Applied Sciences Campus02](https://en.campus02.at/) to create a digital attendance tracking solution. As part of this, I developed a service that syncs all data between the campus management system and Microsoft Teams. This included the following.
@@ -81,7 +87,7 @@ I am in charge of coordinating first, second, and third-level support. I investi
 ### Interpersonal & Development Processes
 
 {{< notice warning >}}
-Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring
+Keywords: Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring • Mentorship
 {{</ notice >}}
 
 As it turned out, there is much more than coding that makes a great Software Engineer. I learned how to communicate effectively with coworkers, across teams, and with clients. This was great for my personal growth.
