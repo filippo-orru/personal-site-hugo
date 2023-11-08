@@ -68,7 +68,7 @@ In my Bachelor thesis, I compared the survey creator against Google Forms and Su
 
 ### Backend Services, Databases, DevOps
 {{< notice warning >}}
-Keywords: Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • Unix • Nginx • Node • Traefik • Docker
+Keywords: Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • C++ • Unix • Nginx • Node • Traefik • Docker
 {{</ notice >}}
 
 We were contracted by the [University of Applied Sciences Campus02](https://en.campus02.at/) to create a digital attendance tracking solution. As part of this, I developed a service that syncs all data between the campus management system and Microsoft Teams. This included the following.
