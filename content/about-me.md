@@ -7,7 +7,7 @@ siteTitleFirst: true
 
 My name is Filippo, and I'm currently {{< age-years 2001-07-25 />}} years old. This is my hub for showcasing my latest personal projects, blog articles, and attempts at art.
 
-## Hobbies & Interests
+# Hobbies & Interests
 I live in Graz, Austria. In October 2023, I started pursuing a master's degree at Graz Technical University while working as a software developer. In my free time, I enjoy rock climbing, coding my personal projects, and spending time with my friends. Sometimes, when I stumble upon a new topic that sparks my interest, it draws me in for a few weeks and learn as much as I can about it. This could be a new programming language, 3D modeling, or compute shaders.
 
 After completing my bachelor's degree in October 2022, I spent five months exploring Southeast Asia. I combined work and travel, visiting Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
@@ -17,14 +17,14 @@ After completing my bachelor's degree in October 2022, I spent five months explo
 {{< /felt-map >}}
 
 
-## Experience
+# Experience
 
 I'm currently working at [Studo](https://studo.com/en/). I started in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. These include the roles of **Project Lead Developer**, handling project communication and development with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 
 The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) and all university services into one place. The app is used by more than 300 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
 
 
-### Mobile App Development
+## Mobile App Development
 {{< notice warning >}}
 Keywords: Kotlin • Swift • SwiftUI • Flutter • Dart • Realm • Java
 {{</ notice >}}
@@ -48,7 +48,7 @@ I worked on new features and bug fixes for our native Android and iOS apps. My p
     - [Read more about my game Four in a Row]({{< ref "/blog/four-in-a-row" >}})
 
 
-### Modern Web Development
+## Modern Web Development
 {{< notice warning >}}
 Keywords: Kotlin • React • JavaScript • Elm • Typescript • Svelte • HTML • CSS
 {{</ notice >}}
@@ -66,7 +66,7 @@ Like most of Studo's web projects, the survey creator is written in Kotlin and t
 In my Bachelor thesis, I compared the survey creator against Google Forms and SurveyJS. Spoiler alert: mine was found to be easiest to use, hitting one of the main goals. The thesis and thesis defense were both graded `very good` (1). I've summarized the creation process and thesis findings in a blog post, which you can read [here]({{< ref "/blog/bachelor-thesis" >}}). 
 
 
-### Backend Services, Databases, DevOps
+## Backend Services, Databases, DevOps
 {{< notice warning >}}
 Keywords: Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • C++ • Unix • Nginx • Node • Traefik • Docker
 {{</ notice >}}
@@ -79,12 +79,12 @@ We were contracted by the [University of Applied Sciences Campus02](https://en.c
 I deployed the server for my game 'Four in a Row' on a cheap Ubuntu server. Writing systemd and nginx configuration from scratch introduced me to the world of DevOps. Later, I went on to writing my own CD tool that automatically publishes new server and app versions.
 
 
-### Head of User Support
+## Head of User Support
 
 I am in charge of coordinating first, second, and third-level support. I investigate challenging cross-project issues when they come up, and bring in my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced new processes, regarding ticket assignment, hand-off, and inter-team communication.
 
 
-### Interpersonal & Development Processes
+## Interpersonal & Development Processes
 
 {{< notice warning >}}
 Keywords: Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring • Mentorship
@@ -95,7 +95,7 @@ As it turned out, there is much more than coding that makes a great Software Eng
 I am also partly responsible for hiring and onboarding new developers. This entails coding interviews, decision-making and mentorship. I helped introduce many current developers to our tech stack and conventions.
 
 
-## More
+# More
 - Check out my [LinkedIn profile](https://linkedin.com/in/filippo-orru).
 - If you're curious about what I've been up to, take a look at [my recent blog posts]({{< ref "/blog/" >}}).
 - Want an app suggestion? I like using [Harmonic](https://play.google.com/store/apps/details?id=com.simon.harmonichackernews&hl=en) to browse hacker news.

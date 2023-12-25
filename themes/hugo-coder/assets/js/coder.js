@@ -43,3 +43,32 @@ function setTheme(theme) {
 function rememberTheme(theme) {
     localStorage.setItem('colorscheme', theme);
 }
+
+function getOffset(el) {
+    var _x = 0;
+    var _y = 0;
+    while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+        _x += el.offsetLeft - el.scrollLeft;
+        _y += el.offsetTop - el.scrollTop;
+        el = el.offsetParent;
+    }
+    return { top: _y, left: _x };
+}
+
+let toc = document.getElementById("TableOfContents");
+let content = document.getElementsByClassName("content")[0];
+let initial = getOffset(toc).top;
+
+function recalculateTocPosition() {
+    if (content.classList.contains("floating")) {
+        if (initial > window.scrollY + 64) {
+            content.classList.remove("floating");
+        }
+    } else {
+        if (toc.getBoundingClientRect().y < 64) {
+            content.classList.add("floating");
+        }
+    }
+}
+
+window.addEventListener('scroll', recalculateTocPosition);

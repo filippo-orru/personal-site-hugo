@@ -153,7 +153,7 @@ What a journey. I bought my first font and designed a logo with it. The home pag
 
 But as the saying goes, art is never finished. While writing this post, I created the image comparison widget that you see above and changed the site's design so much that all screenshots had to be captured at least twice. I fully expect many more small and big tweaks to come.
 
-### More
+# More
 - [github.com/ffactory-ofcl/personal-site-hugo](https://github.com/ffactory-ofcl/personal-site-hugo)\
 If you're interested to see the behind-the-scenes, check out the repo!
 

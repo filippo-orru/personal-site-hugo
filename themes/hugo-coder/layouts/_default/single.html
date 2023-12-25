@@ -3,12 +3,13 @@
 {{ end }}
 {{ define "content" }}
 <section class="container post">
-<article>
-    {{ partial "posts/article-header.html" . }}
-    {{ partial "posts/article-body.html" . }}
-    {{ partial "posts/article-footer.html" . }}
-</article>
+    {{ partial "table-of-contents.html" . }}
+    <article>
+        {{ partial "posts/article-header.html" . }}
+        {{ partial "posts/article-body.html" . }}
+        {{ partial "posts/article-footer.html" . }}
+    </article>
 
-{{ partial "posts/math.html" . }}
-</section>  
+    {{ partial "posts/math.html" . }}
+</section>
 {{ end }}

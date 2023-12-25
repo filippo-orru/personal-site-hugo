@@ -1,5 +1,19 @@
 @mixin content_dark {
   .content {
+    aside.table-of-contents {
+      &::before {
+        background-color: #ffffff1c;
+      }
+
+      nav {
+        background: #ffffff0a;
+      }
+
+      a {
+        color: #b6b6b6;
+      }
+    }
+
     article {
       p.image-source {
         color: $fg-color-secondary-dark;

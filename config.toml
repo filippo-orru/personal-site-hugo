@@ -13,6 +13,7 @@ keywords = 'blog,developer,personal,flutter,rust'
 info = 'Full Stack Developer'
 subInfo = 'Graz, Austria'
 colorScheme = "dark"
+tableOfContents = true
 # avatarURL = "images/avatar.png"
 featuredPage = "/blog/updating-site-theme"
 # postHeaderMessageTitle = "Welcome :)"
@@ -21,6 +22,12 @@ postHeaderMessage = "Hi, I'm Filippo. A software engineer living in Graz, Austri
 [cascade]
   [cascade._build]
     publishResources = false
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
 
 [taxonomies]
 category = "categories"
