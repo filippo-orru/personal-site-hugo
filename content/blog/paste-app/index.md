@@ -8,7 +8,7 @@ ongoing: false
 featured: false
 slug: password-in-clipboard-history
 featuredImage: featured.png
-featuredImageSource: ['generated using DALL·E', 'https://labs.openai.com/s/KazatOfjTaMOC4O6xb2hUppx']
+featuredImageSource: ['generated using DALL·E 3']
 categories: []
 ---
 

@@ -1,6 +1,5 @@
 {{ if and (gt .WordCount 400 ) (not .Params.toc) (gt (len (findRE "\n#+" .Page.RawContent)) 2) }}
 <aside class="table-of-contents floating">
-    <!-- <p>Contents</p> -->
     {{ .TableOfContents }}
 </aside>
 {{ end }}

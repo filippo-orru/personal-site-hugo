@@ -6,12 +6,20 @@
     {{ end }}
 
     {{ if .Params.featuredImageSource }}
-      <p class="image-source">Photo by <a href="{{ index .Params.featuredImageSource 1 }}" target="_blank">{{ index .Params.featuredImageSource 0 }}</a></p>
+      <p class="image-source">
+        {{ if eq (len .Params.featuredImageSource) 2 }}
+        <a href="{{ index .Params.featuredImageSource 1 }}" target="_blank">{{ index .Params.featuredImageSource 0 }}</a>
+        {{ else }}
+        {{ index .Params.featuredImageSource 0 }}
+        {{ end }}
+      </p>
     {{ end }}
   {{ end }}
+  {{ if and (gt .WordCount 400) (not .Params.toc) (gt (len (findRE "\n#+" .Page.RawContent)) 2) (not .Params.featured) }}
   <aside class="table-of-contents inline">
     {{ .TableOfContents }}
   </aside>
+  {{ end }}
   {{ .Content }}
   
   {{ if (ne .Page.RelPermalink "/about-me/") }}
