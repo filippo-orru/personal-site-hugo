@@ -23,6 +23,10 @@ body {
   }
 }
 
+hr {
+  border: 1px solid #c6c6c6;
+}
+
 a {
   font-weight: 500;
   color: $link-color;
@@ -79,7 +83,7 @@ h6 {
 
   .title-link {
     color: inherit;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
   }
 }

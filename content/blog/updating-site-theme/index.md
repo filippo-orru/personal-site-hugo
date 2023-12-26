@@ -1,5 +1,5 @@
 ---
-title: "Giving my hugo-based blog a facelift"
+title: "Giving my blog a facelift"
 subtitle: "Pretty fonts for a modern look?"
 slug: giving-my-blog-a-facelift
 date: 2022-12-05T13:36:00+07:00
@@ -53,15 +53,20 @@ Don't
     - finding a font, animations, logo, art page (-> design people)
   - why should they read this / who should read this
 -->
+{{< notice info "TLDR" >}}
+I was inspired to redesign and polish all parts this website. The landing page, the blog overview, and the reading page. In this post I explain my thoughts behind the decisions for layout, logo, fonts, and animations.
+{{</ notice >}}
+
+{{< compare-images left="img/comparisons/home-old.png" right="img/comparisons/home-new.png" >}}
+
 Recently, I came across a [blog post by Daniel Immke](https://daniel.do/article/laying-myself-off-from-amazon/) about quitting his job at Amazon. It's an interesting read, but **what really caught my eye was the design**. The choice of fonts, the subtle text color, the animated shapes in the header - beautiful.
 
 {{< image src="img/daniel-do.png" alt="Screenshot of https://daniel.do/article/laying-myself-off-from-amazon/" >}}
   Inspiration - Daniel Immke's blog
 {{< /image >}}
 
-Suddenly, my own blog felt antiquated and stiff and I felt inspired to improve its design. In this post I'll talk about how I completely redesigned the blog listing page and my search for an expressive font. I designed a logo for the site and added a place to showcase some humble art. Check out this before--after comparison and stick around to see how I did it.
+Suddenly, my own blog felt antiquated and stiff and I felt inspired to improve its design. In this post I'll talk about how I completely redesigned the blog listing page and my search for an expressive font. I designed a logo for the site and added a place to showcase some humble art. If the before--after comparison caught your interest, stick around to see how I did it.
 
-{{< compare-images left="img/comparisons/home-old.png" right="img/comparisons/home-new.png" >}}
 
 ---
 1. [Redesigning the list of blog posts]({{< ref "#redesign-blog-list" >}})

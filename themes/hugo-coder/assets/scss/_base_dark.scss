@@ -39,6 +39,10 @@
     color: $fg-color-dark;
   }
 
+  hr {
+    border: 1px solid #595959;
+  }
+
   // fix color schemes which do not explicitly set fg-color
   .highlight {
     pre {
