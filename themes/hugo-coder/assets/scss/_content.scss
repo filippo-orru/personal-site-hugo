@@ -18,12 +18,12 @@
     display: block;
     position: absolute;
     transform: translateX(calc(-100% - 32px));
+    transition: opacity 0.2s, transform 0.2s;
 
     @media only screen and (max-width: 1450px) {
-      display: none;
+      opacity: 0;
 
-      transform: none;
-      position: relative;
+      transform: translateX(-100%);
     }
 
     &::before {
@@ -41,6 +41,31 @@
       padding-top: 1.5rem;
       border-radius: 8px;
       background: #0000000a;
+
+      li {
+        &::before {
+          content: " ";
+          width: 8px;
+          height: 8px;
+          display: block;
+          position: absolute;
+          background: #ffffff63;
+          border-radius: 8px;
+          transform: translateY(1rem);
+          opacity: 0;
+          transition: opacity 0.1s;
+        }
+
+        &.active {
+          &::before {
+            opacity: 1;
+          }
+
+          >a {
+            text-decoration: underline;
+          }
+        }
+      }
     }
 
     ul {
