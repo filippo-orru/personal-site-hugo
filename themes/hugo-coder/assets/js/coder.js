@@ -55,7 +55,7 @@ function getOffset(el) {
     return { top: _y, left: _x };
 }
 
-let toc = document.getElementById("TableOfContents");
+let toc = document.querySelector(".table-of-contents.floating #TableOfContents");
 let content = document.getElementsByClassName("content")[0];
 let initial = getOffset(toc).top;
 
@@ -64,13 +64,13 @@ let headers = Array.from(document.querySelectorAll("h1, h2, h3"))
 let tocElements = Array.from(toc.querySelectorAll("a"));
 
 function recalculateTocPosition() {
-    if (content.classList.contains("floating")) {
+    if (content.classList.contains("toc-floating")) {
         if (initial > window.scrollY + 64) {
-            content.classList.remove("floating");
+            content.classList.remove("toc-floating");
         }
     } else {
         if (toc.getBoundingClientRect().y < 64) {
-            content.classList.add("floating");
+            content.classList.add("toc-floating");
         }
     }
 

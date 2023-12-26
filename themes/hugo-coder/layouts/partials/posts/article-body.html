@@ -9,6 +9,9 @@
       <p class="image-source">Photo by <a href="{{ index .Params.featuredImageSource 1 }}" target="_blank">{{ index .Params.featuredImageSource 0 }}</a></p>
     {{ end }}
   {{ end }}
+  <aside class="table-of-contents inline">
+    {{ .TableOfContents }}
+  </aside>
   {{ .Content }}
   
   {{ if (ne .Page.RelPermalink "/about-me/") }}

@@ -85,6 +85,7 @@ h6 {
     color: inherit;
     font-weight: 600;
     text-decoration: none;
+    line-height: 5rem;
   }
 }
 
@@ -271,7 +272,7 @@ figure {
 
 .container {
   margin: 3rem auto 0;
-  max-width: 90rem;
+  max-width: calc(768px - 4rem);
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;

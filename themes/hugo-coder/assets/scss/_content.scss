@@ -12,35 +12,38 @@
 
   aside.table-of-contents {
     font-size: 1.4rem;
-    margin-top: 150px;
-    width: 250px;
-    padding: 0 0 0 32px;
     display: block;
-    position: absolute;
-    transform: translateX(calc(-100% - 32px));
-    transition: opacity 0.2s, transform 0.2s;
 
-    @media only screen and (max-width: 1450px) {
-      opacity: 0;
+    &.inline {
+      transition: opacity .2s, transform .2s;
+      margin: 32px 0;
+      position: relative;
 
-      transform: translateX(-100%);
+      @media only screen and (min-width: 1450px) {
+        display: none;
+      }
+
+      &::before {
+        left: -24px;
+        @media only screen and (max-width: 768px) {
+          left: -18px;
+        }
+      }
     }
 
-    &::before {
-      content: " ";
-      height: 100%;
-      width: 8px;
-      background-color: #0000001c;
-      display: block;
+    &.floating {
+      margin-top: 150px;
+      width: 250px;
+      padding: 0 0 0 32px;
       position: absolute;
-      border-radius: 8px;
-      left: 8px;
-    }
+      transform: translateX(calc(-100% - 32px));
+      transition: opacity 0.2s, transform 0.2s;
 
-    nav {
-      padding-top: 1.5rem;
-      border-radius: 8px;
-      background: #0000000a;
+      @media only screen and (max-width: 1450px) {
+        opacity: 0;
+
+        transform: translateX(-100%);
+      }
 
       li {
         &::before {
@@ -68,6 +71,23 @@
       }
     }
 
+    &::before {
+      content: " ";
+      height: 100%;
+      width: 8px;
+      background-color: #0000001c;
+      display: block;
+      position: absolute;
+      border-radius: 8px;
+      left: 8px;
+    }
+
+    nav {
+      padding-top: 1.5rem;
+      border-radius: 8px;
+      background: #0000000a;
+    }
+
     ul {
       margin: 0;
       padding: 0;
@@ -86,8 +106,8 @@
     }
   }
 
-  &.floating {
-    aside.table-of-contents {
+  &.toc-floating {
+    aside.table-of-contents.floating {
       top: 64px;
       margin-top: 0;
       position: fixed;
