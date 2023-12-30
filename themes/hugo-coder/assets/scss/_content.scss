@@ -10,21 +10,42 @@
   overflow: hidden;
   position: relative;
 
+  .back-link {
+    color: #565656;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 0.75rem;
+    align-items: center;
+    width: max-content;
+
+    &:hover {
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
   aside.table-of-contents {
     font-size: 1.4rem;
     display: block;
+    position: relative;
 
     &.inline {
       transition: opacity .2s, transform .2s;
       margin: 32px 0;
       position: relative;
 
-      @media only screen and (min-width: 1450px) {
-        display: none;
+      &:not(.manual) {
+        @media only screen and (min-width: 1450px) {
+          display: none;
+        }
       }
 
       &::before {
         left: -24px;
+
         @media only screen and (max-width: 768px) {
           left: -18px;
         }
@@ -38,6 +59,10 @@
       position: absolute;
       transform: translateX(calc(-100% - 32px));
       transition: opacity 0.2s, transform 0.2s;
+
+      &::before {
+        left: 16px;
+      }
 
       @media only screen and (max-width: 1450px) {
         opacity: 0;
@@ -79,7 +104,6 @@
       display: block;
       position: absolute;
       border-radius: 8px;
-      left: 8px;
     }
 
     nav {
@@ -241,23 +265,6 @@
   .post {
     .post-title {
       margin-bottom: 0.75em;
-
-      .back-link {
-        color: #565656;
-        display: flex;
-        gap: 16px;
-        margin-bottom: 0.75rem;
-        align-items: center;
-        width: max-content;
-
-        &:hover {
-          text-decoration: none;
-
-          span {
-            text-decoration: underline;
-          }
-        }
-      }
     }
 
     .post-meta {

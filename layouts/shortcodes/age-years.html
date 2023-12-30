@@ -1,6 +1,6 @@
 <!-- Don't format this file, or the html whitespace gets broken-->
 
-{{- $id := print "age-years" (substr (md5 .Inner) 0 16) -}}
+{{- $id := print "age-years" (substr (md5 (delimit .Params ",")) 0 16) -}}
 <code id="{{ $id }}" class="inline-time"></code><script>
         /**
          * Calculates human age in years given a birth day. 

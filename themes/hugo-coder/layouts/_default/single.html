@@ -3,7 +3,7 @@
 {{ end }}
 {{ define "content" }}
 <section class="container post">
-    {{ partial "table-of-contents.html" . }}
+    {{ partial "table-of-contents.html" (dict "context" . "className" "floating") }}
     <article>
         {{ partial "posts/article-header.html" . }}
         {{ partial "posts/article-body.html" . }}
@@ -11,5 +11,13 @@
     </article>
 
     {{ partial "posts/math.html" . }}
+
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/toc.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/toc.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    {{ end }}
 </section>
 {{ end }}

@@ -1,5 +1,9 @@
 @mixin content_dark {
   .content {
+    .back-link {
+      color: #adadad;
+    }
+    
     aside.table-of-contents {
       &::before {
         background-color: #ffffff1c;
@@ -31,12 +35,6 @@
     }
 
     .post {
-      .post-title {
-        .back-link {
-          color: #adadad;
-        }
-      }
-
       .tags {
         .tag {
           background-color: $alt-bg-color-dark;

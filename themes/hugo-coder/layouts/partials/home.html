@@ -59,6 +59,8 @@
   {{ with $featuredPage }}
   <!-- TODO actual check -->
   <section class="container page">
+    {{ partial "table-of-contents.html" (dict "context" . "className" "floating") }}
+
     <article>
       <header class="with-subtitle">
         <h1 class="overlined">{{ .Title }}</h1>
@@ -73,5 +75,12 @@
       {{ partial "posts/article-body.html" $featuredPage }}
     </article>
   </section>
+  {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/toc.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/toc.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    {{ end }}
   {{ end }}
 </div>
