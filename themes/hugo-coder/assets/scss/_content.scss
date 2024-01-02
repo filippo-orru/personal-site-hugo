@@ -227,6 +227,16 @@
       .see-also {
         margin: 3.2rem 0;
 
+        .current {
+          font-weight: bold;
+          opacity: 0.8;
+
+          &::marker {
+            content: "→ ";
+            font-weight: normal;
+          }
+        }
+
         h3 {
           margin: 3.2rem 0;
         }
@@ -257,6 +267,7 @@
           max-height: 90vh;
 
           @include content-element();
+          border-radius: 8px;
         }
       }
     }
@@ -515,12 +526,19 @@
           display: flex;
           align-items: center;
           justify-content: center;
-
-          span {
+          
+          div {
             padding: 8px 12px;
             background-color: rgba(255, 255, 255, 0.87);
             color: rgba(0, 0, 0, 0.87);
             border-radius: 12px;
+            margin: 16px;
+            text-align: center;
+
+            .date {
+              white-space: nowrap;
+              color: rgba(0, 0, 0, 0.66);
+            }
           }
         }
 

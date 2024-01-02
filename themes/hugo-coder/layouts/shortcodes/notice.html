@@ -1,6 +1,5 @@
 {{- $type := .Get 0 -}}
 {{- $title := .Get 1 | default "" -}}
-{{- $inner := .Inner | .Page.RenderString | chomp -}}
 {{- $icon := dict "note" "fa-sticky-note" "tip" "fa-lightbulb-o" "example" "fa-file-text" "question" "fa-question" "info" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "error" "fa-times-circle" -}}
 <div class="notice {{ $type }}">
   {{- if ne $title "" -}}
@@ -9,6 +8,6 @@
   </div>
   {{- end -}}
   <div class="notice-content">
-    {{- $inner -}}
+    {{ .Inner }}
   </div>
 </div>

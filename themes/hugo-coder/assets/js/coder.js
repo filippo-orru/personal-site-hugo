@@ -44,7 +44,7 @@ function rememberTheme(theme) {
     localStorage.setItem('colorscheme', theme);
 }
 
-document.querySelectorAll(".back-link").forEach(function (el) {
+document.querySelectorAll(".back-link.navigate").forEach(function (el) {
     el.addEventListener("click", function (e) {
         e.preventDefault();
         window.history.back();
