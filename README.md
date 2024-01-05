@@ -10,15 +10,15 @@ Before getting started, make sure you have the following installed on your machi
 
 ## Setup / Deployment
 
-1. Set up reverse proxy with traefik: https://github.com/ffactory-ofcl/vps-reverse-proxy. Follow instructions there.
+1. Set up reverse proxy with traefik: https://github.com/filippo-orru/vps-reverse-proxy. Follow instructions there.
 
-1. Create a deploy key using [this script](https://gist.github.com/ffactory-ofcl/a4dcfc7a68c0b8d35487aa8297e98128) and add it to the Github repository.
+1. Create a deploy key using [this script](https://gist.github.com/filippo-orru/a4dcfc7a68c0b8d35487aa8297e98128) and add it to the Github repository.
 
 1. Clone this repository using the command echoed by the script.
 
 1. Pull the submodule `webhook-listener` (used for automatic deployment).
     
-    1. Generate a deploy key and add it to the [Github repository](https://github.com/ffactory-ofcl/webhook-listener).
+    1. Generate a deploy key and add it to the [Github repository](https://github.com/filippo-orru/webhook-listener).
 
     2. Clone the `webhook-listener` repository using the command echoed by the script.
 

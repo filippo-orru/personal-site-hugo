@@ -160,7 +160,7 @@ What a journey. I bought my first font and designed a logo with it. The home pag
 But as the saying goes, art is never finished. While writing this post, I created the image comparison widget that you see above and changed the site's design so much that all screenshots had to be captured at least twice. I fully expect many more small and big tweaks to come.
 
 # More
-- [github.com/ffactory-ofcl/personal-site-hugo](https://github.com/ffactory-ofcl/personal-site-hugo)\
+- [github.com/filippo-orru/personal-site-hugo](https://github.com/filippo-orru/personal-site-hugo)\
 If you're interested to see the behind-the-scenes, check out the repo!
 
 - [Comparing Survey Creation Platforms]({{< ref "/blog/bachelor-thesis" >}}). I spent two months building a survey creation platform, deployed it to >300k users and compared it to Google Forms and SurveyJS.

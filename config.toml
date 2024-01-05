@@ -52,7 +52,7 @@ url = "about-me"
 name = "GitHub"
 icon = "fa fa-2x fa-github"
 weight = 1
-url = "https://github.com/ffactory-ofcl/"
+url = "https://github.com/filippo-orru/"
 
 [[params.social]]
 name = "LinkedIn"
