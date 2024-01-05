@@ -1,11 +1,11 @@
 ---
 title: "Meet Your Friends (easy) — A Full Stack Project"
-description: "The world really needs is another solution to schedule meetings. Some tech details and backstory on a group project."
+description: "The world really needs another solution to schedule meetings. Some tech details and backstory on a group project."
 date: 2022-05-30T00:00:00+02:00
 # images: ['blog/come-over/social.png']
 featuredImage: featured.png
 featuredImageSource: ['Daniel McCullough', 'https://unsplash.com/@d_mccullough?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
-draft: false
+draft: true
 ongoing: false
 categories: ['project']
 ---

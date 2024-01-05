@@ -11,7 +11,7 @@ On this page, I want to give an overview of my interests and experience. If you 
 
 # Right now
 
-I live in Graz, Austria. In October 2023, I started pursuing a master's degree at [Graz Technical University](https://tugraz.at) while working as a software developer ([→ Experience]({{< ref "#experience" >}})). The topics that interest me most right now are **deep learning** and **AI-powered information retrieval**.
+I live in Graz, Austria. In October 2023, I started pursuing a master's degree at [Graz Technical University](https://tugraz.at) while working as a software developer ([↓ Experience]({{< ref "#experience" >}})). The topics that interest me most right now are **deep learning** and **AI-powered information retrieval**.
 
 After completing my bachelor's degree in October 2022, I spent five months exploring **Southeast Asia**, combining work and travel. I visited Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
 
@@ -27,7 +27,7 @@ In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/
 
 I've been working at [Studo](https://studo.com/en/) for over {{< age-years 2020-07-08 >}} years. 
 
-{{< notice info >}}
+{{< notice info "What is Studo?" >}}
 The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) spread across multiple services into one place. The app is used by more than 300 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
 {{</ notice >}}
 
@@ -38,7 +38,9 @@ I started in 2020 as a **Full-stack Software Engineer**, working on new features
 Keywords: React • JavaScript • Kotlin • Elm • Typescript • Svelte • HTML • CSS • Angular
 {{</ notice >}}
 
-As my biggest project so far, I created a custom survey creation platform and then wrote my bachelor thesis about it. It is integrated into the Studo Newsroom, which is a platform that allows partner companies to publish content for the Studo news feed. Try it out here: [studo.co/connect/survey-creator](https://studo.co/connect/survey-creator).
+As my biggest project so far, I created a custom survey creation platform and then wrote my bachelor thesis about it. It is integrated into the Studo Newsroom, which is a platform that allows partner companies to publish content for the Studo news feed. 
+
+**Try it out here: [studo.co/connect/survey-creator](https://studo.co/connect/survey-creator).**
 
 I was responsible for the entire design and development, which required multiple UI iterations over the course of a few months. Later, I worked with a colleague to integrate the survey fill-out page into the app, allowing users to respond right from the news feed. This proved to be very valuable, as it **increased survey response rates**. 
 
@@ -96,14 +98,14 @@ I deployed the server for my game 'Four in a Row' on a cheap Ubuntu server. Writ
 Keywords: Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring • Mentorship
 {{</ notice >}}
 
-As it turned out, there is much more than coding that makes a great Software Engineer. I learned how to communicate effectively with coworkers, across teams, and with clients. This was great for my personal growth.
+As it turned out, there is much more than coding that makes a great Software Engineer. I learned how to **communicate effectively** with coworkers, across teams, and with clients. This was great for my personal growth.
 
-I am also partly responsible for hiring and onboarding new developers. This entails coding interviews, decision-making and mentorship. I helped introduce many current developers to our tech stack and conventions.
+I am also partly responsible for hiring and onboarding new developers. This entails coding interviews, decision-making and **mentorship**. I helped introduce many current developers to our tech stack and conventions.
 
 
 ## Head of User Support
 
-As part of my work at Studo, I am responsible for managing our **excellent user support**. This means I coordinate first, second, and third-level support, I investigate challenging cross-project issues when they come up, and call upon my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced **new processes** regarding ticket assignment, hand-off, and inter-team communication.
+As part of my work at Studo, I am responsible for managing our **excellent user support**. This means I coordinate first, second, and third-level support, I investigate challenging **cross-project issues** when they come up, and call upon my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced **new processes** regarding ticket assignment, hand-off, and inter-team communication.
 
 
 # More

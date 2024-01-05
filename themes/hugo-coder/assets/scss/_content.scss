@@ -33,7 +33,6 @@
     position: relative;
 
     &.inline {
-      transition: opacity .2s, transform .2s;
       margin: 32px 0;
       position: relative;
 
@@ -58,7 +57,7 @@
       padding: 0 0 0 32px;
       position: absolute;
       transform: translateX(calc(-100% - 32px));
-      transition: opacity 0.2s, transform 0.2s;
+      transition: opacity ease 0.2s, transform ease 0.2s;
 
       &::before {
         left: 16px;
@@ -71,22 +70,9 @@
       }
 
       li {
-        &::before {
-          content: " ";
-          width: 8px;
-          height: 8px;
-          display: block;
-          position: absolute;
-          background: #ffffff63;
-          border-radius: 8px;
-          transform: translateY(1rem);
-          opacity: 0;
-          transition: opacity 0.1s;
-        }
-
         &.active {
-          &::before {
-            opacity: 1;
+          &::marker {
+            content: "→";
           }
 
           >a {
@@ -94,6 +80,10 @@
           }
         }
       }
+    }
+
+    &.hidden {
+      display: none;
     }
 
     &::before {
@@ -118,15 +108,23 @@
       padding-left: 8px;
     }
 
-    a {
-      color: #3e3e3e;
-      margin-bottom: 1.5rem;
-      display: inline-block;
-      padding: 0 16px;
-    }
-
     li {
-      list-style: none;
+      margin-left: 12px;
+
+      > * {
+        vertical-align: top;
+      }
+
+      &::marker {
+        content: ">";
+      }
+
+      a {
+        color: #3e3e3e;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        padding: 0 16px 0 8px;
+      }
     }
   }
 
@@ -380,7 +378,13 @@
     padding: 0;
 
     &.posts {
+      &:hover li:not(:hover) {
+        opacity: 0.75;
+      }
+
       li {
+        transition: opacity ease 0.2s;
+
         a {
           -webkit-tap-highlight-color: transparent;
 
@@ -434,13 +438,13 @@
             z-index: -1;
             border: 1px solid transparent;
             border-radius: 6px;
-            transform: perspective(400px) rotateX(-2deg);
+            transform: perspective(400px) rotateX(-3.5deg);
 
             $selector: &;
 
             @at-root {
               body.ready #{$selector} {
-                transition: background-color ease 0.11s, border-color 0.11s, transform ease 0.05s,
+                transition: background-color ease 0.11s, border-color 0.11s, transform ease 0.07s,
                   top ease 0.11s, bottom ease 0.11s, left ease 0.11s, right ease 0.11s;
               }
             }
@@ -459,7 +463,12 @@
             }
 
             .title span {
-              text-decoration: underline;
+              // text-decoration: underline;
+            }
+
+            .title .arrow {
+              transform: translate(0.5rem, -0.5rem);
+              opacity: 1;
             }
           }
 
@@ -467,6 +476,16 @@
             margin: 1rem 0;
             display: flex;
             align-items: center;
+
+            .arrow {
+              transition: transform cubic-bezier(.4, 0, .2, 1) .15s,
+                opacity cubic-bezier(.4, 0, .2, 1) .15s;
+              height: 2rem;
+              width: 2rem;
+              opacity: 0;
+              margin-left: auto;
+              flex-shrink: 0;
+            }
 
             i {
               height: 100%;
@@ -501,7 +520,7 @@
         display: flex;
         border-radius: 6px;
         overflow: hidden;
-        transition: border-radius 0.25s;
+        transition: border-radius ease 0.25s;
         position: relative;
         background-color: rgba(0, 0, 0, 0.1);
         height: 100%;
@@ -520,13 +539,13 @@
           position: absolute;
           height: 100%;
           width: 100%;
-          transition: opacity 0.25s;
+          transition: opacity ease 0.25s;
           pointer-events: none;
 
           display: flex;
           align-items: center;
           justify-content: center;
-          
+
           div {
             padding: 8px 12px;
             background-color: rgba(255, 255, 255, 0.87);
@@ -552,7 +571,7 @@
 
         img {
           object-fit: cover;
-          transition: transform 0.25s;
+          transition: transform ease 0.25s;
           transform: scale(1.1);
           width: 100%;
 
@@ -573,7 +592,7 @@
   }
 }
 
-.centered {
+.container.centered {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -646,26 +665,26 @@
             flex-direction: column;
             gap: 6px;
             text-decoration: none;
-
+            
             span {
               position: relative;
-              top: -15%;
+              transform: translateY(-15%);
               opacity: 0%;
-              transition: opacity 0.25s, top 0.25s;
+              transition: opacity ease 0.25s, transform ease 0.18s;
             }
 
             &:hover,
             &:focus {
               span {
                 opacity: 100%;
-                top: 0%;
+                transform: translateY(0%);
               }
             }
 
             @media (prefers-reduced-motion) {
               span {
                 opacity: 100%;
-                top: 0%;
+                transform: translateY(0%);
               }
             }
           }

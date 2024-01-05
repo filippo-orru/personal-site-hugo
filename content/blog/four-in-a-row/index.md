@@ -3,8 +3,8 @@ title: "Four in a row"
 date: 2021-03-23T08:00:00+02:00
 ongoing: false
 featured: true
-featuredImage: fiar-featured.webp
-featuredImageSource: ['Fotis Fotopoulos', 'https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
+featuredImage: fiar-screenshots.webp
+# featuredImageSource: ['Fotis Fotopoulos', 'https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 description: "A beautiful redesign of the all-time classic Four in a Row, written in Flutter. This is a pet project of mine, which I started during the first lockdown in March of 2020. It's available on Google Play and the web."
 draft: false
 categories: ['project']
@@ -12,13 +12,9 @@ categories: ['project']
 
 Enter ONLINE multiplayer in a beautiful redesign of the all-time classic Four in a Row!
 
-> ⭐️ Over 5000 downloads in the Google Play Store ⭐️
-
-{{< google-play-badge appId="ml.fourinarow" >}}
+{{< notice "info" "centered" >}}⭐️ Over 5000 downloads in the Google Play Store ⭐️ {{</ notice >}}
 
 Desktop and iOS users can play it online at https://play.fourinarow.ffactory.me/
-
-{{< image src="fiar-screenshots.webp" alt="App screenshots" />}}
 
 <!-- video -->
 

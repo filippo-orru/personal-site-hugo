@@ -1,1 +1,3 @@
-{{ partial "table-of-contents.html" (dict "context" .Page "className" "inline manual" "manual" true) }}
+{{ $additionalClassName := default "" (.Get 0) }}
+{{ $className := printf "inline manual %s" $additionalClassName }}
+{{ partial "table-of-contents.html" (dict "context" .Page "className" $className "manual" true) }}
