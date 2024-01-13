@@ -111,7 +111,7 @@
     li {
       margin-left: 12px;
 
-      > * {
+      >* {
         vertical-align: top;
       }
 
@@ -216,6 +216,31 @@
           opacity: 1;
           scale: 1 1;
         }
+      }
+    }
+
+    table {
+      margin: 3.2rem 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.21);
+      border-color: #bebebe;
+
+      th,
+      td {
+        padding: 1.2rem 1.6rem;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f4f4f4;
+        letter-spacing: 0.5px;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
       }
     }
 
@@ -368,6 +393,39 @@
   @media only screen and (max-width: 768px) {
     width: 10rem;
     height: 10rem;
+  }
+}
+
+code.tooltip {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+
+  &::before {
+    content: attr(data-before);
+    position: absolute;
+    width: max-content;
+    transform: translateY(80%);
+    opacity: 0;
+    transition: transform ease-in 0.4s, opacity ease-out 0.25s;
+    pointer-events: none;
+    
+    font-size: 1.2rem;
+    background-color: #e0e0e0;
+    color: #3a3a3a;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  &:hover {
+    background-color: #d2d2d2;
+    
+    &::before {
+      transform: translateY(100%);
+      opacity: 1;
+      transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.18s, opacity ease-out 0.2s;
+    }
   }
 }
 
@@ -665,7 +723,7 @@
             flex-direction: column;
             gap: 6px;
             text-decoration: none;
-            
+
             span {
               position: relative;
               transform: translateY(-15%);

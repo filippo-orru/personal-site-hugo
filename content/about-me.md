@@ -5,7 +5,7 @@ draft: false
 siteTitleFirst: true
 ---
 
-My name is Filippo, and I'm currently {{< age-years 2001-07-25 >}} years old. This is my hub for showcasing my latest [personal projects]({{< ref "/categories/project" >}}), [blog articles]({{< ref "/blog" >}}), and attempts at [art]({{< ref "/art" >}}). 
+My name is Filippo, and I'm currently {{< age-years date="2001-07-25" >}} years old. This is my hub for showcasing my latest [personal projects]({{< ref "/categories/project" >}}), [blog articles]({{< ref "/blog" >}}), and attempts at [art]({{< ref "/art" >}}). 
 
 On this page, I want to give an overview of my interests and experience. If you want to read my **resume**, head over to [LinkedIn](https://www.linkedin.com/in/filippo-orru/).
 
@@ -14,6 +14,13 @@ On this page, I want to give an overview of my interests and experience. If you 
 I live in Graz, Austria. In October 2023, I started pursuing a master's degree at [Graz Technical University](https://tugraz.at) while working as a software developer ([↓ Experience]({{< ref "#experience" >}})). The topics that interest me most right now are **deep learning** and **AI-powered information retrieval**.
 
 After completing my bachelor's degree in October 2022, I spent five months exploring **Southeast Asia**, combining work and travel. I visited Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
+
+| When?        | What? |
+|--------------|-------|
+| 2020 - today ({{< age-years date="2020-07-08" class="no-highlight" withComma="true" >}} years) | [↓ Software Developer @ Studo]({{< ref "#experience" >}}) |
+| 2023 - today | Start master's degree at [TU Graz](https://tugraz.at) |
+| 2019 - 2022  | Bachelor of Science in Mobile Software Development |
+| 2019         | Finish school, move to Graz |
 
 # Hobbies & Interests
 
@@ -25,13 +32,13 @@ In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/
 
 # Experience
 
-I've been working at [Studo](https://studo.com/en/) for over {{< age-years 2020-07-08 >}} years. 
+I've been developing software for {{< age-years date="2015-05-15" withComma="true" >}} years, and I've been working professionally for {{< age-years date="2020-07-08" withComma="true" >}} years. 
+
+I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. Today, I am a **Project Lead Developer**, handling project communication and development with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 
 {{< notice info "What is Studo?" >}}
 The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) spread across multiple services into one place. The app is used by more than 300 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
 {{</ notice >}}
-
-I started in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. Today, I am a **Project Lead Developer**, handling project communication and development with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 
 ## Modern Web Development
 {{< notice warning >}}
