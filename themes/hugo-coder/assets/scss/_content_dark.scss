@@ -50,6 +50,21 @@
       }
     }
 
+    table {
+      border-color: #3f3f3f;
+      box-shadow: 0 2px 14px rgba(255, 255, 255, 0.096);
+
+      th {
+        background-color: #373737;
+      }
+    }
+
+    code.tooltip {
+      &:hover {
+        background-color: #535353;
+      }
+    }
+
     .list {
       ul.posts {
         li {
