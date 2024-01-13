@@ -1,5 +1,11 @@
 // This file handles the floating table of contents
 
+let toc = document.querySelector(".table-of-contents.floating #TableOfContents");
+if (!toc) {
+    // The floating TOC is not inserted if an inline TOC is present. Do nothing.
+    return;
+}
+
 function getOffset(el) {
     var _x = 0;
     var _y = 0;
@@ -11,7 +17,6 @@ function getOffset(el) {
     return { top: _y, left: _x };
 }
 
-let toc = document.querySelector(".table-of-contents.floating #TableOfContents");
 let content = document.getElementsByClassName("content")[0];
 let initial = getOffset(toc).top;
 

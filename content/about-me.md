@@ -17,7 +17,7 @@ After completing my bachelor's degree in October 2022, I spent five months explo
 
 | When?        | What? |
 |--------------|-------|
-| 2020 - today ({{< age-years date="2020-07-08" class="no-highlight" withComma="true" >}} years) | [↓ Software Developer @ Studo]({{< ref "#experience" >}}) |
+| 2020 - today | Software Developer @ Studo [↓ Read more]({{< ref "#experience" >}}) |
 | 2023 - today | Start master's degree at [TU Graz](https://tugraz.at) |
 | 2019 - 2022  | Bachelor of Science in Mobile Software Development |
 | 2019         | Finish school, move to Graz |
@@ -32,7 +32,7 @@ In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/
 
 # Experience
 
-I've been developing software for {{< age-years date="2015-05-15" withComma="true" >}} years, and I've been working professionally for {{< age-years date="2020-07-08" withComma="true" >}} years. 
+I've been coding since I was 14 (that's more than {{< age-years date="2015-05-15" class="no-highlight" >}} years!). For the past {{< age-years date="2020-07-08" withComma="true" class="no-highlight" >}} years I've been developing software professionally. 
 
 I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. As time passed, I grew within the company and received more responsibilities. Today, I am a **Project Lead Developer**, handling project communication and development with selected clients, and **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 

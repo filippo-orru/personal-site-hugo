@@ -34,7 +34,7 @@
     color: $fg-color-strong-dark;
   }
 
-  code {
+  code:not(.no-highlight) {
     background-color: $alt-bg-color-dark;
     color: $fg-color-dark;
   }
