@@ -1,4 +1,8 @@
-<nav class="navigation">
+{{ $classNameExpanded := "" }}
+{{ if eq (.Page) (.GetPage "/" ) }}
+  {{ $classNameExpanded = "expanded" }}
+{{ end }}
+<nav class="navigation {{$classNameExpanded}}">
   <section class="container">
     {{ $homeActiveClass := "" }}
     {{ if ne (.Page) (.GetPage "/" ) }}

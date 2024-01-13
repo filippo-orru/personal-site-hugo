@@ -38,61 +38,16 @@
     margin-bottom: 0;
     margin-top: 0;
 
-    @media only screen and (max-width: 768px) {
-      position: relative;
-      top: 2rem;
-      right: 0;
-      z-index: 5;
-      visibility: hidden;
-      opacity: 0;
-      padding: 0;
-      max-height: 0;
-      width: 100%;
-      background-color: $bg-color;
-      border: solid 2px $alt-bg-color;
-      transition: opacity 0.25s, max-height 0.15s linear;
-    }
-
     .navigation-item {
       float: left;
       margin: 0;
       position: relative;
-
-      @media only screen and (max-width: 768px) {
-        float: none !important;
-        text-align: center;
-
-        a,
-        span {
-          line-height: 5rem;
-        }
-
-        &.active {
-          text-decoration: underline;
-        }
-      }
+      user-select: none;
 
       a,
       span {
         margin-left: 1rem;
         margin-right: 1rem;
-      }
-    }
-
-    .separator {
-      @media only screen and (max-width: 768px) {
-        display: none;
-      }
-    }
-
-    .menu-separator {
-      @media only screen and (max-width: 768px) {
-        border-top: 2px solid $fg-color;
-        margin: 0 8rem;
-
-        span {
-          display: none;
-        }
       }
     }
   }
@@ -109,18 +64,6 @@
 
   #menu-toggle {
     display: none;
-
-    @media only screen and (max-width: 768px) {
-      &:checked+label>i {
-        color: $alt-bg-color;
-      }
-
-      &:checked+label+ul {
-        visibility: visible;
-        opacity: 1;
-        max-height: 100rem;
-      }
-    }
   }
 
   .menu-button {
@@ -131,13 +74,6 @@
     width: 48px;
     align-items: center;
     justify-content: center;
-
-    @media only screen and (max-width: 768px) {
-      position: relative;
-      display: flex;
-      font-size: 2.4rem;
-      font-weight: 400;
-    }
 
     i {
 
@@ -154,6 +90,71 @@
     &:hover,
     &:focus {
       color: $link-color;
+    }
+  }
+
+  &:not(.expanded) {
+    @media only screen and (max-width: 768px) {
+      .navigation-list {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+        width: 100%;
+        background-color: $bg-color;
+        border: solid 2px $alt-bg-color;
+        transition: opacity 0.25s, max-height 0.15s linear;
+
+        .navigation-item {
+          float: none !important;
+          text-align: center;
+
+          a,
+          span {
+            line-height: 5rem;
+          }
+
+          &.active {
+            text-decoration: underline;
+          }
+        }
+
+        .separator {
+          display: none;
+        }
+
+        .menu-separator {
+          border-top: 2px solid $fg-color;
+          margin: 0 8rem;
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      .menu-button {
+        position: relative;
+        display: flex;
+        font-size: 2.4rem;
+        font-weight: 400;
+      }
+
+      #menu-toggle {
+        &:checked+label>i {
+          color: $alt-bg-color;
+        }
+
+        &:checked+label+ul {
+          visibility: visible;
+          opacity: 1;
+          max-height: 100rem;
+        }
+      }
     }
   }
 }
