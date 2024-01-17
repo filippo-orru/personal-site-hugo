@@ -8,8 +8,8 @@ paginate = 15
 
 [params]
 author = 'Filippo Orru'
-description = "Personal development showcase and blog."
-keywords = 'blog,developer,personal,flutter,rust'
+description = "Dev Blog • Projects Showcase • Art"
+keywords = 'blog,developer,personal,flutter,rust,graz,portfolio,programming,projects'
 info = 'Full Stack Developer'
 subInfo = 'Graz, Austria'
 colorScheme = "dark"
