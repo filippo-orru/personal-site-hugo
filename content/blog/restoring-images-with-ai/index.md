@@ -1,14 +1,15 @@
 ---
-title: "Restoring Images With AI"
-subtitle: "Using autoencoders with skip-connections to make celebrity faces pretty again."
+title: "Restoring Images (With AI)"
+subtitle: "Make celebrity faces pretty again using autoencoders with skip connections."
 date: 2024-01-23T21:03:00+01:00
 draft: false
-description: "Using autoencoders with skip-connections to make celebrity faces pretty again."
+description: "Make celebrity faces pretty again using autoencoders with skip connections."
 ongoing: false
 featured: false
 featuredImage: featured.webp
 featuredImageSource: ['Damaged images are restored. Created by me and my three university peers']
 categories: ["project"]
+images: []
 ---
 
 <!--
