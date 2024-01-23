@@ -11,20 +11,27 @@
   position: relative;
 
   .back-link {
-    color: #565656;
     display: flex;
-    gap: 16px;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 0.75rem;
-    align-items: center;
-    width: max-content;
 
-    &:hover {
-      text-decoration: none;
-
-      span {
-        text-decoration: underline;
+    a {
+      color: #565656;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      width: max-content;
+      
+      &:hover {
+        text-decoration: none;
+  
+        span {
+          text-decoration: underline;
+        }
       }
     }
+
   }
 
   aside.table-of-contents {
@@ -410,17 +417,17 @@ code.tooltip {
     opacity: 0;
     transition: transform ease-in 0.4s, opacity ease-out 0.25s;
     pointer-events: none;
-    
+
     font-size: 1.2rem;
     background-color: #e0e0e0;
     color: #3a3a3a;
     border-radius: 0.6rem;
     padding: 0.3rem 0.6rem;
   }
-  
+
   &:hover {
     background-color: #d2d2d2;
-    
+
     &::before {
       transform: translateY(100%);
       opacity: 1;
