@@ -7,7 +7,6 @@ description: "Make celebrity faces pretty again using autoencoders with skip con
 ongoing: false
 featured: false
 featuredImage: featured.webp
-featuredImageSource: ['Damaged images are restored. Created by me and my three university peers']
 categories: ["project"]
 images: []
 ---
@@ -53,9 +52,11 @@ images: []
 
 -->
 
-{{< notice "info" "In short">}}In a group of four, me and my peers completed a university project in deep learning. We trained a neural network capable of restoring "damaged" pictures to their original state, as the above image shows.{{</ notice >}}
+{{< notice "info" "In short">}}In a group of four, we trained a neural network capable of restoring "damaged" pictures to their original state, as the above image shows.{{</ notice >}}
 
-The type of network we used for this task is a *convolutional autoencoder*, but arriving at the final model architecture was harder than it might seem. An autoencoder is characterized by its two halves that are usually symmetrical: the encoder and the decoder. First, the encoder transforms the input into a compressed representation containing all important information about the input. This is then fed to the decoder, which transforms the compressed input back to the original size. In the process, finer information like noise is discarded, while the important parts are kept. This makes it a good starting point for restoring damaged images!
+For the final project in our *Deep Learning* class, we used a *convolutional autoencoder* to restore damaged images. Arriving at the final model architecture was harder than it might seem, so in this article I'll explain the project and learnings we had. 
+
+An autoencoder is characterized by its two halves that are usually symmetrical: the encoder and the decoder. First, the encoder transforms the input into a compressed representation containing all important information about the input. This is then fed to the decoder, which transforms the compressed input back to the original size. In the process, finer information like noise is discarded, while the important parts are kept. This makes it a good starting point for restoring damaged images!
 
 We applied these types of "damage" to the input data:
 1. Additive gaussian noise
@@ -77,18 +78,18 @@ The dataset we used, [*Labeled Faces in the Wild*](https://vis-www.cs.umass.edu/
 
 # Finding a Good Model
 
-Initially, we started with a simple setup based on [Tensorflow's autoencoder tutorial](https://www.tensorflow.org/tutorials/generative/autoencoder). It consists of a few convolutional layers, each downsampling the input's dimensions, then followed by transposed convolutional layers, which perform the reverse operation. However, in our initial model, we used simple *MaxPooling* and *Upsampling* operations to reduce the dimensions. This model performed quite **poorly**. It was able to take intact images as input, compress them, and reconstruct the input, but **unable** to correct noisy images with sufficient detail.
+Initially, we started with a simple setup based on [Tensorflow's autoencoder tutorial](https://www.tensorflow.org/tutorials/generative/autoencoder). It consists of a few convolutional layers, each downsampling the input's dimensions, then followed by transposed convolutional layers, which perform the reverse operation. However, in our initial model, we used simple *MaxPooling* and *Upsampling* operations to reduce the dimensions. This model performed quite poorly. It was able to take intact images as input, compress them, and reconstruct the input, but *unable* to correct noisy images with sufficient detail.
 
 We were inspired by the papers *Image Restoration Using Convolutional Auto-encoders with Symmetric Skip Connections* ([Mao, 2016](https://arxiv.org/abs/1606.08921)), and *U-Net: Convolutional Networks for Biomedical Image Segmentation* ([Ronneberger, 2015](https://arxiv.org/abs/1505.04597)). Based on this research, we implemented **two key improvements**:
 
-1. We switched from our *MaxPooling* and *Upsampling* layers to using convolutions (and transposed convolutions) with a stride of `(2, 2)`, which allows the model to learn which pixels are more relevant when downsampling and upsampling. 
-2. We introduced * -Connections* to our model, shown in the next image. The output of each encoder layer is fed to the corresponding decoder layer, which enables it to restore fine details that were lost when compressing the input to the latent space. 
+1. We switched from our *MaxPooling* and *Upsampling* layers to using convolutions and transposed convolutions with a stride of `(2, 2)`, which allows the model to learn which pixels are relevant when downsampling and upsampling. 
+2. We introduced *skip connections* to our model, shown in the next image. This means that the output of each encoder layer is fed to its corresponding decoder layer, enabling later decoder layers to restore fine details that were lost when compressing the input in previous layers. 
  
 {{< image src="images/model-architecture.jpg" alt="Final architecture of the model." >}}
   The final architecture of the model.
 {{< /image >}}
 
-The model is made up of multiple encoder blocks, compressing the image, then the same number of decoder blocks. The output dimensions are the same as the input dimensions. Shown below are the layers inside the encoder and decoder block.
+The model is made up of multiple encoder blocks that compress the image, then the same number of decoder blocks. The output dimensions are the same as the input dimensions. 
 
 {{< image src="images/encoder.jpg" alt="Layers of the encoder block." >}}
   Layers of the encoder block.
@@ -100,7 +101,7 @@ The encoder block is very simple. It just performs two convolutions, one of whic
   Layers of the decoder block.
 {{< /image >}}
 
-In the decoder, we want to concatenate the input with the corresponding encoder's output (or the actual input image, in the case of the last decoder). To do this, we first upsample the image with a transposed convolution, concatenate it with the skip connection input, and apply two more convolutions. 
+In the decoder, we want to concatenate the input with the corresponding encoder's output (or the actual input image, in the case of the last decoder). To do this, we first upsample the image with a transposed convolution, concatenate it with the *skip connection* input, and apply two more convolutions. 
 
 
 # Conclusion
