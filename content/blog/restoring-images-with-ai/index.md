@@ -67,7 +67,7 @@ We applied these types of "damage" to the input data:
 
 # Dataset
 
-The dataset we used, [*Labeled Faces in the Wild*](https://vis-www.cs.umass.edu/lfw/) (LFW), contains more than 13,000 face photographs of over a thousand individuals, collected from the web. Every person has two or more distinct photos in the data set. The dataset contains two versions of each image, namely the original and *funneled* version. In this context, funneling means aligning a face so that the eyes and mouth are at fixed positions within the image frame. This reduces variation between images of different people and enables neural networks to spend their training time learning about facial features in a controlled manner. This improves performance and efficiency. 
+The dataset we used, [*Labeled Faces in the Wild*](https://vis-www.cs.umass.edu/lfw/) (LFW), contains more than 13,000 face photographs of over a thousand individuals, collected from the web. Every person has two or more distinct photos in the data set. The dataset contains two versions of each image, namely the original and a *funneled* version. In this context, funneling means aligning a face so that the eyes and mouth are at fixed positions within the image frame. This reduces variation between different images, which allows the neural network to focus on learning about facial features in a controlled manner. This improves performance and training efficiency. 
 
 
 {{< image src="images/dataset.webp" alt="Some examples from the LFW dataset." >}}
