@@ -20,6 +20,8 @@ images: []
 - MacBook charger
 - Charging brick with 4 USB ports. Living the USB-C life
 
+{{< table-of-contents "hidden" >}}
+
 ---
 # Clothing
 I managed to stuff almost all of my clothes into two packing cubes.
