@@ -1,13 +1,17 @@
 <div>
   {{ $featuredImage := .Page.Resources.GetMatch .Params.featuredImage }}
+  {{ $quality := 75 }}
+  {{ if .Params.featuredImageQuality }}
+  {{ $quality = .Params.featuredImageQuality }}
+  {{ end }}
   {{ if $featuredImage }}
-    {{ with $featuredImage.Resize (printf "%dx%d webp" $featuredImage.Width $featuredImage.Height) }}
+    {{ with $featuredImage.Resize (printf "%dx%d webp q%d" $featuredImage.Width $featuredImage.Height $quality) }}
       <img src="{{ .RelPermalink }}" alt="Featured image" class="featured" width="{{ .Width }}" height="{{ .Height }}" />
     {{ end }}
 
-    {{ if .Params.featuredImageSource }}
+    {{ if .Params.featuredImageSource  }}
       <p class="image-source">
-        {{ if eq (len .Params.featuredImageSource) 2 }}
+        {{ if ge (len .Params.featuredImageSource) 2 }}
         <a href="{{ index .Params.featuredImageSource 1 }}" target="_blank">{{ index .Params.featuredImageSource 0 }}</a>
         {{ else }}
         {{ index .Params.featuredImageSource 0 }}
