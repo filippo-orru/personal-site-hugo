@@ -19,6 +19,8 @@ images: []
 - GoPro tripod / extension arm
 - MacBook charger
 - Charging brick with 4 USB ports. Living the USB-C life
+- Travel adapter (EU &rarr; US/JP/UK plug) 
+- Head-mounted light
 
 {{< table-of-contents "hidden" >}}
 
@@ -77,7 +79,5 @@ I managed to stuff almost all of my clothes into two packing cubes.
   &rarr; for keeping the MacBook safe while we're not in the hotel room
 - Light plastic water bottle
 
-# 🗑️ What I didn't need
+# What I didn't need
 - Laptop sleeve (I always stored it inside the day pack)
-- Travel adapter (EU &rarr; US/JP/UK plug) 
-- Head-mounted light
