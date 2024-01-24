@@ -6,6 +6,7 @@ date: 2022-11-24T08:44:03+07:00
 draft: false
 featuredImage: featured.webp
 # featuredImageSource: ['NAME', 'https://unsplash.com/@NAME?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
+images: []
 ---
 
 # Tech
