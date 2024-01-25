@@ -10,8 +10,8 @@ series: ["playlist-covers"]
 
 The topic for 2024's covers is `pretty patterns`.
 
-{{< notice question "Playlist Covers" >}}
-I've been creating one playlist with my favorite music every month for the past {{< age-years 2018-07-01 >}} years. As the month goes on, I add songs that strike a chord with me (hehe). On average, they contain around 10 songs, but that varies a lot depending on how much time I can dedicate to actively listening to music.
+{{< notice type="question" title="Playlist Covers" raw=true >}}
+I've been creating one playlist with my favorite music every month for the past {{< age-years date="2018-07-01" >}} years. As the month goes on, I add songs that strike a chord with me (hehe). On average, they contain around 10 songs, but that varies a lot depending on how much time I can dedicate to actively listening to music.
 {{</ notice >}}
 
 Last year's topic was `aerial shots`, check it out [here]({{< ref "/art/playlist-covers-2023" >}}), or see all [playlist covers]({{< ref "/series/playlist-covers" >}}).

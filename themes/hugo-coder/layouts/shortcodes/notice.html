@@ -1,10 +1,14 @@
-{{- $type := .Get 0 -}}
-{{- $centeredClassName := "" -}}
-{{- $title := .Get 1 | default "" -}}
+{{- $type := .Get "type" -}}
+{{- $title := .Get "title" | default "" -}}
 
-{{- if eq (.Get 1) "centered" -}}
+{{- $useMarkdownify := true -}}
+{{- if eq (.Get "raw") true -}}
+{{- $useMarkdownify = false -}}
+{{- end -}}
+
+{{- $centeredClassName := "" -}}
+{{- if eq (.Get "centered") true -}}
 {{- $centeredClassName = "centered" -}}
-{{- $title = .Get 2 | default "" -}}
 {{- end -}}
 
 {{- $icon := dict "note" "fa-sticky-note" "tip" "fa-lightbulb-o" "example" "fa-file-text" "question" "fa-question" "info" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "error" "fa-times-circle" -}}
@@ -15,8 +19,12 @@
   </div>
   {{- end -}}
   <div class="notice-content">
+    {{- if eq (.Get "raw") true -}}
+    {{- .Inner -}}
+    {{- else -}}
     {{ with .Inner }}
     {{ . | markdownify }}
+    {{ end }}
     {{ end }}
   </div>
 </div>

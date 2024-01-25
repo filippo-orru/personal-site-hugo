@@ -18,7 +18,7 @@ A beautiful redesign of the all-time classic game four in a row! With online mul
 
 Available for [Android](https://play.google.com/store/apps/details?id=ml.fourinarow) and the web: [play.fourinarow.ffactory.me](https://play.fourinarow.ffactory.me/).
 
-{{< notice "info" "centered" >}}⭐️ Over 5000 downloads in the Google Play Store ⭐️ {{</ notice >}}
+{{< notice type="info" centered=true >}}⭐️ Over 5000 downloads in the Google Play Store ⭐️ {{</ notice >}}
 
 
 The perfect game to lighten up boring hours - challenge your friends or play world wide.
