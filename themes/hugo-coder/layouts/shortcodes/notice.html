@@ -1,14 +1,23 @@
-{{- $type := .Get "type" -}}
-{{- $title := .Get "title" | default "" -}}
-
+<!-- Defaults -->
+{{- $type := "" -}}
+{{- $title := "" -}}
 {{- $useMarkdownify := true -}}
-{{- if eq (.Get "raw") true -}}
-{{- $useMarkdownify = false -}}
-{{- end -}}
-
 {{- $centeredClassName := "" -}}
-{{- if eq (.Get "centered") true -}}
-{{- $centeredClassName = "centered" -}}
+
+{{ if .IsNamedParams }}
+  {{- $type = .Get "type" -}}
+  {{- $title = .Get "title" | default "" -}}
+
+  {{- if eq (.Get "raw") true -}}
+  {{- $useMarkdownify = false -}}
+  {{- end -}}
+
+  {{- if eq (.Get "centered") true -}}
+  {{- $centeredClassName = "centered" -}}
+  {{- end -}}
+{{- else -}}
+  {{- $type = .Get 0 -}}
+  {{- $title = .Get 1 | default "" -}}
 {{- end -}}
 
 {{- $icon := dict "note" "fa-sticky-note" "tip" "fa-lightbulb-o" "example" "fa-file-text" "question" "fa-question" "info" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "error" "fa-times-circle" -}}

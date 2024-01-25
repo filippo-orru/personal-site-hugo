@@ -366,6 +366,12 @@
       border-radius: 4px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
     }
+
+    embed {
+      width: 100%;
+      min-height: 500px;
+      max-height: 600px;
+    }
   }
 
   figcaption p {

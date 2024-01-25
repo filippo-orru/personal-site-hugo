@@ -1,4 +1,93 @@
 {{ $relativeUrl := .Page.Resources.GetMatch (.Get 0) }}
 <figure>
-    <embed type="application/pdf" width="100%" style="max-height: 600px" src="{{ $relativeUrl.RelPermalink }}" />
+    <embed type="application/pdf" width="100" src="{{ $relativeUrl.RelPermalink }}" />
+    <script>
+        // Taken from https://github.com/pipwerks/PDFObject/blob/master/pdfobject.js
+    
+        let nav = window.navigator;
+        let ua = window.navigator.userAgent;
+    
+        //Time to jump through hoops -- browser vendors do not make it easy to detect PDF support.
+    
+        /*
+            IE11 still uses ActiveX for Adobe Reader, but IE 11 doesn't expose window.ActiveXObject the same way 
+            previous versions of IE did. window.ActiveXObject will evaluate to false in IE 11, but "ActiveXObject" 
+            in window evaluates to true.
+    
+            MS Edge does not support ActiveX so this test will evaluate false
+        */
+        let isIE = ("ActiveXObject" in window);
+    
+        /*
+            There is a coincidental correlation between implementation of window.promises and native PDF support in desktop browsers
+            We use this to assume if the browser supports promises it supports embedded PDFs
+            Is this fragile? Sort of. But browser vendors removed mimetype detection, so we're left to improvise
+        */
+        let isModernBrowser = (window.Promise !== undefined);
+    
+        //Older browsers still expose the mimeType
+        let supportsPdfMimeType = (nav.mimeTypes["application/pdf"] !== undefined);
+    
+        //Safari on iPadOS doesn't report as 'mobile' when requesting desktop site, yet still fails to embed PDFs
+        let isSafariIOSDesktopMode = (  nav.platform !== undefined && 
+                                        nav.platform === "MacIntel" && 
+                                        nav.maxTouchPoints !== undefined && 
+                                        nav.maxTouchPoints > 1 );
+    
+        //Quick test for mobile devices.
+        let isMobileDevice = (isSafariIOSDesktopMode || /Mobi|Tablet|Android|iPad|iPhone/.test(ua));
+    
+        //Safari desktop requires special handling 
+        let isSafariDesktop = ( !isMobileDevice && 
+                                nav.vendor !== undefined && 
+                                /Apple/.test(nav.vendor) && 
+                                /Safari/.test(ua) );
+        
+        //Firefox started shipping PDF.js in Firefox 19. If this is Firefox 19 or greater, assume PDF.js is available
+        let isFirefoxWithPDFJS = (!isMobileDevice && /irefox/.test(ua) && ua.split("rv:").length > 1) ? (parseInt(ua.split("rv:")[1].split(".")[0], 10) > 18) : false;
+    
+    
+        /* ----------------------------------------------------
+           Supporting functions
+           ---------------------------------------------------- */
+    
+        let createAXO = function (type){
+            var ax;
+            try {
+                ax = new ActiveXObject(type);
+            } catch (e) {
+                ax = null; //ensure ax remains null
+            }
+            return ax;
+        };
+    
+        //If either ActiveX support for "AcroPDF.PDF" or "PDF.PdfCtrl" are found, return true
+        //Constructed as a method (not a prop) to avoid unneccesarry overhead -- will only be evaluated if needed
+        let supportsPdfActiveX = function (){ return !!(createAXO("AcroPDF.PDF") || createAXO("PDF.PdfCtrl")); };
+    
+        //Determines whether PDF support is available
+        let supportsPDFs = (
+            //As of Sept 2020 no mobile browsers properly support PDF embeds
+            !isMobileDevice && (
+                //We're moving into the age of MIME-less browsers. They mostly all support PDF rendering without plugins.
+                isModernBrowser ||
+                //Modern versions of Firefox come bundled with PDFJS
+                isFirefoxWithPDFJS ||
+                //Browsers that still support the original MIME type check
+                supportsPdfMimeType ||
+                //Pity the poor souls still using IE
+                (isIE && supportsPdfActiveX())
+            )
+        );
+    
+        if (!supportsPDFs) {
+            // Hide the <embed> element
+            document.currentScript.parentElement.querySelector("embed").style.display = "none";
+
+            // Show a message
+            let element = document.createElement("p");
+            element.innerHTML = "I'd show a PDF here, but sadly your browser does not support that. <a href=\"{{ $relativeUrl.RelPermalink }}\">Download PDF</a>";
+            document.currentScript.parentElement.appendChild(element);
+        }
+    </script>
 </figure>
