@@ -22,10 +22,10 @@
       align-items: baseline;
       gap: 16px;
       width: max-content;
-      
+
       &:hover {
         text-decoration: none;
-  
+
         span {
           text-decoration: underline;
         }
@@ -358,6 +358,11 @@
         max-width: 100%;
       }
 
+    }
+
+    img,
+    video,
+    embed {
       border-radius: 4px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.21);
     }

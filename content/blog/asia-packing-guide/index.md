@@ -7,6 +7,7 @@ draft: false
 featuredImage: featured.webp
 # featuredImageSource: ['NAME', 'https://unsplash.com/@NAME?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 images: []
+showToc: false
 ---
 
 # Tech
@@ -21,8 +22,6 @@ images: []
 - Charging brick with 4 USB ports. Living the USB-C life
 - Travel adapter (EU &rarr; US/JP/UK plug) 
 - Head-mounted light
-
-{{< table-of-contents "hidden" >}}
 
 ---
 # Clothing

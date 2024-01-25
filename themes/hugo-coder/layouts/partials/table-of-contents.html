@@ -1,5 +1,8 @@
-{{ $className := .className }}
 {{ $context := .context }}
+{{ $className := .className }}
+{{ if eq $context.Params.showToc false }}
+{{ $className = printf "%s hidden" $className }}
+{{ end }}
 {{ if and
     (gt (len (findRE "\n#+" $context.RawContent)) 2) 
     (or .manual (eq (len (findRE "table-of-contents" $context.RawContent)) 0))

@@ -6,6 +6,7 @@ date: 2022-12-05T13:36:00+07:00
 draft: false
 categories: ['project']
 featured: true
+showToc: false
 ---
 
 <!-- 
@@ -68,8 +69,6 @@ Recently, I came across a [blog post by Daniel Immke](https://daniel.do/article/
 {{< /image >}}
 
 Suddenly, my own blog felt antiquated and stiff and I felt inspired to improve its design. I'll talk about how I completely redesigned the blog listing page and my search for an expressive font. I designed a logo for the site and added a place to showcase some humble art. If the before--after comparison caught your interest, stick around to see how I did it.
-
-{{< table-of-contents "hidden" >}}
 
 ---
 1. [Redesigning the list of blog posts]({{< ref "#redesign-blog-list" >}})
