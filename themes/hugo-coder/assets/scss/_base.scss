@@ -59,24 +59,21 @@ h6 {
   margin: 6rem 0 2.5rem 0;
 
   &:hover .heading-link {
-    opacity: 1;
+    opacity: 0.8;
   }
 
   .heading-link {
-    color: $link-color;
-    font-weight: inherit;
+    font-weight: normal;
     text-decoration: none;
     font-size: 77%;
+    padding: 0 12px;
+    color: $fg-color;
+    opacity: 0;
+    transition: opacity ease-in-out 0.15s;
     position: absolute;
     transform: translateX(-100%);
-    opacity: 0;
-    transition: opacity 0.15s;
-
-    :first-child {
-      margin-right: 1rem;
-    }
-
-    &:focus {
+    
+    &:focus, &:hover {
       opacity: 1;
     }
   }
