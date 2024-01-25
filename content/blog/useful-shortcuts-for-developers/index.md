@@ -2,7 +2,7 @@
 title: "36 Useful Shortcuts for Developers"
 subtitle: "Boost your productivity writing, coding, and working."
 date: 2024-01-25T08:14:04+01:00
-draft: true
+draft: false
 description: "Boost your productivity with these shortcuts for Mac, IntelliJ, and general text editing."
 ongoing: false
 featured: false
