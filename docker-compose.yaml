@@ -10,7 +10,7 @@ services:
       - ./public:/usr/share/nginx/html
     labels:
       traefik.enable: "true"
-      traefik.http.routers.filippo-orru.rule: "Host(`filippo-orru.com`)"
+      traefik.http.routers.filippo-orru.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`)"
       traefik.http.routers.filippo-orru.entrypoints: "https"
       traefik.http.routers.filippo-orru.tls: "true"
       traefik.http.services.filippo-orru.loadbalancer.server.port: "80"
