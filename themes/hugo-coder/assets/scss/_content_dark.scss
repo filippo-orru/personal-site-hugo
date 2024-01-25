@@ -126,17 +126,18 @@
         }
       }
     }
-  }
 
-  img,
-  video,
-  embed {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
-  }
+    figure {
+      img,
+      video,
+      embed {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+      }
+    }
 
-
-  .image-comparison-slider {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    .image-comparison-slider {
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+    }
   }
 }
 
