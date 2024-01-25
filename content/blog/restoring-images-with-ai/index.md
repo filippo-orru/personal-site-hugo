@@ -122,7 +122,7 @@ Lastly, I want to say that working on this project with my three colleagues was 
 
 # More
 - Read how I [redesigned this site]({{< ref "/blog/updating-site-theme" >}}).
-- Want to hear about another project? [How I built a split keyboard](({{< ref "/blog/lily58" >}})).
+- Want to hear about another project? [How I built a split keyboard]({{< ref "/blog/lily58" >}}).
 - Or you can [read about me]({{< ref "/about-me" >}}).
 
 *All figures in this post were drawn by me.*
