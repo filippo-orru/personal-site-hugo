@@ -15,7 +15,7 @@ subInfo = 'Graz, Austria'
 colorScheme = "dark"
 tableOfContents = true
 # avatarURL = "images/avatar.png"
-featuredPage = "/blog/updating-site-theme"
+featuredPage = "/blog/busy-friends-make-scheduling-hard"
 # postHeaderMessageTitle = "Welcome :)"
 postHeaderMessage = "Hi, I'm Filippo. A software engineer living in Graz, Austria. On this blog I write about my programming projects and other interests. Learn more [about me](/about-me)."
 

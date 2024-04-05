@@ -1,12 +1,12 @@
 ---
 title: "Busy Friends Make Scheduling Hard"
 subtitle: "... but quando.events makes it easy"
-date: 2024-03-18T16:36:08+01:00
-draft: true
+date: 2024-04-04T16:36:08+01:00
+draft: false
 description: How I built a site that makes it easy to find time to meet your friends in your schedule in 10 days.
 
 ongoing: false
-featured: false
+featured: true
 categories: ['project']
 featuredImage: featured.jpg
 featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
