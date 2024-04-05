@@ -119,6 +119,10 @@ Sketch of the calendar view and final product.
 
 
 # Tech
+{{< notice type="warning" >}}
+The project is open source! [github.com/filippo-orru/quando.events](https://github.com/filippo-orru/quando.events)
+{{</ notice }}
+
 I went from the idea to release in just 10 days. Usually, I work with React, Flutter, or static websites, but for this project, I wanted to try out a new stack. I went with [Nuxt](https://nuxt.com), a meta-framework that bundles Vue with a backend and some other helpful bits into one compelling package. It offers great DX and enables extremely fast iteration.
 
 Stack:
@@ -154,6 +158,6 @@ To try it out, head over to [www.quando.events](https://www.quando.events) now, 
 
 # More
 - Read [how I redesigned this website]({{< ref "/blog/updating-site-theme" >}}).
-- Learn more [about me]({{< ref "/blog/updating-site-theme" >}}).
+- Learn more [about me]({{< ref "/about-me" >}}).
 - Check out [my other posts]({{< ref "/blog/" >}}).
 - Find me on [LinkedIn](https://linkedin.com/in/filippo-orru).
