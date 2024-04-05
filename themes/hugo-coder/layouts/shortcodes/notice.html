@@ -3,6 +3,7 @@
 {{- $title := "" -}}
 {{- $useMarkdownify := true -}}
 {{- $centeredClassName := "" -}}
+{{- $showIcon := true -}}
 
 {{ if .IsNamedParams }}
   {{- $type = .Get "type" -}}
@@ -15,6 +16,10 @@
   {{- if eq (.Get "centered") true -}}
   {{- $centeredClassName = "centered" -}}
   {{- end -}}
+
+  {{- if eq (.Get "showIcon") false -}}
+  {{- $showIcon = false -}}
+  {{- end -}}
 {{- else -}}
   {{- $type = .Get 0 -}}
   {{- $title = .Get 1 | default "" -}}
@@ -24,7 +29,10 @@
 <div class="notice {{ $type }} {{ $centeredClassName }}">
   {{- if ne $title "" -}}
   <div class="notice-title">
-    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>{{ i18n $title | default $title }}
+    {{- if ne $showIcon false -}}
+    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>
+    {{- end -}}
+    {{ i18n $title | default $title }}
   </div>
   {{- end -}}
   <div class="notice-content">
