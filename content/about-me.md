@@ -52,7 +52,7 @@ As my biggest project so far, I created a custom survey creation platform and th
 I was responsible for the entire design and development, which required multiple UI iterations over the course of a few months. Later, I worked with a colleague to integrate the survey fill-out page into the app, allowing users to respond right from the news feed. This proved to be very valuable, as it **increased survey response rates**. 
 
 {{< image src="images/survey-creator.png" alt="The survey creator" >}}
-    The survey creator.
+The survey creator.
 {{< /image >}}
 
 Read [my blog post]({{< ref "/blog/bachelor-thesis" >}}) about the survey creator, or read the [official article on studo.com](https://studo.com/en/universities/studo-survey). 

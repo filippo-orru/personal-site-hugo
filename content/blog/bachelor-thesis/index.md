@@ -25,7 +25,7 @@ I compared it against two third-party solutions, Google Forms and SurveyJS, hypo
 
 ## Studo Survey
 {{< image src="images/survey-creation-platforms/custom/creator.png" alt="Studo survey: creator view" >}}
-    The creator view of Studo survey.
+The creator view of Studo survey.
 {{< /image >}}
 
 The survey creaeator interface has the goal of being simple to use, allowing a range of users with widely different expertise to easily create a survey. It can be accessed from within the Studo Newsroom when creating a post.
@@ -33,32 +33,32 @@ The survey creaeator interface has the goal of being simple to use, allowing a r
 The main content is the list of questions of the current survey, while there is a live preview floating on the right side, of what the survey will look like from the respondent's perspective. Questions can be of multiple types, including multiple choice and single choice, free text and quiz format. There's also the option of inserting an info text, which for instance could be used to explain the topic of the following questions. Survey items also have additional settings, such as marking them as optional.
 
 {{< image src="images/survey-creation-platforms/custom/responses.png" alt="Studo Survey responses view" >}}
-    Statistic for the responses to a survey question question.
+Statistic for the responses to a survey question question.
 {{< /image >}}
 
 After gathing some responses. The results can be viewed in a list which shows each question with a bar chart or table, depending on the question type. Choice-questions also have the option to view the responses as a table.
 
 {{< image src="images/survey-creation-platforms/custom/inline.png" alt="Survey inline in Studo app news feed" >}}
-    Survey being displayed inline in the Studo app news feed.
+Survey being displayed inline in the Studo app news feed.
 {{< /image >}}
 
 While not yet available at the time of writing the bachelor thesis, surveys can now be filled out right in the Studo app's news feed. Previously, users had to tap the post and then the survey would open in an in-app browser.
 
 ## Google Forms
 {{< image src="images/survey-creation-platforms/google/overview.png" alt="Google Forms overview page" >}}
-    Overview page of Google Forms, containing one survey.
+Overview page of Google Forms, containing one survey.
 {{< /image >}}
 
 Google Forms is a tool included in Google's popular 'Google Docs Editors' suite of web applications. As most other products of the search engine giant, their survey creation tool is free to use. Unlike competitors such as [SurveyMonkey](https://surveymonkey.com/) or [Typeform](https://www.typeform.com/), Google Forms does not place strict limits on the number of surveys a user can create or the amount of responses a survey can receive.
 
 {{< image src="images/survey-creation-platforms/google/creator.png" alt="Google Forms: create new survey" >}}
-    Creator view of Google Forms.
+Creator view of Google Forms.
 {{< /image >}}
 
 When creating a new survey, each question is laid out on its own card, which can be dragged to change the order of questions. 'Sections' can be used to split longer surveys into multiple steps. All questions in one section are shown in a list view and the user is can navigate to the next section freely. There is a variety of different question types, such as free text, multiple choice, checkboxes, linear scale, dropdown and even a file upload option.  This allows creating surveys or forms of many different styles and requirements.Google Forms also offers some customization options, like setting a custom theme or a header image for the survey.
 
 {{< image src="images/survey-creation-platforms/google/responses-fullsize.png" alt="Google Forms statistics of responses" >}}
-    Google Forms presents statistics for collected responses.
+Google Forms presents statistics for collected responses.
 {{< /image >}}
 
 Once a survey has been published and received a few responses, they can be analyzed by heading to the 'responses' tab of a survey. Just like the editing view, it shows a survey's responses in a list, each with appropriate visualisation via graph or table. 
@@ -69,13 +69,13 @@ Once a survey has been published and received a few responses, they can be analy
 SurveyJS is made up of multiple modules that work together around the concept of providing your own database to store survey structure data as well as responses. These modules are the 'Survey Library' (allows users to fill out surveys), the 'Creator' and the 'Analytics' module, all readily available for easy installation via npm, alongside integrations for popular app frameworks like Vue or React. While the libraries are open source, a license must be bought for commercial use. 
 
 {{< image src="images/survey-creation-platforms/survey-js/creator-overview.png" alt="SurveyJS creator view" >}}
-    Overview of SurveyJS' 'designer', its creation interface.
+Overview of SurveyJS' 'designer', its creation interface.
 {{< /image >}}
 
 The survey 'designer' allows creating surveys. It lists questions, categorized into pages, equivalent to Google Forms' sections. However, configuration options for the survey itself, as well as questions and question types go much further than the other two tools. Each component can be tweaked, styled, expanded and configured to one's content. There is a plethora of simple and advanced question types available, including matrix, rating, boolean, image picker, signature and more. The survey can be previewed at any time, to see how it will look to the user.
 
 {{< image src="images/survey-creation-platforms/survey-js/preview.png" alt="SurveyJS preview tab" >}}
-    Example question in the SurveyJS preview tab.
+Example question in the SurveyJS preview tab.
 {{< /image >}}
 
 The 'Preview' tab allows previewing the survey as it will look to the user. The design is very adaptable, but the structure of the survey is primarily geared towards desktop use, with the mobile UX being significantly worse. The third tab is allows configuring advanced logic to show or hide questions based on previous answers or other conditions.
@@ -103,8 +103,8 @@ The three hypotheses this thesis aimed to answer are:
 
     {{< items-row align="center" >}}
         {{< image src="images/performance/speedindex_compare_progress.png" alt="Speedindex visualisation" >}}{{< /image >}}
-        {{< image src="images/performance/speedindex_vc_progress.png" alt="Speedindex graph visualisation" >}}{{< /image >}}
-    {{< /items-row >}}
+{{< image src="images/performance/speedindex_vc_progress.png" alt="Speedindex graph visualisation" >}}{{< /image >}}
+{{< /items-row >}}
 
     The performance of the survey fill-out view was measured using the Lighthouse tool. This tool is used to quantify the performance of websites and provides metrics such as: *Time to Interactive*, the time it takes for the page to become interactive, and *SpeedIndex*, how quickly the page contents are visually populated. The above image shows a visualisation of how SpeedIndex is calculated and on the right a graph of SpeedIndex progressing for the two examples.
 
@@ -129,7 +129,7 @@ The 'closed' event was logged when the *onbeforeunload* event occurs. The proble
 To conduct the A/B test, three posts were published to users of the Studo app in August 2022, each post containing a survey created using one of the three tools. The surveys were distributed randomly to users, so that each user received a survey created using one of the three tools. After around 48 hours the posts were unpublished, each post had reached the target of receiving ca. 14,000 impressions.
 
 {{< image src="images/20221006202338.png" alt="Table of funnel events for A/B test" >}}
-    Measurement of funnel events for survey comparison A/B test.
+Measurement of funnel events for survey comparison A/B test.
 {{< /image >}}
 <!-- TODO maybe create chart or highlight key points -->
 
@@ -145,7 +145,7 @@ Measuring page load time is not straightforward, but SpeedIndex and `time to int
 The test was performed using webpagetest.org. It offers Lighthouse testing using emulated devices with consistent CPU power and a stable and consistent internet connection. The SpeedIndex and `time to interactive' values that the performance test measured are displayed in the table below.
 
 {{< image src="images/20221006203058.png" alt="Table of page load speed metrics" >}}
-    WebPageTest performance test results.
+WebPageTest performance test results.
 {{< /image >}}
 <!-- TODO replace with chart -->
 

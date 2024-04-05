@@ -16,7 +16,7 @@ categories: ['project']
 The Lily58L is a split mechanical keyboard that allows for extensive customization. You get to choose and customize every single part of your keyboard, from the choice of microcontrollers (USB-C!) to the keycaps. Then assemble and solder your own keyboard from that. 
 
 {{< image src="images/featured.jpg" alt="Final result: Lily58L" >}}
-  Final product, my self-made Lily58L
+Final product, my self-made Lily58L
 {{< /image >}}
 
 »*What is a split keyboard?*« I hear you ask. It is a type of mechanical keyboard that is split into two halves, one for each hand. The halves are connected via a 3.5mm aux cable and can be placed exactly at each hand's natural resting position. Placing the hands further apart opens up the shoulders, a more ergonomic posture than that conventional keyboards force us into. This is especially relevant for office workers who spend long hours typing.
@@ -40,13 +40,13 @@ As a base, I used the [Lily58L kit](https://keycapsss.com/keyboard-parts/pcbs/71
 After receiving all the required parts and tools, I got to work right away. My soldering setup looks super sketchy but did its job. At one point during the build, the tip of the cheap soldering iron I was using simply melted. Not sure if it was my fault, but the thicker tips worked fine afterwards. 
 
 {{< image src="images/build-items.jpg" alt="Overview of build stations and tools" >}}
-  (clockwise) The first soldering station; The melted tip of my cheap soldering iron; Elite-C laying in its package; Second soldering station on an old baking sheet.
+(clockwise) The first soldering station; The melted tip of my cheap soldering iron; Elite-C laying in its package; Second soldering station on an old baking sheet.
 {{< /image >}}
 
 I started by soldering one diode and one key switch socket for each key. It turned out to be quite good practice since the diodes are quite small and I had to solder 232 points! Good thing I'd only have to do this step once.
 
 {{< image src="images/diodes.jpg" alt="Closeup shots of soldered diodes" >}}
-  (clockwise) Closeup of (poorly) soldered diodes; Diode size comparison; Overview of the two PCBs.
+(clockwise) Closeup of (poorly) soldered diodes; Diode size comparison; Overview of the two PCBs.
 {{< /image >}}
 
 
@@ -57,11 +57,11 @@ The next step was to mount the Elite-C for each half. The idea is quite straight
 After completing the right half, I was intensely excited when I plugged it into my Mac for the first time. Just a couple of weeks after deciding to buy it, I'd be typing on this awesome keyboard! I proceeded to flash the chip's firmware and had a small heart attack when I noticed that one column of keys was not responding, but the problem was quickly solved by reflowing some of the admittedly poor solder joints on the PCB.
 
 {{< image src="images/bad-joints.jpg" alt="Comparison of solder joints at the beginning and end of the project. Progressed from quite bad and uneven to pretty even." >}}
-  Comparison of solder joints at the beginning and end of the project. Started with bad and uneven, but progressed to decent solder joints.
+Comparison of solder joints at the beginning and end of the project. Started with bad and uneven, but progressed to decent solder joints.
 {{< /image >}}
 
 {{< image src="images/right-half-done.jpg" alt="Right half of the keyboard is done" >}}
-  Right half of the keyboard is done 🎉
+Right half of the keyboard is done 🎉
 {{< /image >}}
 
 
@@ -76,7 +76,7 @@ One half is done, just one more to go! Now comes the first fail. Since the PCBs 
 After many hours of trial and error debugging, reflowing all solder points, I was despairing. Thankfully, the kind people in keycapsss' discord server were able to find the mistake: the wrong column. Now began a period of brutal war. I tried my best to desolder the microcontroller from the PCB to salvage the parts. I tried this for around 10 hours to no success, using desoldering wick, solder grease, and a hot air station, but still lost the war. In the end, I clipped the header legs to free the now broken controller. It is now framed on my wall and tells its story.
 
 {{< image src="images/elite-c.jpg" alt="The broken Elite-C, framed on my wall" >}}
-  The broken Elite-C: freed, framed, and up close
+The broken Elite-C: freed, framed, and up close
 {{< /image >}}
 
 

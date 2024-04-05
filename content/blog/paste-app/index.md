@@ -50,7 +50,7 @@ categories: []
   - a note on security :thinking:
 
 {< image src="images/image.jpg" alt="ALT" >}}
-  DESCRIPTION
+DESCRIPTION
 {< /image >}}
 
 -->
@@ -74,13 +74,13 @@ Paste allows fuzzy search for all my clipboard history, which works okay. But of
 The app must have a database somewhere containing all copied snippets. I was able to find it by inspecting the `Paste.app` process in the Activity Monitor. The "Open Files and Ports" tab contains an interesting file handle: `Paste.db`.
 
 {{< image src="images/paste-handles.png" alt="The Paste app's open files and ports, in the macOS Activity Monitor." >}}
-  The Paste app's open files and ports, in the macOS Activity Monitor.
+The Paste app's open files and ports, in the macOS Activity Monitor.
 {{< /image >}}
 
 At first, I was unsure whether I'd be able to easily read the database's contents, but my first hunch turned out to be correct. It's simply SQLite. Using the command line to browse through an unknown database is pretty cumbersome, so I used [DB Browser for SQLite](https://sqlitebrowser.org), which makes it easy to explore SQLite databases. There are a dozen tables, but the interesting one is `ZSNIPPET`.
 
 {{< image src="images/sqlite-browser-1.png" alt="The ZSNIPPET table in Paste's database." >}}
-  The `ZSNIPPET` table in Paste's database. Blob of a snippet shown in the top right.
+The `ZSNIPPET` table in Paste's database. Blob of a snippet shown in the top right.
 {{< /image >}}
 
 This table contains everything I copied in the past 6 months. My first instinct was to use the `timestamp` to quickly jump to the time the Bitwarden note was created. However, for some reason, Paste's timestamps do not match usual Unix timestamps. I also tried using a known timestamp to calculate the offset between the two, but this didn't work either.

@@ -6,7 +6,7 @@ featuredImage: featured.jpg
 ---
 
 {{< image src="wireframe.png" alt="Wireframe view" >}}
-    Wireframe view
+Wireframe view
 {{< /image >}}
 
 This is an (almost) exact copy of this artwork created by Folio Illustrations: https://dribbble.com/shots/18213186-Yacht

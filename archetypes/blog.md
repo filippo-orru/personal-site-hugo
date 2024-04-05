@@ -30,7 +30,7 @@ categories: []
 - conclusion
 
 {< image src="images/image.jpg" alt="ALT" >}}
-  DESCRIPTION
+DESCRIPTION
 {< /image >}}
 
 -->

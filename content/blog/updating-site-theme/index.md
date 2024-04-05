@@ -65,7 +65,7 @@ In this post, I explain my thoughts behind the decisions for layout, logo, fonts
 Recently, I came across a [blog post by Daniel Immke](https://daniel.do/article/laying-myself-off-from-amazon/) about quitting his job at Amazon. It's an interesting read, but **what really caught my eye was the design**. The choice of fonts, the subtle text color, the animated shapes in the header - beautiful.
 
 {{< image src="img/daniel-do.png" alt="Screenshot of https://daniel.do/article/laying-myself-off-from-amazon/" >}}
-  Inspiration - Daniel Immke's blog
+Inspiration - Daniel Immke's blog
 {{< /image >}}
 
 Suddenly, my own blog felt antiquated and stiff and I felt inspired to improve its design. I'll talk about how I completely redesigned the blog listing page and my search for an expressive font. I designed a logo for the site and added a place to showcase some humble art. If the before--after comparison caught your interest, stick around to see how I did it.
@@ -93,7 +93,7 @@ What I really like about Daniel's logo font is it's elegant *and* playful, witho
 Then I found [Bely Display](https://www.type-together.com/bely-font).
 
 {{< image src="img/fonts-comparison.jpg" alt="Comparing fonts: Tiempos Headline, Yeseva One, Bely Display" >}}
-  Comparison between 'Tiempos Headline', 'Yeseva One' and 'Bely Display'
+Comparison between 'Tiempos Headline', 'Yeseva One' and 'Bely Display'
 {{< /image >}}
 
 Considering my blog had 23 unique visitors in the past 7 days (17 of which were me), the only thing I'm really willing to spend on it is my time. So finding out that a web license for Bely Display costs 35 USD stung a bit. 
@@ -101,7 +101,7 @@ Considering my blog had 23 unique visitors in the past 7 days (17 of which were 
 The search for a free alternative began. I tried fontspring's [Matcherator](https://www.fontsquirrel.com/matcherator), which takes a screenshot of some text and returns a list of similar-looking fonts. This turned out to be quite sobering. None of the fonts, free or paid, compared to Bely. Most felt crude, not as sharp and expressive. The only somewhat similar font I could find is [Nocturne Serif](https://www.fontspring.com/fonts/machalski/nocturne-serif). I guess you just can't beat love at first sight, so in the end I bought the license for Bely Display. 
 
 {{< image src="img/similar-fonts.jpg" alt="List of fonts similar to Bely Display, created using fontspring's Matcherator." >}}
-  Fonts similar to Bely Display (top). Closest match highlighted: Nocturne Serif (middle).
+Fonts similar to Bely Display (top). Closest match highlighted: Nocturne Serif (middle).
 {{< /image >}}
 
 They say "to travel far, you need to travel together", so the next step was finding a font for the body text and secondary headlines. I first landed on [Merriweather](https://fonts.google.com/specimen/Merriweather) after playing around with some fonts offered by Google Fonts. While I was writing this article, I switched the body font to [Poppins](https://fonts.google.com/specimen/Poppins). It fits the site better since it feels more modern and less clunky than Merriweather.
@@ -111,14 +111,14 @@ They say "to travel far, you need to travel together", so the next step was find
 Having decided to use Bely as my expressive display font, I started creating a logo to replace the previous plain text. I started by drafting up some ideas on my reMarkable and then used Affinity Designer 2 to create the logo. It's a simple two-lined text with a splash of yellow.
 
 {{< image src="img/logo-light-dark.png" alt="New logo for the website, light and dark mode." >}}
-  New logo for the website, in light and dark mode. Created using Affinity Designer 2.
+New logo for the website, in light and dark mode. Created using Affinity Designer 2.
 {{< /image >}}
 
 The site's theme is based on [hugo-coder](https://github.com/luizdepra/hugo-coder). It's free and supports both light and dark mode and has a minimal and clean look. A great starting point for customization.
 Most notably, the redesigned home page features the new logo in the center, which really draws attention to the name. Around it, I added some matrix dots inspired by a recent [newsletter by Erik D. Kennedy](https://www.learnui.design/newsletter.html).
 
 {{< image src="img/comparisons/home-new.png" alt="New home page." >}}
-  New home page.
+New home page.
 {{< /image >}}
 
 There were some challenges while designing. I wanted the logo's yellow splash to have different opacities on the text and on the background. But the overlay effects used for this are unsupported when exporting to SVG. This meant that the layers would get rasterized, defeating the purpose of exporting to SVG in the first place. So I used Affinity Designer's new shape builder feature to split the yellow from the white text. This made for minimal SVG sizes after exporting, since everything is now reduced to simple curves with a background color.
@@ -147,7 +147,7 @@ However when I do create something, I'd like to showcase it somewhere just for f
 I drafted a page with a grid of images that lists all my art posts. I took some inspiration from Instagram's layout and the portfolio page of the theme [Kross](https://demo.gethugothemes.com/kross/). It doesn't look crazy innovative, but why reinvent the wheel when a simple and familiar layout gets the job done? 
 
 {{< image src="img/art-list.png" alt="List of art posts, with a grid of images." >}}
-  List of art posts, laid out as a grid of images.
+List of art posts, laid out as a grid of images.
 {{< /image >}}
 
 Hugo makes it easy to compress images I supply. In the grid shown above, an individual image is never larger than 400x400 pixels. So when the page is built, all images are compressed to this size and converted to `.webp`, which makes for minimal file sizes and quick page loads. Of course, when viewing an individual artwork, the full-size image is used. 

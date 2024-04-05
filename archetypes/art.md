@@ -9,5 +9,5 @@ featuredImage: featured.jpg
 
 # TODO fill or remove
 {{< image src="secondary.jpg" alt="alt text" >}}
-    Caption
+Caption
 {{< /image >}}

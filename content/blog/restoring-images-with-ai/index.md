@@ -47,7 +47,7 @@ images: []
         - read paper -> adapt model -> see improvements
 
 {< image src="images/image.jpg" alt="ALT" >}}
-  DESCRIPTION
+DESCRIPTION
 {< /image >}}
 
 -->
@@ -72,7 +72,7 @@ The dataset we used, [*Labeled Faces in the Wild*](https://vis-www.cs.umass.edu/
 
 
 {{< image src="images/dataset.webp" alt="Some examples from the LFW dataset." >}}
-  Some examples from the LFW dataset.
+Some examples from the LFW dataset.
 {{< /image >}}
 
 
@@ -86,19 +86,19 @@ We were inspired by the papers *Image Restoration Using Convolutional Auto-encod
 2. We introduced *skip connections* to our model, shown in the next image. This means that the output of each encoder layer is fed to its corresponding decoder layer, enabling later decoder layers to restore fine details that were lost when compressing the input in previous layers. 
  
 {{< image src="images/model-architecture.jpg" alt="Final architecture of the model." >}}
-  The final architecture of the model.
+The final architecture of the model.
 {{< /image >}}
 
 The model is made up of multiple encoder blocks that compress the image, then the same number of decoder blocks. The output dimensions are the same as the input dimensions. 
 
 {{< image src="images/encoder.jpg" alt="Layers of the encoder block." >}}
-  Layers of the encoder block.
+Layers of the encoder block.
 {{< /image >}}
 
 The encoder block is very simple. It just performs two convolutions, one of which downsamples the input to half of its x and y dimensions. Afterward, we apply *dropout* and *batch normalization* to improve the model's generalization.
 
 {{< image src="images/decoder.jpg" alt="Layers of the decoder block." >}}
-  Layers of the decoder block.
+Layers of the decoder block.
 {{< /image >}}
 
 In the decoder, we want to concatenate the input with the corresponding encoder's output (or the actual input image, in the case of the last decoder). To do this, we first upsample the image with a transposed convolution, concatenate it with the *skip connection* input, and apply two more convolutions. 
@@ -111,7 +111,7 @@ This worked much better than expected! We trained a convolutional autoencoder wi
 Plotting the training and validation loss reveals no signs of overfitting, so maybe we could have improved the model's performance even more with more training. I also feel like a larger number of kernels and a size of 5x5 would be worth exploring. For our final project report, we conducted a hyperparameter search, comparing 7 variations of the base model using different kernel sizes, numbers of layers, and with or without skip connections. The following image shows the input image, the results of training these variations for 20 epochs, and the ground truth image.
 
 {{< image src="images/model-comparison.png" alt="Overview of hyperparameter search." >}}
-  Overview of hyperparameter search.
+Overview of hyperparameter search.
 {{< /image >}}
 
 However, the model has some limitations. First, while images sized 48x48 pixels were fine, performance suffered greatly when we tried using images of 128x128 pixels. This is likely because the model's architecture is static -- we always apply the same convolutional kernels with size 3x3, no matter the image size. On a larger image, this results in a relatively smaller receptive field. 

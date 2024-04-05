@@ -12,5 +12,5 @@ I was invited to the bachelor party of one of my friends and designed these shir
 Both names have been changed for privacy.
 
 {{< image src="images/guests-shirt.webp" alt="Shirt for bachelor party guests" >}}
-    Shirt for bachelor party guests
+Shirt for bachelor party guests
 {{< /image >}}
