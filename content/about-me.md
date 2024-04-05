@@ -41,8 +41,8 @@ The Studo App is an app for university students. It integrates useful informatio
 {{</ notice >}}
 
 ## Modern Web Development
-{{< notice warning >}}
-Keywords: React • JavaScript • Kotlin • Elm • Typescript • Svelte • HTML • CSS • Angular
+{{< notice type="warning" title="Keywords" showIcon=false >}}
+React • Vue • HTML • CSS • Angular • JavaScript & TypeScript • Kotlin • Elm • Svelte
 {{</ notice >}}
 
 As my biggest project so far, I created a custom survey creation platform and then wrote my bachelor thesis about it. It is integrated into the Studo Newsroom, which is a platform that allows partner companies to publish content for the Studo news feed. 
@@ -57,14 +57,16 @@ The survey creator.
 
 Read [my blog post]({{< ref "/blog/bachelor-thesis" >}}) about the survey creator, or read the [official article on studo.com](https://studo.com/en/universities/studo-survey). 
 
-Like most of Studo's web projects, the survey creator is written in Kotlin and transpiled to JavaScript. Kotlin provides a number of benefits for developers, especially on smaller teams. Everything is type checked and because we can access the same class from both backend and frontend code, API contracts are kept at the compiler level. We use React through a Kotlin wrapper that ensures type safety for all properties and functions.
+Like most of Studo's web projects, the survey creator is written in KotlinJS and transpiled to JavaScript. Kotlin provides a number of benefits for developers, especially on smaller teams. Everything is type checked and because we can access the same class from both backend and frontend code, API contracts are kept at the compiler level. We use React through a Kotlin wrapper that ensures type safety for all properties and functions.
 
 In my bachelor thesis, I compared the survey creator against Google Forms and SurveyJS. Spoiler alert: mine was found to be easiest to use, which was one of the main goals. I graduated with distinction. 
 
+For a recent project, I created a website to simplify meeting busy friends. I went from concept to release in just 10 days, read more about it here: [Busy Friends make scheduling hard]({{< ref "/blog/busy-friends-make-scheduling-hard" >}}).
+
 
 ## Mobile App Development
-{{< notice warning >}}
-Keywords: Kotlin • Swift • Flutter • Dart • Realm • Java • UI Design
+{{< notice type="warning" title="Keywords" showIcon=false >}}
+Kotlin • Swift • Flutter • Dart • Realm • Java • UI Design
 {{</ notice >}}
 
 - I worked on extending the Studo app's **mail client** to support authentication via **OAuth**.
@@ -83,8 +85,8 @@ Keywords: Kotlin • Swift • Flutter • Dart • Realm • Java • UI Design
 
 
 ## Backend Services, Databases, DevOps
-{{< notice warning >}}
-Keywords: Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • C++ • Unix • Nginx • Node • Traefik • Docker
+{{< notice type="warning" title="Keywords" showIcon=false >}}
+Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • C++ • Unix • Nginx • Node • Traefik • Docker
 {{</ notice >}}
 
 As part of a cooperation project with a university in Graz, I developed a service that imports data from the the university's systems and synchronizes it to **Microsoft Teams**. For example, it creates teams for each course and **automatically creates events**. This service is now included as a part of [Studo Flow](https://studo.com/en/administration/flow).
@@ -101,8 +103,8 @@ I deployed the server for my game 'Four in a Row' on a cheap Ubuntu server. Writ
 
 ## Interpersonal & Development Processes
 
-{{< notice warning >}}
-Keywords: Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring • Mentorship
+{{< notice type="warning" title="Keywords" showIcon=false >}}
+Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring • Mentorship
 {{</ notice >}}
 
 As it turned out, there is much more than coding that makes a great Software Engineer. I learned how to **communicate effectively** with coworkers, across teams, and with clients. This was great for my personal growth.
@@ -114,6 +116,7 @@ I am also partly responsible for hiring and onboarding new developers. This enta
 
 As part of my work at Studo, I am responsible for managing our **excellent user support**. This means I coordinate first, second, and third-level support, I investigate challenging **cross-project issues** when they come up, and call upon my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced **new processes** regarding ticket assignment, hand-off, and inter-team communication.
 
+In March 2024, I started automating parts of the first-level support by leveraging LLMs. So far, the results look promising.
 
 # More
 - Check out my [LinkedIn profile](https://linkedin.com/in/filippo-orru).
