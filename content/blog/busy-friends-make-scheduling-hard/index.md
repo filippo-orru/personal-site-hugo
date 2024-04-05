@@ -1,6 +1,6 @@
 ---
 title: "Busy Friends Make Scheduling Hard"
-subtitle: "... but quando.events makes it easy"
+subtitle: "... but quando.events makes it easy!"
 date: 2024-04-04T16:36:08+01:00
 draft: false
 description: How I built a site that makes it easy to find time to meet your friends in your schedule in 10 days.
@@ -63,33 +63,6 @@ Keep on reading to learn more about how I did it, or try it out now: [Create a n
 
 {{< table-of-contents >}}
 
-# Tech
-I went from the idea to release in just 10 days. Usually, I work with React, Flutter, or static websites, but for this project, I wanted to try out a new stack. I went with [Nuxt](https://nuxt.com), a meta-framework that bundles Vue with a backend and some other helpful bits into one compelling package. It offers great DX and enables extremely fast iteration.
-
-Stack:
-- Frontend
-    - [Vue 3](https://vuejs.org/) for all UI. Includes server-side rendering with hydration.
-    - [Typescript](https://typescriptlang.org), because if I have to use JS, I'd like to have types, please.
-    - [Tailwind CSS](https://tailwindcss.com), for maintainable styling.
-    - [Pinia](https://pinia.vuejs.org/), for managing state and persisting to local storage.
-- Backend
-    - API: [Nitro](https://nitro.unjs.io) with Websocket support, for sending real-time updates.
-    - Database: [Redis](https://redis.io/) as a simple key-value store for the meeting data.
-    - [Plausible Analytics](https://plausible.io/) because it's privacy-friendly and can be self-hosted
-- DevOps
-    - [Hetzner](https://www.hetzner.com/cloud/) for my cheap VPS. It powers all my services, including this website, *quando.events*, my [Four in a Row]({{< ref "/blog/four-in-a-row" >}}) game, and more.
-    - [Traefik](https://traefik.io/traefik/) to proxy requests to the service.
-    - [Docker Compose](https://docs.docker.com/compose/) to easily build and deploy the bundled Nuxt app, Redis, and Plausible.
-
-
-## About Nuxt & Vue
-Honestly, working with Nuxt was really pleasant. I've read that "opinionated products breed passionate customers" and this certainly rings true in the case of Nuxt. If you follow the conventions, *everything just works*.
-
-Routing is based on directories by default. Server-side rendering works out of the box, which is important for good SEO and fast page loads. Of course, you still get all of Vue's reactivity after the page is *hydrated*, enabling highly interactive pages. 
-
-Vue offers a lot of useful built-in components, like [transitions](vuejs.org/guide/built-ins/transition). Adding dialogs with [Headless UI](headlessui.com/vue/dialog) was a breeze.
-
-
 # Concept
 When starting to create the project's concept, the goal was to **focus on an MVP** and keep complexity as low as possible. The initial name was 'meet me', which got superseded by 'quando.events' later on.
 
@@ -143,6 +116,33 @@ Sketch of the home page and final product.
 {{< image src="images/sketch-desktop-calendar.jpg" alt="Sketch of the calendar view and final product." >}}
 Sketch of the calendar view and final product.
 {{</ image >}}
+
+
+# Tech
+I went from the idea to release in just 10 days. Usually, I work with React, Flutter, or static websites, but for this project, I wanted to try out a new stack. I went with [Nuxt](https://nuxt.com), a meta-framework that bundles Vue with a backend and some other helpful bits into one compelling package. It offers great DX and enables extremely fast iteration.
+
+Stack:
+- Frontend
+    - [Vue 3](https://vuejs.org/) for all UI. Includes server-side rendering with hydration.
+    - [Typescript](https://typescriptlang.org), because if I have to use JS, I'd like to have types, please.
+    - [Tailwind CSS](https://tailwindcss.com), for maintainable styling.
+    - [Pinia](https://pinia.vuejs.org/), for managing state and persisting to local storage.
+- Backend
+    - API: [Nitro](https://nitro.unjs.io) with Websocket support, for sending real-time updates.
+    - Database: [Redis](https://redis.io/) as a simple key-value store for the meeting data.
+    - [Plausible Analytics](https://plausible.io/) because it's privacy-friendly and can be self-hosted
+- DevOps
+    - [Hetzner](https://www.hetzner.com/cloud/) for my cheap VPS. It powers all my services, including this website, *quando.events*, my [Four in a Row]({{< ref "/blog/four-in-a-row" >}}) game, and more.
+    - [Traefik](https://traefik.io/traefik/) to proxy requests to the service.
+    - [Docker Compose](https://docs.docker.com/compose/) to easily build and deploy the bundled Nuxt app, Redis, and Plausible.
+
+
+## About Nuxt & Vue
+Honestly, working with Nuxt was really pleasant. I've read that "opinionated products breed passionate customers" and this certainly rings true in the case of Nuxt. If you follow the conventions, *everything just works*.
+
+Routing is based on directories by default. Server-side rendering works out of the box, which is important for good SEO and fast page loads. Of course, you still get all of Vue's reactivity after the page is *hydrated*, enabling highly interactive pages. 
+
+Vue offers a lot of useful built-in components, like [transitions](vuejs.org/guide/built-ins/transition). Adding dialogs with [Headless UI](headlessui.com/vue/dialog) was a breeze.
 
 
 # Challenges
