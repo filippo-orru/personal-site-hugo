@@ -1,10 +1,11 @@
 <clickhouse>
+    <listen_host>::</listen_host>
+    <listen_host>0.0.0.0</listen_host>
+    <listen_try>1</listen_try>
     <logger>
         <level>warning</level>
         <console>true</console>
     </logger>
-
-    <!-- Stop all the unnecessary logging -->
     <query_thread_log remove="remove"/>
     <query_log remove="remove"/>
     <text_log remove="remove"/>
