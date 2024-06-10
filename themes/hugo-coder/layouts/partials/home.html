@@ -75,7 +75,7 @@
       {{ partial "posts/article-body.html" $featuredPage }}
     </article>
   </section>
-  {{ if .Site.IsServer }}
+  {{ if hugo.IsServer }}
       {{ $script := resources.Get "js/toc.js" }}
       <script src="{{ $script.RelPermalink }}"></script>
     {{ else }}

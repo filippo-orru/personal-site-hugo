@@ -1,10 +1,12 @@
 <div class="arts-post">
 
-    {{ $imageRef := .Page.Resources.GetMatch .Params.featuredImage }}
-    {{ $image := $imageRef.Resize (printf "%dx%d webp" $imageRef.Width $imageRef.Height) }}
-    <div class="cover-image">
-        <img src="{{ $image.RelPermalink }}" alt="Artwork" width="{{ $image.Width }}" height="{{ $image.Height }}" />
-    </div>
+    {{ with .Page.Resources.GetMatch .Params.featuredImage }}
+        {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+            <div class="cover-image">
+                <img src="{{ .RelPermalink }}" alt="Artwork" width="{{ .Width }}" height="{{ .Height }}" />
+            </div>
+        {{ end }}
+    {{ end }}
 
     {{ .Content }}
 </div>

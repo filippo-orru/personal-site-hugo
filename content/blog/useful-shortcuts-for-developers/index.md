@@ -60,6 +60,6 @@ As always, you should balance the time you spend optimizing something, versus us
 But I believe that **people making a living using a computer ought to invest some time into learning how to use it efficiently** and ergonomically. And as a bonus, you might reduce your risk of Repetitive Strain Injury (RSI).
 
 # More
-- Read more [about me]({{< ref "/about-me " >}}).
+- Read more [about me]({{< ref "/about-me" >}}).
 - Want to know how it took me more than 4 months to build my split keyboard? [Read about it here]({{< ref "/blog/lily58" >}}).
 - If you're curious about what I've been up to, take a look at [my recent blog posts]({{< ref "/blog/" >}}).

@@ -12,7 +12,7 @@
 
     {{ partial "posts/math.html" . }}
 
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
       {{ $script := resources.Get "js/toc.js" }}
       <script src="{{ $script.RelPermalink }}"></script>
     {{ else }}
