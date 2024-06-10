@@ -8,7 +8,6 @@ ongoing: false
 featured: false
 featuredImage: featured.png
 featuredImageSource: ['Google Maps', 'https://maps.google.com/maps/contrib/100109078814148623067']
-
 categories: []
 showToc: false
 ---
