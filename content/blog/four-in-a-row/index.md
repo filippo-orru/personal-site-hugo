@@ -44,3 +44,7 @@ You can check out the homepage at [fourinarow.ffactory.me](https://fourinarow.ff
 {{< video src="showcase-3.mp4" alt="Friends list UI" hidecontrols="true" >}}
 Friends list UI
 {{< /video >}}
+
+Four in a row was my first "big" project, but it started out very small. In the beginning there was only the game board and you'd take turns playing on one device. Step by step, I expanded it with more features and whenever I noticed that the current data structure / architecture was not working, I rewrote large parts of the app to improve it. This took a lot of time, effort, and careful thinking. These failed attempts led to the project's architecture you can see today.
+
+One example is the reliable online multiplayer. I created a very simple version first, but noticed that I often lost my connection, which caused the game to end for both players. To solve that, I came up with the idea to wrap each network message in a numbered package and re-send it when the connection was interrupted. This was inspired by the way TCP works.
