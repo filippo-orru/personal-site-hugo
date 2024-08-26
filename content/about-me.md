@@ -11,20 +11,23 @@ On this page, I want to give an overview of my interests and experience. If you 
 
 # Right now
 
-I live in Graz, Austria. In October 2023, I started pursuing a master's degree at [Graz Technical University](https://tugraz.at) while working as a software developer ([↓ Experience]({{< ref "#experience" >}})). The topics that interest me most right now are **deep learning** and **AI-powered information retrieval**.
+I live in Graz, Austria. After four years of working as a software engineer ([↓ Experience]({{< ref "#experience" >}})), I am currently taking a break, travelling through the Balkans. 
 
-After completing my bachelor's degree in October 2022, I spent five months exploring **Southeast Asia**, combining work and travel. I visited Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
+{{< image src="images/about-me-balkans-pictures.png" alt="Map of the Balkans with some pictures I took" >}}
+{{< /image >}}
+
 
 | When?        | What? |
 |--------------|-------|
-| 2023 - today | Start master's degree at [TU Graz](https://tugraz.at) |
-| 2020 - 2024  | Software Developer @ Studo [↓ Read more]({{< ref "#experience" >}}) |
+| 2020 - 2024  | Software Engineer @ Studo [↓ Read more]({{< ref "#experience" >}}) |
 | 2019 - 2022  | B.Sc. in Mobile Software Development at [FH Joanneum](fh-joanneum.at/mobile-software-development/bachelor/en) |
 | 2019         | Finish school, move to Graz |
 
 # Hobbies & Interests
 
 In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/categories/project" >}}), and spending time with my friends. Sometimes, when I stumble upon a new topic that sparks my interest, it draws me in for weeks. I can't help but learn as much as I can about it. This could for example be a new programming language, 3D modeling, or compute shaders.
+
+After completing my bachelor's degree in October 2022, I spent five months exploring **Southeast Asia**, combining work and travel. I visited Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
 
 # Table Of Contents
 
