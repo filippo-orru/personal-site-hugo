@@ -59,19 +59,19 @@ DESCRIPTION
 I was able to find a lost password in my clipboard history using creativity, some SQL, and command line tools. A lesson in problem-solving for me.
 {{</ notice >}}
 
-After setting up a new, I tried to build an Android project and discovered that the release signing key was missing. I use [Bitwarden](https://bitwarden.com) as my password manager, so the signing key must be saved there -- or so I thought -- there was an entry for the signing key, but it was empty. It seemed like I had forgotten to paste the password when creating the entry. 
+When I cloned an old Android project and tried to build it, I discovered that the *release signing key* was missing. No problem, I use [Bitwarden](https://bitwarden.com) as my password manager, so the signing key **must** be saved there -- or so I thought. there was an entry for the signing key, but it was empty. It seemed like I had forgotten to paste the password when creating the entry. 
 
-After some despair, I remembered where the key might be found: in my clipboard. \
-I use the [Paste app](https://pasteapp.io) to easily copy & paste multiple items at a time and keep a history of all my clipboard items. 
+After some despair, I remembered where the key might be found: **in my clipboard**. \
+I use [Paste app](https://pasteapp.io) to easily copy & paste multiple items at a time and keep a history of all my clipboard items. 
 
 **The signing key I generated in Bitwarden must still be in my clipboard history! But how do I find it?**
 
-Paste allows fuzzy search for all my clipboard history, which works okay. But of course it can't be used to find an unknown string, so I needed a different approach. I knew *when* the key was generated, thanks to the creation date of the entry in Bitwarden, but manually scrolling through thousands of items I had copied in the past months was not an option. There has to be another way, right?
+Paste has fuzzy search to find items in my clipboard history, which works pretty well. But of course it can't be used to find an *unknown string*, so I needed a different approach. I knew **when** the key was generated, thanks to the creation date of the entry in Bitwarden, but manually scrolling through thousands of items I had copied in the past months was not an option. There has to be another way, right?
 
 
 # Searching the data
 
-The app must have a database somewhere containing all copied snippets. I was able to find it by inspecting the `Paste.app` process in the Activity Monitor. The "Open Files and Ports" tab contains an interesting file handle: `Paste.db`.
+The app must have a database somewhere containing all copied snippets. I was able to find it by inspecting the `Paste.app` process in the MacOS Activity Monitor. The `Open Files and Ports` tab contains an interesting file handle: `Paste.db`.
 
 {{< image src="images/paste-handles.png" alt="The Paste app's open files and ports, in the macOS Activity Monitor." >}}
 The Paste app's open files and ports, in the macOS Activity Monitor.
