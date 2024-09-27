@@ -5,14 +5,14 @@ draft: false
 siteTitleFirst: true
 ---
 
-My name is Filippo, and I'm currently {{< age-years date="2001-07-25" >}} years old. On this website I showcase my latest [personal projects]({{< ref "/categories/project" >}}) and [blog articles]({{< ref "/blog" >}}). 
+Hey, I'm Filippo! This is where I showcase my latest [personal projects]({{< ref "/categories/project" >}}) and [blog articles]({{< ref "/blog" >}}). 
 
 # Right now
 
-I'm looking for a challenging new role! After working as a software engineer at Studo for four years, I decided it was time for some new adventures.
+As of October 2024, I'm looking for a challenging new role! After working as a full-stack software engineer at Studo for four years, I decided it was time for some new adventures.
 
-| When?        | What? |
-|--------------|-------|
+| When?        | What?         |
+|--------------|---------------|
 | 2020 - 2024  | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
 | 2019 - 2022  | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}}) |
 | 2019         | Moved from Germany to Graz after finishing school |
@@ -21,14 +21,15 @@ I'm looking for a challenging new role! After working as a software engineer at 
 
 This is an overview of my experience and interests.
 
-
 {{< table-of-contents >}}
 
 # Hobbies & Interests
 
 In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/categories/project" >}}), and spending time with friends. Sometimes, when I stumble upon a new topic that sparks my interest, it draws me in for weeks. I can't help but learn as much as I can about it. This could for example be a new programming language, 3D modeling, or compute shaders.
 
-I **traveled through the Balkans** for four weeks in the summer of 2024.
+---
+
+In the summer of 2024, I **traveled through the Balkans** for four weeks.
 
 {{< image src="images/about-me/balkans-pictures.png" alt="Map of the Balkans with some pictures I took" >}}
 Map of the Balkans with some pictures I took. Made with [Felt](https://felt.com).
@@ -40,10 +41,14 @@ In October 2022 I completed my bachelor's degree and spent five months exploring
 
 I started programming when I was 14 and have been developing software professionally for over {{< age-years date="2020-07-08" >}} years. 
 
-I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. Over the four years I spent there, I grew within the company and received more responsibilities. I handled entire projects for selected clients, including planning, development, and communication. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
+In 2020, I started at Studo as a **full-stack software engineer**, but quickly received more and more responsibilities. I developed new features and handled entire projects for selected clients, including planning, development, and communication. Also, I introduced new developers to the tech stack and mentored them. I held meetings like sprint planning and backlog grooming with important stakeholders.
+
+In my role as **head of user support**, I managed a small team and was able to greatly improve the coordination between first- and second-level support. 
+
+Thanks to these many responsibilities, I was able to grow a lot and improve my skills in many different areas. I'm very grateful for the opportunity I had.
 
 {{< notice question "What is Studo?" >}}
-Studo is an app for university students. It gathers calendar events, grades, and courses in one place, and it features a chat and mail client. The app is used by more than 500 thousand students across Europe. Studo also offers solutions for universities to digitalize processes like *attendance tracking*.
+[Studo](https://studo.com/en/) is an app for university students. It gathers calendar events, grades, and courses in one place, and it features a chat and mail client. The app reached a million users across Europe. Studo also offers solutions for universities to digitalize processes like *attendance tracking*.
 {{</ notice >}}
 
 ## Modern Web Development
