@@ -1,46 +1,49 @@
 ---
 title: "About me"
-date: 2024-06-18T10:15:30+02:00
+date: 2024-09-27T10:15:30+02:00
 draft: false
 siteTitleFirst: true
 ---
 
-My name is Filippo, and I'm currently {{< age-years date="2001-07-25" >}} years old. This is my hub for showcasing my latest [personal projects]({{< ref "/categories/project" >}}), [blog articles]({{< ref "/blog" >}}), and attempts at [art]({{< ref "/art" >}}). 
-
-On this page, I want to give an overview of my interests and experience. If you want to read my **resume**, head over to [LinkedIn](https://www.linkedin.com/in/filippo-orru/).
+My name is Filippo, and I'm currently {{< age-years date="2001-07-25" >}} years old. On this website I showcase my latest [personal projects]({{< ref "/categories/project" >}}) and [blog articles]({{< ref "/blog" >}}). 
 
 # Right now
 
-I live in Graz, Austria. After four years of working as a software engineer ([↓ Experience]({{< ref "#experience" >}})), I am currently taking a break, travelling through the Balkans. 
-
-{{< image src="images/about-me-balkans-pictures.png" alt="Map of the Balkans with some pictures I took" >}}
-{{< /image >}}
-
+I'm looking for a challenging new role! After working as a software engineer at Studo for four years, I decided it was time for some new adventures.
 
 | When?        | What? |
 |--------------|-------|
-| 2020 - 2024  | Software Engineer @ Studo [↓ Read more]({{< ref "#experience" >}}) |
-| 2019 - 2022  | B.Sc. in Mobile Software Development at [FH Joanneum](fh-joanneum.at/mobile-software-development/bachelor/en) |
-| 2019         | Finish school, move to Graz |
+| 2020 - 2024  | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
+| 2019 - 2022  | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}}) |
+| 2019         | Moved from Germany to Graz after finishing school |
 
-# Hobbies & Interests
+# On This Page
 
-In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/categories/project" >}}), and spending time with my friends. Sometimes, when I stumble upon a new topic that sparks my interest, it draws me in for weeks. I can't help but learn as much as I can about it. This could for example be a new programming language, 3D modeling, or compute shaders.
+This is an overview of my experience and interests.
 
-After completing my bachelor's degree in October 2022, I spent five months exploring **Southeast Asia**, combining work and travel. I visited Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
-
-# Table Of Contents
 
 {{< table-of-contents >}}
 
+# Hobbies & Interests
+
+In my free time, I enjoy rock climbing, coding my [personal projects]({{< ref "/categories/project" >}}), and spending time with friends. Sometimes, when I stumble upon a new topic that sparks my interest, it draws me in for weeks. I can't help but learn as much as I can about it. This could for example be a new programming language, 3D modeling, or compute shaders.
+
+I **traveled through the Balkans** for four weeks in the summer of 2024.
+
+{{< image src="images/about-me/balkans-pictures.png" alt="Map of the Balkans with some pictures I took" >}}
+Map of the Balkans with some pictures I took. Made with [Felt](https://felt.com).
+{{< /image >}}
+
+In October 2022 I completed my bachelor's degree and spent five months exploring **Southeast Asia**, combining work and travel. I visited Thailand, Laos, Vietnam, the Philippines, Japan, South Korea, and Singapore. I had a great time, and I'm grateful for the opportunity.
+
 # Experience
 
-I've been coding since I was 14 (that's more than {{< age-years date="2015-05-15" class="no-highlight" >}} years!). For the past {{< age-years date="2020-07-08" withComma="true" class="no-highlight" >}} years I've been developing software professionally. 
+I started programming when I was 14 and have been developing software professionally for over {{< age-years date="2020-07-08" >}} years. 
 
-I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. Over the four years I spent there, I grew within the company and received more responsibilities. I handled entire projects for selected clients, including development and communication. In 2022, I also became **Head of User Support**. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
+I started at [Studo](https://studo.com/en/) in 2020 as a **Full-stack Software Engineer**, working on new features in all parts of the Studo ecosystem. Over the four years I spent there, I grew within the company and received more responsibilities. I handled entire projects for selected clients, including planning, development, and communication. Thanks to the trust placed in me and the variety of roles, I was able to improve my skills in many different areas and gain new expertise.
 
-{{< notice info "What is Studo?" >}}
-The Studo App is an app for university students. It integrates useful information (calendar, grades, courses & more) spread across multiple services into one place. The app is used by more than 500 thousand students across Europe. We also create solutions for universities to digitalize processes like *attendance tracking* and more.
+{{< notice question "What is Studo?" >}}
+Studo is an app for university students. It gathers calendar events, grades, and courses in one place, and it features a chat and mail client. The app is used by more than 500 thousand students across Europe. Studo also offers solutions for universities to digitalize processes like *attendance tracking*.
 {{</ notice >}}
 
 ## Modern Web Development
@@ -48,43 +51,39 @@ The Studo App is an app for university students. It integrates useful informatio
 React • Vue • HTML • CSS • Angular • JavaScript & TypeScript • Kotlin • Elm • Svelte
 {{</ notice >}}
 
-I recently created a website to **simplify meeting busy friends.** I went from concept to release **in just 10 days**, read more about it here: [Busy Friends make scheduling hard]({{< ref "/blog/busy-friends-make-scheduling-hard" >}}).
+I recently created a website to **simplify meeting busy friends.** I went from concept to release **in just 10 days**. [Read more about it here]({{< ref "/blog/busy-friends-make-scheduling-hard" >}}).
 
-As my biggest project so far, I created a custom survey creation platform and then wrote my bachelor thesis about it. It is integrated into the Studo Newsroom, which is a platform that allows partner companies to publish content for the Studo news feed. 
-
-**Try it out here: [studo.co/connect/survey-creator](https://studo.co/connect/survey-creator).**
-
-I was responsible for the entire design and development, which required multiple UI iterations over the course of a few months. Later, I worked with a colleague to integrate the survey fill-out page into the app, allowing users to respond right from the news feed. This proved to be very valuable, as it **increased survey response rates**. 
-
-{{< image src="images/survey-creator.png" alt="The survey creator" >}}
-The survey creator.
+{{< image src="images/about-me/quando-events.jpg" alt="Screenshot of quando.events" >}}
+[www.quando.events](https://www.quando.events)
 {{< /image >}}
 
-Read [my blog post]({{< ref "/blog/bachelor-thesis" >}}) about the survey creator, or read the [official article on studo.com](https://studo.com/en/universities/studo-survey). 
+---
 
-Like most of Studo's web projects, the survey creator is written in [KotlinJS](https://kotlinlang.org/docs/js-overview.html) and transpiled to JavaScript. Kotlin provides a number of benefits for developers, especially smaller teams. Everything is type checked and, because we can access the same class from both backend and frontend code, API contracts are kept at the compiler level. We use React through a Kotlin wrapper that ensures type safety for all properties and functions.
+At Studo I created a custom survey creation platform and then wrote my bachelor thesis about it. This was one of my biggest projects so far.
 
-In my bachelor thesis, I compared the survey creator against Google Forms and SurveyJS. Spoiler alert: mine was found to be easiest to use, which was one of the main goals. **I graduated with distinction.**
+I was responsible for the entire design and development, including frontend and backend. Over the course of multiple UI iterations, our senior designer helped me ensure great and consistent design.
 
+The surveys are shown right inside the app, which **increased survey response rates**. The survey editor was found to be easier to use than Google Forms. Read [my blog post]({{< ref "/blog/bachelor-thesis" >}}) about the survey creator, or read the [official article on studo.com](https://studo.com/en/universities/studo-survey). 
+
+{{< image src="images/about-me/survey-creator.png" alt="The survey creator" >}}
+The survey creator. Try it out here: [studo.co/connect/survey-creator](https://studo.co/connect/survey-creator).
+{{< /image >}}
 
 ## Mobile App Development
 {{< notice type="warning" title="Keywords" showIcon=false >}}
 Kotlin • Swift • Flutter • Dart • Realm • Java • UI Design
 {{</ notice >}}
 
-- I worked on extending the Studo app's **mail client** to support authentication via **OAuth**.
+Some examples of my work in app development:
 
-- We created a digital student card in a one-week hackathon. My main focus was to implement a **holographic verification effect** using layered canvas drawing and the device's gyroscope sensors.
+1. I worked on extending the Studo app's **mail client** to support authentication via **OAuth**.
 
-- The Studo app is monetized via a freemium model -- free users see banner ads. I integrated a new **third-party ad provider SDK** to increase revenue per click. 
+2. We created a digital student card in a one-week hackathon. My main focus was to implement a **holographic verification effect** using layered canvas drawing and the device's gyroscope sensors.
 
-- My pretty [cross-platform game 'Four in a Row']({{< ref "blog/four-in-a-row" >}}) is written in Flutter.
-    Published a game on the Play Store and getting >5000 downloads taught me so much.
-    - Mobile development: advanced state handling, animations, UI/UX design.
-    - Ensuring stable connections (reconnection handling).
-    - Creating a fast, authoritative game server in Rust.
-    - CI/CD to improve my own developer experience.
-    - Launching an app and listening to user feedback.
+3. I integrated a new **ad network SDK** to increase ad revenue. 
+
+4. I published a cross-platform game on the Play Store which achieved **>5000 downloads**.
+    'Four in a Row' is written in Flutter and available for web and Android. You can [read more here]({{< ref "blog/four-in-a-row" >}}), or [check out the website](https://fourinarow.ffactory.me/).
 
 
 ## Backend Services, Databases, DevOps
@@ -92,16 +91,17 @@ Kotlin • Swift • Flutter • Dart • Realm • Java • UI Design
 Kotlin • Rust • MongoDB • Ktor • SQL • Java • Python • C++ • Unix • Nginx • Node • Traefik • Docker
 {{</ notice >}}
 
-As part of a cooperation project with a university in Graz, I developed a service that imports data from the the university's systems and synchronizes it to **Microsoft Teams**. For example, it creates teams for each course and **automatically creates events**. This service is now included as a part of [Studo Flow](https://studo.com/en/administration/flow).
+I've always worked full-stack, meaning that I develop the backend *and* frontend part for new features. And when it's not clear whether an issue is caused by the frontend, backend, or the interaction between the two. In that case, it's very useful to know both.
 
-My tasks included:
-- Ongoing communication with our client. Reacting to their wishes and bug reports.
-- Writing a custom wrapper for the MS Graph API featuring easy authentication, rate limiting, exponential backoff, and more.
-- Knowing when to ask for help from senior coworkers.
+For example, I completed these two projects:
 
----
+1. **Third-party API data synchronization**  
+    For our client, a university in Graz, I developed a service that imports data from the the university's systems and synchronizes it to **Microsoft Teams**. I designed the architecture of the service in coordination with the client and maintained and extended the service.  
+    This service is sold as part of [Studo Flow](https://studo.com/en/administration/flow).
 
-I deployed the game server for my 'Four in a Row' app on a VPS. Writing docker, docker compose, systemd, and nginx configuration from scratch introduced me to the world of DevOps. Later, I went on to write my own **CD tool** that automatically releases new server and app versions.
+2. **Game server for 'Four in a Row'**  
+    I created the game server and deployed it on a VPS.  
+    Writing docker, docker compose, systemd, and nginx configuration from scratch introduced me to the world of DevOps. Later, I went on to write my own **CD tool** that automatically releases new server and app versions.
 
 
 ## Interpersonal & Development Processes
@@ -110,16 +110,24 @@ I deployed the game server for my 'Four in a Row' app on a VPS. Writing docker, 
 Communication  • Agile methodology • Effort estimation • Requirements engineering • Hiring • Mentorship
 {{</ notice >}}
 
-As it turned out, there is much more than coding that makes a great Software Engineer. I learned how to **communicate effectively** with coworkers, across teams, and with clients. This was great for my personal growth.
+As it turned out, there's more to being a great software engineer than coding. At Studo, I learned how to **communicate effectively** with coworkers, across teams, and with clients. 
 
-I was also partly responsible for hiring and onboarding new developers. This entails coding interviews, decision-making and **mentorship**. I helped introduce many of Studo's current developers to our tech stack and conventions.
+I also held coding interviews to **hire** new developers. Once hired, I **onboarded** them to the company's tech stack and conventions, and continued to provide **mentorship** and support.
 
 
 ## Head of User Support
 
-As part of my work at Studo, I was responsible for managing the **excellent user support** team. This means I coordinated first, second, and third-level support, I investigated challenging **cross-project issues** when they come up, and called upon my coworkers' expertise to ensure our users are happy. As the number of developers and support team members grew, I introduced **new processes** regarding ticket assignment, hand-off, and inter-team communication.
+At Studo, I was responsible for managing the **excellent user support** team. I coordinated first, second, and third-level support, investigated challenging **cross-project issues** when they come up, and called upon my coworkers' expertise to ensure that users are happy. 
 
-In March 2024, I experimented with automating parts of the first-level support by leveraging LLMs. The results looked promising, but would require more time.
+As the number of developers and support team members grew, I introduced **new processes** regarding ticket assignment, hand-off, and inter-team communication. In this role, I learned a lot about collaborating across teams.
+
+# Education
+
+The Bachelor program "Mobile Software Development" at [FH Joanneum](https://fh-joanneum.at/mobile-software-development/bachelor/en) is excellent. It covers not just computer science and programming, but also economics, leadership, management, and modern software development practices (e.g. agile development). 
+
+I especially liked the focus on gaining real-world experience -- students start working as developers from the second year of study onwards.
+
+In October 2022 I graduated with distinction.
 
 # More
 - Check out my [LinkedIn profile](https://linkedin.com/in/filippo-orru).

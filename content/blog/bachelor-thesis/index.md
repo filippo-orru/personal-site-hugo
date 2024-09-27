@@ -42,7 +42,9 @@ After gathing some responses. The results can be viewed in a list which shows ea
 Survey being displayed inline in the Studo app news feed.
 {{< /image >}}
 
-While not yet available at the time of writing the bachelor thesis, surveys can now be filled out right in the Studo app's news feed. Previously, users had to tap the post and then the survey would open in an in-app browser.
+Surveys can now be filled out right in the Studo app's news feed.
+
+Like most of Studo's web projects, the survey creator is written in [KotlinJS](https://kotlinlang.org/docs/js-overview.html) and transpiled to JavaScript. Kotlin provides a number of benefits for developers, especially smaller teams. Everything is type checked and, because we can access the same class from both backend and frontend code, API contracts are kept at the compiler level. We use React through a Kotlin wrapper that ensures type safety for all properties and functions.
 
 ## Google Forms
 {{< image src="images/survey-creation-platforms/google/overview.png" alt="Google Forms overview page" >}}

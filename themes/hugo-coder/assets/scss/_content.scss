@@ -416,14 +416,14 @@
 code.tooltip {
   position: relative;
   cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
 
   &::before {
     content: attr(data-before);
     position: absolute;
     width: max-content;
-    transform: translateY(80%);
+    transform: translateX(-40%) translateY(80%);
     opacity: 0;
     transition: transform ease-in 0.4s, opacity ease-out 0.25s;
     pointer-events: none;
@@ -439,7 +439,7 @@ code.tooltip {
     background-color: #d2d2d2;
 
     &::before {
-      transform: translateY(100%);
+      transform: translateX(-40%) translateY(100%);
       opacity: 1;
       transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.18s, opacity ease-out 0.2s;
     }
@@ -535,10 +535,6 @@ code.tooltip {
               background-color: #f7f7f7;
               border-color: #dbdbdb;
               transform: perspective(400px) rotateX(0deg);
-            }
-
-            .title span {
-              // text-decoration: underline;
             }
 
             .title .arrow {

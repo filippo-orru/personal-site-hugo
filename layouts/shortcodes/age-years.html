@@ -3,7 +3,7 @@
 {{- $date := .Get "date" -}}
 {{- $id := print "age-years" (substr (md5 (delimit .Params ",")) 0 16) -}}
 {{- $withComma := .Get "withComma" -}}
-<code id="{{ $id }}" class="tooltip {{ $className }}" data-before="JS disabled">?</code><script>
+<code id="{{ $id }}" class="tooltip {{ $className }}" data-before="JS disabled">{{ $date }}</code><script>
         /** Calculates age in years given a starting date. */
         function gregorianAge(startDate) {
                 if (startDate == null) return null;
