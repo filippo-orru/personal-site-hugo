@@ -1,6 +1,7 @@
 ---
 title: "Blocsummer Statistics 2024"
-description: "How many people managed to do each boulder?"
+subtitle: "How many people managed to do each boulder?"
+description: "An analysis showing how many people managed to do each boulder of a competition held in Graz."
 date: 2024-05-15T13:34:47+02:00
 draft: false
 
