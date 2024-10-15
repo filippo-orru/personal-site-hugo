@@ -1,9 +1,9 @@
 ---
-title: "AI Powered Climbing App"
+title: "AI-Powered Climbing App"
 subtitle: "TopOut"
 date: 2024-06-26T09:55:28+02:00
-draft: true
-description: TODO
+draft: false
+description: Recording yourself while climbing is a great way to improve your skills. Check out how you can automatically manage recordings.
 
 ongoing: false
 featured: true
@@ -43,9 +43,12 @@ DESCRIPTION
 
 -->
 
-Recording yourself while climbing is a great way to spot mistakes and improve your skills. However, using the camera app to record presents _multiple issues_.
+Recording yourself while bouldering is a great way to spot mistakes and improve your skills.
+But using your camera app to record is pretty annoying, so I created something better!
 
 # Pain Points
+
+If you've ever used your phone to record your climbs, you know these problems:
 
 1. **Overly long videos**
 
@@ -53,16 +56,15 @@ Recording yourself while climbing is a great way to spot mistakes and improve yo
 
 2. **Poor organization**
 
-    Let's say you climb every three days. Videos of your greatest moments and failed attempts will be **mixed in your gallery**, along with hundreds of other photos and videos. Finding a specific moment can take a while, and manually organizating clips takes forever.
+    Let's say you climb every three days. Your gallery will be a mix of videos of your greatest moments, funniest fails, along with **hundreds** of other photos and videos. Finding a specific attempt can take a while, and manually organizating clips takes forever.
 
 # Top Out
 
 {{< notice type="info" >}}
-👉🏻 Top Out uses AI to detect when you start and end an attempt, **saving time and storage**.
-- 🧗 Easily record climbs 
-- 🧠 Automatically detect when each attempt starts and ends
+- 🧗 Use Top Out to easily record your climbs
+- 🧠 Detect when each attempt starts and ends by using AI
+- 🚀 Saves time and storage
 - 📋 Great overview of all attempts of past climbs
-- ⚙️ Edit start and end times of recordings
 {{< /notice >}}
 
 {{< video src="demo.mp4" >}}
