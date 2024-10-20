@@ -8,8 +8,9 @@ description: How I built a site that makes it easy to find time to meet your fri
 ongoing: false
 featured: true
 categories: ['project']
-featuredImage: featured.jpg
-featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
+# featuredImage: featured.jpg
+# featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
+slug: "busy-friends-make-scheduling-hard"
 ---
 
 <!--
