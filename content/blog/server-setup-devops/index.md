@@ -8,8 +8,8 @@ description: I learned DevOps to run 6 websites on a 5€ server because I'm che
 ongoing: false
 featured: false
 featuredImage: featured.webp
+images: ['featured-social.webp']
 # featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
-
 # showToc: false
 categories: []
 ---
