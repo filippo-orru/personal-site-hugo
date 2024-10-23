@@ -38,7 +38,9 @@ services:
   comments:
     image: ghcr.io/isso-comments/isso:release
     volumes:
-      - './services/isso-comments/isso.cfg:/config/isso.cfg'
+      - type: bind
+        source: ./services/isso-comments/isso.cfg
+        target: /config/isso.cfg
       - './services/isso-comments/db:/db'
     expose:
       - 8080
