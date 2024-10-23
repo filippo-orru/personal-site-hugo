@@ -5,5 +5,5 @@ trash.txt
 .DS_Store
 
 webhook.secret
-services/isso-comments/isso.cfg
 services/isso-comments/db
+services/smtp-to-telegram/.env

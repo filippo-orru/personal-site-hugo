@@ -44,8 +44,6 @@ services:
       - './services/isso-comments/db:/db'
     expose:
       - 8080
-    ports:
-      - 8080:8080
     labels:
       traefik.enable: "true"
       traefik.http.routers.filippo-orru-comments.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`) && PathPrefix(`/isso`)"
@@ -56,6 +54,14 @@ services:
       traefik.http.routers.filippo-orru-comments.tls: "true"
       traefik.http.services.filippo-orru-comments.loadbalancer.server.port: "8080"
 
+  smtp-to-telegram:
+    image: kostyaesmukov/smtp_to_telegram
+    env_file:
+      - ./services/smtp-to-telegram/.env
+    environment:
+      ST_TELEGRAM_CHAT_IDS: "1427061497"
+      ST_TELEGRAM_MESSAGE_TEMPLATE: "Subject: {subject}\\n\\n{body}"
+    
 secrets:
   webhook_secret:
     file: ./webhook.secret
