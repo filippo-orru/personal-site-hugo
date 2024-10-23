@@ -1,0 +1,7 @@
+services:
+  webhook-listener:
+    profiles: 
+      - donotstart
+  plausible:
+    profiles: 
+      - donotstart
