@@ -19,15 +19,5 @@
       {{ $script := resources.Get "js/toc.js" | minify | fingerprint }}
       <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
       {{ end }}
-    <div id="isso-thread" data-title="{{ .Title }}"></div>
-    <script data-isso="/isso/"
-        data-isso-css="false"
-        data-isso-max-comments-top="10"
-        data-isso-sorting="upvotes"
-        data-isso-avatar-bg="#d0d0d0"
-        data-isso-avatar-fg="#9abf88 #5698c4 #e279a3 #9163b6"
-        data-isso-vote="true"
-        data-isso-page-author-hashes="8821b36d19c3"
-        src="/isso/js/embed.min.js"></script>
 </section>
 {{ end }}
