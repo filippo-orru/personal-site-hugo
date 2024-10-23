@@ -19,7 +19,7 @@
       {{ $script := resources.Get "js/toc.js" | minify | fingerprint }}
       <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
       {{ end }}
-    <div id="isso-thread"></div>
+    <div id="isso-thread" data-title="{{ .Title }}"></div>
     <script data-isso="/isso/"
         data-isso-css="false"
         data-isso-max-comments-top="10"
