@@ -36,7 +36,7 @@ services:
       traefik.http.services.filippo-orru-webhook.loadbalancer.server.port: "8080"
   
   comments:
-    image: ghcr.io/isso-comments/isso:release
+    image: ghcr.io/isso-comments/isso:latest@sha256:6d31cf7961a6cb57c448e286b239df914b4ff3270ca44fe8fa5a1a84f994f961
     volumes:
       - type: bind
         source: ./services/isso-comments/isso.cfg
