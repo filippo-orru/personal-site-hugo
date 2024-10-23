@@ -1,3 +1,5 @@
+name: personal-site
+
 include:
   - plausible/docker-compose.yaml
 
