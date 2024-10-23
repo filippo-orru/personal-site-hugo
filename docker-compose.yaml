@@ -55,7 +55,7 @@ services:
       traefik.http.services.filippo-orru-comments.loadbalancer.server.port: "8080"
 
   smtp-to-telegram:
-    image: kostyaesmukov/smtp_to_telegram
+    image: alecpetrosky/smtp_to_telegram
     env_file:
       - ./services/smtp-to-telegram/.env
     environment:
