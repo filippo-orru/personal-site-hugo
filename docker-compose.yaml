@@ -8,7 +8,7 @@ services:
       - ./public:/usr/share/nginx/html
     labels:
       traefik.enable: "true"
-      traefik.http.routers.filippo-orru.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`)"
+      traefik.http.routers.filippo-orru.rule: "Host(`localhost`, `www.filippo-orru.com`)"
       traefik.http.routers.filippo-orru.entrypoints: "https"
       traefik.http.routers.filippo-orru.tls: "true"
       traefik.http.services.filippo-orru.loadbalancer.server.port: "80"
@@ -34,6 +34,25 @@ services:
       traefik.http.routers.filippo-orru-webhook.entrypoints: "https"
       traefik.http.routers.filippo-orru-webhook.tls: "true"
       traefik.http.services.filippo-orru-webhook.loadbalancer.server.port: "8080"
+  
+  comments:
+    image: ghcr.io/isso-comments/isso:release
+    volumes:
+      - './services/isso-comments/isso.cfg:/config/isso.cfg'
+      - './services/isso-comments/db:/db'
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.filippo-orru-comments.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`) && PathPrefix(`/isso`)"
+      # traefik.http.routers.filippo-orru-comments.rule: "Host(`localhost`) && PathPrefix(`/isso`)"
+      traefik.http.routers.filippo-orru-comments.middlewares: "filippo-orru-comments-stripprefix"
+      traefik.http.middlewares.filippo-orru-comments-stripprefix.stripprefix.prefixes: "/isso"
+      traefik.http.routers.filippo-orru-comments.entrypoints: "https"
+      traefik.http.routers.filippo-orru-comments.tls: "true"
+      traefik.http.services.filippo-orru-comments.loadbalancer.server.port: "8080"
 
 secrets:
   webhook_secret:

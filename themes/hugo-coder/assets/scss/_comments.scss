@@ -1,0 +1,359 @@
+/* ========================================================================== */
+/* Thread heading area                                                        */
+/* ========================================================================== */
+#isso-thread {
+    padding: 0;
+    margin: 0;
+}
+
+.isso-feedlink {
+    float: right;
+    padding-left: 1em;
+}
+
+.isso-feedlink a {
+    font-size: 0.8em;
+    vertical-align: bottom;
+}
+
+/* ========================================================================== */
+/* Comments                                                                   */
+/* ========================================================================== */
+
+.isso-comment {
+    margin: 0 auto;
+}
+
+.isso-preview .isso-comment {
+    padding-top: 0;
+    margin: 0;
+}
+
+.isso-comment:not(:first-of-type),
+.isso-follow-up .isso-comment {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5em;
+}
+
+.isso-avatar {
+    display: block;
+    float: left;
+    margin: 0.95em 0.95em 0;
+}
+
+.isso-avatar svg {
+    max-width: 48px;
+    max-height: 48px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.isso-text-wrapper {
+    display: block;
+    padding: 0.95em;
+}
+
+.isso-follow-up {
+    padding-left: calc(7% + 20px);
+}
+
+.isso-comment-footer {
+    font-size: 0.95em;
+}
+
+.isso-comment-header {
+    font-size: 0.85em;
+}
+
+.isso-comment-header a {
+    text-decoration: none;
+}
+
+/* Only for comment header, spacer between up-/downvote should have no padding */
+.isso-comment-header .isso-spacer {
+    padding: 0 6px;
+}
+
+.isso-spacer,
+.isso-permalink,
+.isso-note,
+.isso-parent {
+    color: $fg-color-secondary;
+    font-weight: normal;
+    text-shadow: none;
+
+    &:hover {
+        color: $fg-color-strong;
+    }
+}
+
+.isso-note {
+    float: right;
+}
+
+.isso-author {
+    font-weight: bold;
+}
+
+.isso-page-author-suffix {
+    font-weight: bold;
+    color: $fg-color;
+}
+
+.isso-textarea,
+.isso-preview {
+    margin-top: 0.2em;
+    width: 100%;
+    border: 1px solid $alt-bg-color;
+    border-radius: 2px;
+    box-shadow: 0 0 2px $fg-color-secondary;
+}
+
+.isso-text p {
+    margin-top: 0.2em;
+}
+
+.isso-text p:last-child {
+    margin-bottom: 0.2em;
+}
+
+.isso-text h1,
+.isso-text h2,
+.isso-text h3,
+.isso-text h4,
+.isso-text h5,
+.isso-text h6 {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.isso-comment-footer {
+    font-size: 0.80em;
+    color: $fg-color-secondary;
+    clear: left;
+}
+
+.isso-feedlink,
+.isso-comment-footer a {
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: $fg-color-strong;
+    }
+}
+
+.isso-comment-footer {
+    >a {
+        position: relative;
+        top: .2em;
+    }
+
+    >a+a {
+        padding-left: 1em;
+    }
+
+    .isso-votes {
+        color: $fg-color-secondary;
+    }
+}
+
+.isso-upvote,
+.isso-downvote {
+    svg {
+        position: relative;
+        top: .2em;
+    }
+}
+
+/* Reply postbox under existing comment */
+.isso-comment .isso-postbox {
+    margin-top: 0.8em;
+}
+
+.isso-comment.isso-no-votes>*>.isso-comment-footer .isso-votes {
+    display: none;
+}
+
+/* ========================================================================== */
+/* Postbox                                                                    */
+/* ========================================================================== */
+.isso-postbox {
+    margin-bottom: 2em;
+    clear: right;
+
+    p {
+        margin: 0;
+    }
+}
+
+.isso-form-wrapper {
+    display: block;
+    padding: 0;
+}
+
+.isso-textarea,
+.isso-preview {
+    margin: 0 0 .3em;
+    padding: .4em .8em;
+    border-radius: 3px;
+}
+
+.isso-textarea,
+.isso-preview,
+.isso-input-wrapper>input,
+.isso-post-action>input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    &:focus {
+        border: 1px solid $fg-color;
+    }
+}
+
+.isso-textarea {
+    outline: 0;
+    width: 100%;
+    resize: none;
+}
+
+.isso-form-wrapper input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-left: 0;
+}
+
+.isso-notification-section {
+    font-size: 0.90em;
+    padding-top: .3em;
+    display: none;
+    padding-bottom: 10px;
+}
+
+.isso-auth-section {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    // 'website' input field
+    p:nth-child(3),
+    // p:nth-child(2),
+    // 'preview comment' button
+    p:nth-child(5) {
+        display: none;
+    }
+
+    .isso-input-wrapper {
+        flex: 1;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px;
+
+        label {
+            display: inline-block;
+        }
+
+        input {
+            padding: .3em 10px;
+            max-width: 100%;
+            border-radius: 3px;
+            line-height: 1.4em;
+
+            outline: 0;
+        }
+    }
+
+    p:nth-child(4) {
+        margin-left: auto;
+    }
+
+    .isso-post-action {
+        margin: 0;
+        display: flex;
+        align-items: end;
+
+        input {
+            padding: 0.3em 10px;
+            line-height: 1.4;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: 0;
+
+            background-color: $bg-color;
+
+            &:hover {
+                background-color: $alt-bg-color;
+            }
+
+            &:active {
+                background-color: #bbb;
+            }
+        }
+    }
+}
+
+
+/* ========================================================================== */
+/* Postbox (preview mode)                                                     */
+/* ========================================================================== */
+.isso-preview,
+.isso-post-action:has(input[name="edit"]),
+.isso-postbox.isso-preview-mode>.isso-form-wrapper input[name="preview"],
+.isso-postbox.isso-preview-mode>.isso-form-wrapper .isso-textarea {
+    display: none;
+}
+
+.isso-postbox.isso-preview-mode>.isso-form-wrapper .isso-preview {
+    display: block;
+}
+
+.isso-postbox.isso-preview-mode>.isso-form-wrapper:has(input[name="edit"]) {
+    display: inline;
+}
+
+.isso-preview {
+    background-color: #f8f8f8;
+    background: repeating-linear-gradient(-45deg,
+            #f8f8f8,
+            #f8f8f8 10px,
+            #fff 10px,
+            #fff 20px);
+}
+
+/* ========================================================================== */
+/* Animations                                                                 */
+/* ========================================================================== */
+
+/* "target" means the comment that's being linked to, for example:
+ * https://example.com/blog/example/#isso-15
+ */
+.isso-target {
+    animation: isso-target-fade 5s ease-out;
+}
+
+@keyframes isso-target-fade {
+    0% {
+        background-color: #eee5a1;
+    }
+}
+
+/* ========================================================================== */
+/* Media queries                                                              */
+/* ========================================================================== */
+@media screen and (max-width:600px) {
+    .isso-input-wrapper {
+        display: block;
+        max-width: 100%;
+        margin: 0 0 .3em;
+    }
+}

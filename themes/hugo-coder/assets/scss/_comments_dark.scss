@@ -1,0 +1,88 @@
+@mixin comments_dark {
+
+    .isso-spacer,
+    .isso-permalink,
+    .isso-note,
+    .isso-parent {
+        color: $fg-color-secondary-dark;
+
+        &:hover {
+            color: $fg-color-strong-dark;
+        }
+    }
+
+    .isso-page-author-suffix {
+        color: $fg-color-dark;
+    }
+
+    .isso-textarea,
+    .isso-preview,
+    .isso-input-wrapper>input,
+    .isso-post-action>input {
+        border: 1px solid $alt-bg-color-dark;
+        box-shadow: 0 0 2px $fg-color-secondary-dark;
+
+        &:focus {
+            border: 1px solid $fg-color-dark;
+        }
+    }
+
+    .isso-comment-footer {
+        color: $fg-color-secondary-dark;
+    }
+
+    .isso-feedlink,
+    .isso-comment-footer a {
+        &:hover {
+            color: $fg-color-strong-dark;
+        }
+    }
+
+    .isso-comment-footer {
+        .isso-votes {
+            color: $fg-color-secondary-dark;
+        }
+    }
+
+    .isso-auth-section {
+        .isso-post-action {
+            input {
+                background-color: #1f1f1f;
+                
+                &:hover {
+                    background-color: #323232;
+                }
+
+                &:active {
+                    background-color: #171717;
+                }
+            }
+        }
+    }
+
+    .isso-preview {
+        background-color: #2a2a2a;
+        background: repeating-linear-gradient(-45deg,
+                #2a2a2a,
+                #2a2a2a 10px,
+                #2c2c2c 10px,
+                #2c2c2c 20px);
+    }
+
+    @keyframes isso-target-fade {
+        0% {
+            background-color: #3f3c1c;
+        }
+    }
+
+}
+
+body.colorscheme-dark {
+    @include comments_dark();
+}
+
+body.colorscheme-auto {
+    @media (prefers-color-scheme: dark) {
+        @include comments_dark();
+    }
+}
