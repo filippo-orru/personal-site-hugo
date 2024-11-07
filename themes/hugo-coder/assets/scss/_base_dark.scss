@@ -51,7 +51,7 @@
   }
 
   pre {
-    code {
+    code:not(.no-highlight) {
       background-color: inherit;
       color: inherit;
     }

@@ -9,7 +9,7 @@
 {{ $paginator := .Paginate .RegularPages }}
 <section class="container list">
   {{- if eq .Kind "term" -}}
-  <a class="back-link navigate" href="#"><i class="fa fa-chevron-left"></i><span>Back</span></a>
+  <div class="back-link navigate"><a href="#"><i class="fa fa-chevron-left"></i><span>Back</span></a></div>
   {{- end -}}
   <div class="title-with-tags">
     <h1 class="title">

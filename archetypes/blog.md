@@ -1,12 +1,14 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-# TODO subtitle: ""
+subtitle: # TODO
+description: # TODO 
 date: {{ .Date }}
-draft: true
-# TODO description: 
 
+draft: true
+showToc: true
 ongoing: false
 featured: false
+
 # featuredImage: featured.jpg
 # featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
 
@@ -33,6 +35,10 @@ categories: []
 {< image src="images/image.jpg" alt="ALT" >}}
 DESCRIPTION
 {< /image >}}
+
+{< notice type="warning" title="Keywords" showIcon=false raw=false >}}
+• content
+{</ notice >}}
 
 -->
 
