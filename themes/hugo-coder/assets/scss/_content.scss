@@ -346,17 +346,21 @@
   figure {
     margin: 2rem 0;
     padding: 0;
+    overflow: hidden;
 
     img,
     video {
       width: auto;
       height: auto;
-      max-height: 70vh;
-
-      @media only screen and (max-width: 768px) {
-        max-width: 100%;
+      max-width: 100%;
+      
+      &:not(.tall) {
+        max-height: 70vh;
       }
-
+      
+      &.small {
+        max-height: 17em;
+      }
     }
 
     img,

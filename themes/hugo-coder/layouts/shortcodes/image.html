@@ -6,6 +6,8 @@
 
 {{ $img := .Page.Resources.GetMatch $src | default (resources.GetMatch $src) }}
 
+{{ $small := $.Get "small" }}
+
 <!-- Get image -->
 <figure>
     <picture>
@@ -13,7 +15,7 @@
         <source media="(min-width:400px)" srcset="{{ .RelPermalink }}">
         {{ end }}
         {{ with $img.Resize "500x webp" }}
-        <img src="{{ .RelPermalink }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}">
+        <img src="{{ .RelPermalink }}" class="{{ if $small }}small{{ end }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
     </picture>
     {{ with .Inner }}

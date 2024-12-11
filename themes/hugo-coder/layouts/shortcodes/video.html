@@ -4,11 +4,17 @@
 <!-- Get alt param from shortcode -->
 {{ $alt := $.Get "alt"}}
 
-{{ $hidecontrols := $.Get "hidecontrols" }}
+{{ $hidecontrols := eq ($.Get "hidecontrols") "true" }}
+
+{{ $small := eq ($.Get "small") "true" }}
+
+{{ $tall :=  eq  ($.Get "tall") "true" }}
 
 <!-- Get image -->
 <figure>
-  <video aria-label="{{ $alt }}" {{ if ne $hidecontrols "true" }} controls {{ else }} playsinline autoplay muted loop {{end }}
+  <video aria-label="{{ $alt }}" 
+  {{ if not $hidecontrols }} controls {{ else }} playsinline autoplay muted loop  {{ end }} 
+    class="{{ if $small }}small{{ end }}{{ if $tall }}tall{{ end }}"
     src="{{ (.Page.Resources.GetMatch $src).RelPermalink }}"></video>
   {{ with .Inner }}
   <figcaption>{{ . | markdownify }}</figcaption>
