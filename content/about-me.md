@@ -1,11 +1,12 @@
 ---
 title: "About me"
-date: 2024-09-27T10:15:30+02:00
+date: 2024-12-14T20:15:30+02:00
 draft: false
 siteTitleFirst: true
 ---
 
-Hey, I'm Filippo! This is where I showcase my latest [personal projects]({{< ref "/categories/project" >}}) and [blog articles]({{< ref "/blog" >}}). 
+Hey, I'm Filippo! This is where I showcase my latest [personal projects]({{< ref "/categories/project" >}}) and [blog articles]({{< ref "/blog" >}}).  
+My resume: [Resume (PDF)](/Resume%20Filippo%20Orru.pdf).
 
 # Right now
 
