@@ -10,13 +10,16 @@ My resume: [Resume (PDF)](/Resume%20Filippo%20Orru.pdf).
 
 # Right now
 
-As of October 2024, I'm looking for a challenging new role! After working as a full-stack software engineer at Studo for four years, I decided it was time for some new adventures.
+As of January 2025, I'm looking forward to a new role! 
+After working at Studo for four years, I decided it was time for some new adventures. 
+In February, I will start working as a full-stack software engineer at [Online Doctor](https://onlinedoctor.ch) in Zurich. 
 
-| When?        | What?         |
-|--------------|---------------|
-| 2020 - 2024  | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
-| 2019 - 2022  | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}}) |
-| 2019         | Moved from Germany to Graz after finishing school |
+| When?          | What?         |
+|----------------|---------------|
+| 2025 - present | Full-stack software engineer at Online Doctor |
+| 2020 - 2024    | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
+| 2019 - 2022    | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}})    |
+| 2019           | Moved from Germany to Graz after finishing school                               |
 
 # On This Page
 
