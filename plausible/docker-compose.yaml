@@ -14,7 +14,7 @@ services:
       traefik.http.routers.plausibleJs.entrypoints: "https"
       traefik.http.routers.plausibleJs.rule: "Host(`statistics.filippo-orru.com`) && Path(`/psb.js`)"
       traefik.http.routers.plausibleJs.service: plausible
-      traefik.http.middlewares.plausibleJsReplacement.replacepath.path: "/js/plausible.js"
+      traefik.http.middlewares.plausibleJsReplacement.replacepath.path: "/js/script.outbound-links.tagged-events.js"
       traefik.http.routers.plausibleJs.middlewares: plausibleJsReplacement
     command: sh -c "/entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh run"
     depends_on:
