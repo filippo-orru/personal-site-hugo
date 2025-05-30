@@ -1,6 +1,6 @@
 ---
 title: "About me"
-date: 2024-12-14T20:15:30+02:00
+date: 2025-05-30T10:30:30+02:00
 draft: false
 siteTitleFirst: true
 ---
@@ -10,16 +10,14 @@ My resume: [Resume (PDF)](/Resume%20Filippo%20Orru.pdf).
 
 # Right now
 
-As of January 2025, I'm looking forward to a new role! 
-After working at Studo for four years, I decided it was time for some new adventures. 
-In February, I will start working as a full-stack software engineer at [Online Doctor](https://onlinedoctor.ch) in Zurich. 
+As of May 2025, I'm working as a full-stack software engineer at [Online Doctor](https://onlinedoctor.ch) in Zurich. 
 
 | When?          | What?         |
 |----------------|---------------|
-| 2025 - present | Full-stack software engineer at Online Doctor |
-| 2020 - 2024    | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
-| 2019 - 2022    | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}})    |
-| 2019           | Moved from Germany to Graz after finishing school                               |
+| Feb 2025 - present     | Full-stack software engineer at Online Doctor |
+| Jul 2020 - Jul 2024    | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
+| Oct 2019 - Oct 2022    | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}})    |
+| 2019                   | Moved from Germany to Graz after finishing school                               |
 
 # On This Page
 

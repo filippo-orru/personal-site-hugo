@@ -9,15 +9,15 @@ paginate = 15
 [params]
 author = 'Filippo Orru'
 description = "Dev Blog • Projects Showcase • Art"
-keywords = 'blog,developer,personal,flutter,rust,graz,portfolio,programming,projects'
+keywords = 'blog,developer,personal,flutter,rust,graz,zurich,portfolio,programming,projects'
 info = 'Full Stack Developer'
-subInfo = 'Graz, Austria'
+subInfo = 'Zurich, Switzerland'
 colorScheme = "dark"
 tableOfContents = true
 # avatarURL = "images/avatar.png"
 featuredPage = "/about-me"
 # postHeaderMessageTitle = "Welcome :)"
-postHeaderMessage = "Hi, I'm Filippo. A software engineer living in Graz, Austria. On this blog I write about my programming projects and other interests. Learn more [about me](/about-me)."
+postHeaderMessage = "Hi, I'm Filippo. A software engineer currently working in Zurich, Switzerland. On this blog I write about my programming projects and other interests. Learn more [about me](/about-me)."
 images = ["/images/social.jpg"]
 
 [cascade]
