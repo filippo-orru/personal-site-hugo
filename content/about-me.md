@@ -1,23 +1,32 @@
 ---
 title: "About me"
-date: 2025-05-30T10:30:30+02:00
+date: 2025-09-22T11:18:30-07:00
 draft: false
 siteTitleFirst: true
 ---
 
 Hey, I'm Filippo! This is where I showcase my latest [personal projects]({{< ref "/categories/project" >}}) and [blog articles]({{< ref "/blog" >}}).  
-My resume: [Resume (PDF)](/Resume%20Filippo%20Orru.pdf).
+
+{{< rawhtml >}}
+<div class="resume-dl"><a href="/Resume%20Filippo%20Orru.pdf">Resume (PDF)</a></div>
+{{< /rawhtml >}}
 
 # Right now
 
-As of May 2025, I'm working as a full-stack software engineer at [Online Doctor](https://onlinedoctor.ch) in Zurich. 
+As of September 2025, I am traveling around BC and working on my most recent project, [fpv.place](https://www.fpv.place).
+
+In July 2025, I decided to quit my job as a full-stack software engineer at OnlineDoctor to relocate to Vancouver. 
+
+I'll be available for software engineering roles in Vancouver starting January 2026.
+
 
 | When?          | What?         |
 |----------------|---------------|
-| Feb 2025 - present     | Full-stack software engineer at Online Doctor |
-| Jul 2020 - Jul 2024    | Full-stack software engineer at Studo [↓ Experience]({{< ref "#experience" >}}) |
-| Oct 2019 - Oct 2022    | B.Sc. in Mobile Software Development [↓ Education]({{< ref "#education" >}})    |
-| 2019                   | Moved from Germany to Graz after finishing school                               |
+| Sep&nbsp;2025                    | Relocated to Vancouver |
+| Feb&nbsp;2025 - Jul&nbsp;2025    | Full-stack software engineer at OnlineDoctor (Zurich) |
+| Jul&nbsp;2020 - Jul&nbsp;2024    | Full-stack software engineer at Studo [↓&nbsp;Experience]({{< ref "#experience" >}}) |
+| Oct&nbsp;2019 - Oct&nbsp;2022    | B.Sc. in Mobile Software Development [↓&nbsp;Education]({{< ref "#education" >}}) |
+| Sep&nbsp;2019                    | Moved from Germany to Austria after finishing school |
 
 # On This Page
 

@@ -138,6 +138,16 @@
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
     }
   }
+
+  .resume-dl > a {
+    border-color: 1px solid $alt-bg-color-dark;
+
+    &:hover {
+      text-decoration: none;
+      border-color: $link-color-dark;
+      background-color: $alt-bg-color-dark;
+    }
+  }
 }
 
 body.colorscheme-dark {

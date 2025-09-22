@@ -31,7 +31,6 @@
         }
       }
     }
-
   }
 
   aside.table-of-contents {
@@ -82,7 +81,7 @@
             content: "→";
           }
 
-          >a {
+          > a {
             text-decoration: underline;
           }
         }
@@ -118,7 +117,7 @@
     li {
       margin-left: 12px;
 
-      >* {
+      > * {
         vertical-align: top;
       }
 
@@ -353,11 +352,11 @@
       width: auto;
       height: auto;
       max-width: 100%;
-      
+
       &:not(.tall) {
         max-height: 70vh;
       }
-      
+
       &.small {
         max-height: 17em;
       }
@@ -445,7 +444,8 @@ code.tooltip {
     &::before {
       transform: translateX(-40%) translateY(100%);
       opacity: 1;
-      transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.18s, opacity ease-out 0.2s;
+      transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.18s,
+        opacity ease-out 0.2s;
     }
   }
 }
@@ -523,8 +523,9 @@ code.tooltip {
 
             @at-root {
               body.ready #{$selector} {
-                transition: background-color ease 0.11s, border-color 0.11s, transform ease 0.07s,
-                  top ease 0.11s, bottom ease 0.11s, left ease 0.11s, right ease 0.11s;
+                transition: background-color ease 0.11s, border-color 0.11s,
+                  transform ease 0.07s, top ease 0.11s, bottom ease 0.11s,
+                  left ease 0.11s, right ease 0.11s;
               }
             }
           }
@@ -553,8 +554,8 @@ code.tooltip {
             align-items: center;
 
             .arrow {
-              transition: transform cubic-bezier(.4, 0, .2, 1) .15s,
-                opacity cubic-bezier(.4, 0, .2, 1) .15s;
+              transition: transform cubic-bezier(0.4, 0, 0.2, 1) 0.15s,
+                opacity cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
               height: 2rem;
               width: 2rem;
               opacity: 0;
@@ -766,7 +767,6 @@ code.tooltip {
         }
       }
     }
-
   }
 
   .error {
@@ -827,7 +827,6 @@ code.tooltip {
     right: -8%;
     bottom: 5%;
 
-
     @media only screen and (max-width: 570px) {
       right: -28%;
     }
@@ -876,7 +875,6 @@ code.tooltip {
       /* This is in order to fix a Firefox bug, related to the 3D tilt effect */
       /* transition: 0.25s cubic-bezier(.03,.98,.52,.99); */
 
-
       img {
         position: absolute;
         top: 0;
@@ -901,7 +899,7 @@ code.tooltip {
       background-color: rgba(0, 0, 0, 0.33);
       border-radius: 3px;
       opacity: 0.5;
-      transition: 0.25s cubic-bezier(.68, .26, .58, 1.22);
+      transition: 0.25s cubic-bezier(0.68, 0.26, 0.58, 1.22);
     }
 
     @media (hover: hover) {
@@ -931,7 +929,7 @@ code.tooltip {
       align-items: center;
       user-select: none;
       z-index: 2;
-      transition: opacity 0.6s cubic-bezier(.03, .98, .52, .99);
+      transition: opacity 0.6s cubic-bezier(0.03, 0.98, 0.52, 0.99);
       transition-delay: 0.3s;
       opacity: 0.5;
     }
@@ -961,11 +959,28 @@ code.tooltip {
       width: 50px;
       font-family: Monospace;
       /* background-color: rgba(0,0,0,0.5); */
-
     }
   }
 }
 
 hr.content-end {
   margin: 3.5rem 0;
+}
+
+.resume-dl {
+  display: block;
+  text-align: center;
+
+  > a {
+    padding: 1rem 2rem;
+    border: 1px solid $alt-bg-color;
+    border-radius: 0.6rem;
+    transition: border-color ease 0.1s, background-color ease 0.1s;
+
+    &:hover {
+      text-decoration: none;
+      border-color: $link-color;
+      background-color: $alt-bg-color;
+    }
+  }
 }
