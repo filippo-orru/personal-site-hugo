@@ -69,8 +69,8 @@ React • Vue • HTML • CSS • Angular • JavaScript & TypeScript • Kotli
 
 I recently created a website to **simplify meeting busy friends.** I went from concept to release **in just 10 days**. [Read more about it here]({{< ref "/blog/quando.events" >}}).
 
-{{< image src="images/about-me/quando-events.jpg" alt="Screenshot of quando.events" >}}
-[www.quando.events](https://www.quando.events)
+{{< image src="images/about-me/quando-events.jpg" alt="Screenshot of quando events" >}}
+[quando events](https://quando.filippo-orru.com)
 {{< /image >}}
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Busy Friends Make Scheduling Hard"
-subtitle: "... but quando.events makes it easy!"
+subtitle: "... but quando events makes it easy!"
 date: 2024-04-04T16:36:08+01:00
 draft: false
 description: How I built a site that makes it easy to find time to meet your friends in your schedule in 10 days.
@@ -44,7 +44,7 @@ DESCRIPTION
 Ever tried planning an activity with three or more busy friends? You know how hard it can be. It inevitably takes a dozen messages going back and forth, trying to find out where your schedules align.
 
 {{< notice "info" >}}
-**That's why I created [www.quando.events](https://www.quando.events), a simple & free website that makes it easy to schedule meetings with friends.**
+**That's why I created [quando events](https://quando.filippo-orru.com), a simple & free website that makes it easy to schedule meetings with friends.**
 {{</ notice >}}
 
 {{< image src="images/screenshot-1-arrows.jpg" alt="Overview of a meeting page" >}}
@@ -60,12 +60,12 @@ How it works:
 
 4. Meet in the overlap
 
-Keep on reading to learn more about how I did it, or try it out now: [Create a new meeting](https://www.quando.events).
+Keep on reading to learn more about how I did it, or try it out now: [Create a new meeting](https://quando.filippo-orru.com).
 
 {{< table-of-contents >}}
 
 # Concept
-When starting to create the project's concept, the goal was to **focus on an MVP** and keep complexity as low as possible. The initial name was 'meet me', which got superseded by 'quando.events' later on.
+When starting to create the project's concept, the goal was to **focus on an MVP** and keep complexity as low as possible. The initial name was 'meet me', which got superseded by 'quando events' later on.
 
 For the first UI sketches I drew, I wrote down these notes:
 
@@ -137,7 +137,7 @@ Stack:
     - Database: [Redis](https://redis.io/) as a simple key-value store for the meeting data.
     - [Plausible Analytics](https://plausible.io/) because it's privacy-friendly and can be self-hosted
 - DevOps
-    - [Hetzner](https://www.hetzner.com/cloud/) for my cheap VPS. It powers all my services, including this website, *quando.events*, my [Four in a Row]({{< ref "/blog/four-in-a-row" >}}) game, and more.
+    - [Hetzner](https://www.hetzner.com/cloud/) for my cheap VPS. It powers all my services, including this website, *quando events*, my [Four in a Row]({{< ref "/blog/four-in-a-row" >}}) game, and more.
     - [Traefik](https://traefik.io/traefik/) to proxy requests to the service.
     - [Docker Compose](https://docs.docker.com/compose/) to easily build and deploy the bundled Nuxt app, Redis, and Plausible.
 
@@ -154,7 +154,7 @@ Vue offers a lot of useful built-in components, like [transitions](vuejs.org/gui
 Funny enough, the hardest part wasn't building the rather complicated calendar UI. Instead, it was getting Google's approval for the 'import events' functionality. There are lots of rules to follow. Some are obvious (add a privacy policy), and some aren't (make sure to show the 'AppId' in the browser's URL bar in your demo video).
 
 {{< notice "info" >}}
-To try it out, head over to [www.quando.events](https://www.quando.events) now, and schedule a meeting with friends.
+To try it out, head over to [quando.filippo-orru.com](https://quando.filippo-orru.com) now, and schedule a meeting with friends.
 {{</ notice >}}
 
 # More

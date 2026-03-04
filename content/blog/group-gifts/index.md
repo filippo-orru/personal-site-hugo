@@ -183,6 +183,6 @@ You can also take a look at the code responsible for handling notifications:
 - Backend: [receive token](https://github.com/filippo-orru/group-gifts/blob/main/server/api/notifications/token.post.ts), [db schema](https://github.com/filippo-orru/group-gifts/blob/main/server/models/messagingTokens.schema.ts), [send notification](https://github.com/filippo-orru/group-gifts/blob/main/server/utils/notifications.ts)
 
 # More
-- Check out [quando.events](https://quando.events) my website for scheduling a time to meet with busy friends, or read [how I created it]({{< ref "/blog/quando.events" >}})
+- Check out [quando events](https://quando.filippo-orru.com) my website for scheduling a time to meet with busy friends, or read [how I created it]({{< ref "/blog/quando.events" >}})
 - Read [how I redesigned this website]({{< ref "/blog/updating-site-theme" >}})
 - Learn more [about me]({{< ref "/about-me" >}}), my interests, skills, and projects

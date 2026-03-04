@@ -99,6 +99,6 @@ Additionally, just like above, the services that receive web traffic configure t
 
 # More posts
 
-- Use [quando.events](https://quando.events) to schedule a time to meet with busy friends, or read [how I created it]({{< ref "/blog/quando.events" >}})
+- Use [quando events](https://quando.filippo-orru.com) to schedule a time to meet with busy friends, or read [how I created it]({{< ref "/blog/quando.events" >}})
 - [How I redesigned this website]({{< ref "/blog/updating-site-theme" >}})
 - [About me]({{< ref "/about-me" >}}), my interests, skills and projects
