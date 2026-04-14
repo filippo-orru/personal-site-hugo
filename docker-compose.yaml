@@ -1,6 +1,3 @@
-include:
-  - plausible/docker-compose.yaml
-
 services:
   nginx:
     image: nginx:alpine
