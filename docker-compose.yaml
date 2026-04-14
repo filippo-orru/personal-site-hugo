@@ -12,28 +12,6 @@ services:
       traefik.http.routers.filippo-orru.entrypoints: "https"
       traefik.http.routers.filippo-orru.tls: "true"
       traefik.http.services.filippo-orru.loadbalancer.server.port: "80"
-
-  webhook-listener:
-    build: 
-      context: webhook-listener
-      args:
-        - PRE_BUILD_COMMAND=curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.133.0/hugo_extended_0.133.0_linux-arm64.tar.gz && tar -xvzf hugo.tar.gz && cp hugo /usr/bin/ && chmod +x /usr/bin/hugo
-    expose:
-      - 8080
-    environment:
-      - PORT=8080
-      - COMMAND="cd /src && git config --global --add safe.directory /src && git pull && hugo --ignoreCache --minify -s /src -d /target"
-    volumes:
-      - ./:/src
-      - ./public:/target
-    secrets:
-      - webhook_secret
-    labels:
-      traefik.enable: "true"
-      traefik.http.routers.filippo-orru-webhook.rule: "Host(`filippo-orru.com`) && PathPrefix(`/webhook`)"
-      traefik.http.routers.filippo-orru-webhook.entrypoints: "https"
-      traefik.http.routers.filippo-orru-webhook.tls: "true"
-      traefik.http.services.filippo-orru-webhook.loadbalancer.server.port: "8080"
   
   comments:
     image: ghcr.io/isso-comments/isso:latest@sha256:6d31cf7961a6cb57c448e286b239df914b4ff3270ca44fe8fa5a1a84f994f961
@@ -53,18 +31,6 @@ services:
       traefik.http.routers.filippo-orru-comments.entrypoints: "https"
       traefik.http.routers.filippo-orru-comments.tls: "true"
       traefik.http.services.filippo-orru-comments.loadbalancer.server.port: "8080"
-
-  smtp-to-telegram:
-    image: alecpetrosky/smtp_to_telegram
-    env_file:
-      - ./services/smtp-to-telegram/.env
-    environment:
-      ST_TELEGRAM_CHAT_IDS: "1427061497"
-      ST_TELEGRAM_MESSAGE_TEMPLATE: "Subject: {subject}\\n\\n{body}"
-    
-secrets:
-  webhook_secret:
-    file: ./webhook.secret
 
 networks:
   default:

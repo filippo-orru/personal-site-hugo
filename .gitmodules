@@ -1,3 +1,0 @@
-[submodule "webhook-listener"]
-	path = webhook-listener
-	url = git@github.com:filippo-orru/webhook-listener.git
