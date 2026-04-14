@@ -1,6 +1,8 @@
 services:
   nginx:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./public:/usr/share/nginx/html
     labels:
@@ -17,6 +19,8 @@ services:
         source: ./services/isso-comments/isso.cfg
         target: /config/isso.cfg
       - './services/isso-comments/db:/db'
+    env_file:
+      - ./services/isso-comments/.env.secret
     expose:
       - 8080
     labels:
@@ -29,7 +33,7 @@ services:
       traefik.http.routers.filippo-orru-comments.tls: "true"
       traefik.http.services.filippo-orru-comments.loadbalancer.server.port: "8080"
 
-networks:
-  default:
-    external: true
-    name: traefik_proxy
+# networks:
+#   default:
+#     external: true
+#     name: traefik_proxy

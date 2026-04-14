@@ -6,8 +6,6 @@ date: 2022-12-11T08:16:25+07:00
 draft: false
 description: "'Build your own split keyboard', they said. Notes and pictures of my journey towards awesome ergonomic typing."
 categories: ['project']
-# _build:
-#   publishResources: true
 # images: ['blog/build-your-own-split-keyboard-they-said/images/featured.jpg']
 # featuredImage: featured.jpg
 # featuredImageSource: ['Name', 'https://unsplash.com/@XXX_username_XXX?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText']
