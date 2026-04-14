@@ -5,6 +5,6 @@ COPY . .
 RUN mkdir -p /app/public && hugo build --ignoreCache --minify -s /app -d /app/public
 
 FROM nginx:1.29.8
-COPY --from=builder /app/public /usr/share/nginx/html
+COPY --from=builder --chown=root:root /app/public /usr/share/nginx/html
 EXPOSE 80
 
