@@ -5,3 +5,6 @@
 !static
 !themes
 !config.toml
+!docker-compose.yaml
+!Dockerfile
+!services/isso-comments/isso.cfg
