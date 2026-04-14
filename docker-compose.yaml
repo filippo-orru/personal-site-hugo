@@ -3,8 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - ./public:/usr/share/nginx/html
     labels:
       traefik.enable: "true"
       traefik.http.routers.filippo-orru.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`)"
