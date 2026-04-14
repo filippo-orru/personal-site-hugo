@@ -5,3 +5,4 @@ trash.txt
 .DS_Store
 
 services/isso-comments/db
+services/isso-comments/.env.secret
