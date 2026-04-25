@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    restart: unless-stopped
     labels:
       traefik.enable: "true"
       traefik.http.routers.filippo-orru.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`)"
@@ -21,6 +22,7 @@ services:
       - ./services/isso-comments/.env.secret
     expose:
       - 8080
+    restart: unless-stopped
     labels:
       traefik.enable: "true"
       traefik.http.routers.filippo-orru-comments.rule: "Host(`filippo-orru.com`, `www.filippo-orru.com`) && PathPrefix(`/isso`)"
