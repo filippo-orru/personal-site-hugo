@@ -10,6 +10,8 @@ services:
       traefik.http.routers.filippo-orru.entrypoints: "https"
       traefik.http.routers.filippo-orru.tls: "true"
       traefik.http.services.filippo-orru.loadbalancer.server.port: "80"
+      kuma.personal-site.http.name: "Personal Website"
+      kuma.personal-site.http.url: "https://filippo-orru.com"
   
   comments:
     image: ghcr.io/isso-comments/isso:latest@sha256:6d31cf7961a6cb57c448e286b239df914b4ff3270ca44fe8fa5a1a84f994f961
