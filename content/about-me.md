@@ -1,6 +1,6 @@
 ---
 title: "About me"
-date: 2025-09-22T11:18:30-07:00
+date: 2026-05-23T12:00:00-07:00
 draft: false
 siteTitleFirst: true
 ---
@@ -13,24 +13,22 @@ Hey, I'm Filippo! This is where I showcase my latest [personal projects]({{< ref
 
 # Right now
 
-As of September 2025, I am traveling around BC and working on my most recent project, [fpv.place](https://www.fpv.place).
-
-In July 2025, I decided to quit my job as a full-stack software engineer at OnlineDoctor to relocate to Vancouver. 
-
-I'll be available for software engineering roles in Vancouver starting January 2026.
+As of May 2026, I am working as a Full Stack Software Engineer at [Sensor Tower](https://sensortower.com/). I am part of a small team building [Web Insights](https://sensortower.com/product/website/web-insights) - a product that allows companies to benchmark competitors' website traffic and engagement, among a dozen other features.
 
 
-| When?          | What?         |
-|----------------|---------------|
-| Sep&nbsp;2025                    | Relocated to Vancouver |
-| Feb&nbsp;2025 - Jul&nbsp;2025    | Full-stack software engineer at OnlineDoctor (Zurich) |
-| Jul&nbsp;2020 - Jul&nbsp;2024    | Full-stack software engineer at Studo [↓&nbsp;Experience]({{< ref "#experience" >}}) |
-| Oct&nbsp;2019 - Oct&nbsp;2022    | B.Sc. in Mobile Software Development [↓&nbsp;Education]({{< ref "#education" >}}) |
-| Sep&nbsp;2019                    | Moved from Germany to Austria after finishing school |
+| When? | What? |
+|-------|-------|
+| Mar&nbsp;2026 - present          | Full-stack software engineer at Sensor Tower (Vancouver) |
+| Jan&nbsp;2026 - Mar&nbsp;2026    | Software developer at TotalLife (Vancouver)              |
+| Sep&nbsp;2025 - Nov&nbsp;2025    | Relocated to Vancouver                                   |
+| Feb&nbsp;2025 - Jul&nbsp;2025    | Full-stack software engineer at OnlineDoctor (Zurich, CH) |
+| Jul&nbsp;2020 - Jul&nbsp;2024    | Full-stack software engineer at Studo (Graz, AT)         |
+| Oct&nbsp;2019 - Oct&nbsp;2022    | B.Sc. in Mobile Software Development                     |
+| Sep&nbsp;2019                    | Moved from Germany to Austria after finishing school     |
 
 # On This Page
 
-This is an overview of my experience and interests.
+This is an overview of my experience and interests (dated 2024). 
 
 {{< table-of-contents >}}
 
